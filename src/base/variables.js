@@ -1,4 +1,4 @@
-export const color_hero_1 = '#22282c';
+export const color_hero_1 = '#1B2023';
 export const color_hero_2 = '#0B0D0F';
 
 export const color_grey_1 = '#333';

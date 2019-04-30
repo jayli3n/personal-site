@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import {
+	color_hero_1,
+	color_hero_2,
 	color_grey_1
 } from '../base/variables'
 
@@ -11,6 +13,8 @@ import font_medium from '../fonts/StratumNo1 Medium.ttf';
 import font_regular from '../fonts/StratumNo1 Regular.ttf';
 import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
+import Particles from 'react-particles-js';
+import particlesOptions from './particlesjs-config';
 import Hero from '../components/hero/hero';
 
 
@@ -75,8 +79,14 @@ const GlobalStyle = createGlobalStyle`
 	}
 `;
 
-const Title = styled.p`
-	font-size: 20rem;
+const Stars = styled.div`
+	background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
 `;
 
 class App extends Component {
@@ -87,6 +97,9 @@ class App extends Component {
 	render(){
 		return(
 			<>
+				<Stars>
+					<Particles params={particlesOptions}/>
+				</Stars>
 				<GlobalStyle />
 				<Hero></Hero>
 			</>
