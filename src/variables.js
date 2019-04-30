@@ -1,14 +1,15 @@
-export const color-primary = '#22282c';
-export const color-primary-dark-1 = '#0B0D0F';
+export const color_primary = '#22282c';
+export const color_primary_dark_1 = '#0B0D0F';
 
-export const color-grey-1 = '#333';
-export const color-grey-2 = '#777';
-export const color-grey-3 = '#999';
-export const color-grey-4 = '#aaa';
-export const color-grey-5 = '#ccc';
-export const color-grey-6 = '#f0eeee';
-export const color-grey-7 = '#f4f2f2';
-export const color-grey-8 = '#faf9f9';
+export const color_grey_1 = '#333';
+export const color_grey_2 = '#777';
+export const color_grey_3 = '#999';
+export const color_grey_4 = '#aaa';
+export const color_grey_5 = '#ccc';
+export const color_grey_6 = '#f0eeee';
+export const color_grey_7 = '#f4f2f2';
+export const color_grey_8 = '#faf9f9';
+
 
 
 export const maxWidth = 1005;
