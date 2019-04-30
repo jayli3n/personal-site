@@ -4,7 +4,7 @@ import {
 	color_hero_1,
 	color_hero_2,
 	color_grey_1
-} from '../base/variables'
+} from '../atoms/variables'
 
 import font_bold from '../fonts/StratumNo1 Bold.ttf';
 import font_heavy from '../fonts/StratumNo1 Heavy.ttf';

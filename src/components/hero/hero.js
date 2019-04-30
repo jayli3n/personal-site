@@ -2,13 +2,14 @@ import React from 'react';
 import {
 	color_hero_1,
 	color_hero_2
-} from '../../base/variables'
+} from '../../atoms/variables'
 import {
 	H1,
 	P
 } from '../../base/base'
 import styled from 'styled-components';
 import avatar from '../../images/avatar.jpg';
+import ButtonAtom from '../../atoms/buttonAtom'
 
 const Section = styled.section`
 	min-height: 100vh;
@@ -42,6 +43,23 @@ const Status = styled(P)`
 	color: #fff;
 `;
 
+const Buttons = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 2rem;
+	width: auto;
+`;
+
+const Button = styled(ButtonAtom)`
+	color: #fff;
+	font-size: 1.6rem;
+
+	:not(:last-child){
+		margin-right: 2rem;
+	};
+`;
+
 
 const Hero = () => {
 	return(
@@ -50,6 +68,10 @@ const Hero = () => {
 				<Avatar></Avatar>
 				<Name>Jay Li</Name>
 				<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
+				<Buttons>
+					<Button href='#'>Contact Me</Button>
+					<Button href='#' secondary>Resume</Button>
+				</Buttons>
 			</InfoBox>
 		</Section>
 	)

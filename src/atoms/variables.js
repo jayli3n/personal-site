@@ -1,3 +1,6 @@
+export const color_primary = '#3A539B';
+export const color_primary_dark = '#314582';
+
 export const color_hero_1 = '#1B2023';
 export const color_hero_2 = '#0B0D0F';
 
