@@ -35,6 +35,10 @@ const IconBox = styled.div`
 	min-width: 11rem;
 	transition: all .2s;
 
+	.name{
+		margin-top: 1rem;
+	}
+
 	:hover{
 		transform: scale(1.05);
 
@@ -53,10 +57,6 @@ const Icon = styled.div`
 	width: 7rem;
 `;
 
-const Name = styled(H3)`
-	margin-top: 1rem;
-`;
-
 //------------------------------------------------------------------------------
 
 const Technologies = () => {
@@ -67,67 +67,67 @@ const Technologies = () => {
 					<Icon className='icon' style={{"background-color": '#61DAFB'}}>
 						<ReactSvg/>
 					</Icon>
-					<Name>React</Name>
+					<H3 className='name'>React</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#764ABC'}}>
 						<Redux/>
 					</Icon>
-					<Name>Redux</Name>
+					<H3 className='name'>Redux</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#F7DF1E'}}>
 						<JS/>
 					</Icon>
-					<Name>Javascript</Name>
+					<H3 className='name'>Javascript</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#E34F26'}}>
 						<Html5/>
 					</Icon>
-					<Name>HTML</Name>
+					<H3 className='name'>HTML</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#1572B6'}}>
 						<Css3/>
 					</Icon>
-					<Name>CSS</Name>
+					<H3 className='name'>CSS</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#CC6699'}}>
 						<Sass/>
 					</Icon>
-					<Name>Sass</Name>
+					<H3 className='name'>Sass</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#339933'}}>
 						<NodeJS/>
 					</Icon>
-					<Name>NodeJS</Name>
+					<H3 className='name'>NodeJS</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#336791'}}>
 						<PostgreSQL/>
 					</Icon>
-					<Name>PostgreSQL</Name>
+					<H3 className='name'>PostgreSQL</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#F05032'}}>
 						<Git/>
 					</Icon>
-					<Name>Git</Name>
+					<H3 className='name'>Git</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#563D7C'}}>
 						<Bootstrap/>
 					</Icon>
-					<Name>Bootstrap</Name>
+					<H3 className='name'>Bootstrap</H3>
 				</IconBox>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#7AB55C'}}>
 						<Shopify/>
 					</Icon>
-					<Name>Shopify</Name>
+					<H3 className='name'>Shopify</H3>
 				</IconBox>
 			</Wrapper>
 		</StyledSection>

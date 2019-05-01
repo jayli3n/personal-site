@@ -18,6 +18,7 @@ import particlesOptions from './particlesjs-config';
 import Hero from '../components/hero/hero';
 import Profile from '../components/profile/profile';
 import Technologies from '../components/technologies/technologies';
+import Portfolio from '../components/portfolio/portfolio';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -106,6 +107,7 @@ class App extends Component {
 					<Hero/>
 					<Profile/>
 					<Technologies/>
+					<Portfolio/>
 			</>
 		)
 	}
