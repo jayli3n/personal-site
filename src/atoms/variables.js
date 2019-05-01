@@ -1,4 +1,5 @@
 export const color_primary = '#3A539B';
+export const color_primary_light = '#3B54A0';
 export const color_primary_dark = '#314582';
 
 export const color_hero_1 = '#1B2023';
@@ -15,7 +16,7 @@ export const color_grey_8 = '#faf9f9';
 
 
 
-export const maxWidth = 1005;
+export const max_width = '70%';
 
 export const smartphoneSize = 500;
 export const tabletSize = 650;
