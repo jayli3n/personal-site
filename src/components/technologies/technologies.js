@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-	H1,
 	H3
 } from '../../atoms/typography';
 import StyledSection from '../../atoms/section';
@@ -62,7 +61,7 @@ const Name = styled(H3)`
 
 const Technologies = () => {
 	return(
-		<StyledSection title='I can use:' dark>
+		<StyledSection title='Professional Skills'>
 			<Wrapper>
 				<IconBox>
 					<Icon className='icon' style={{"background-color": '#61DAFB'}}>

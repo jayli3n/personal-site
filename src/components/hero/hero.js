@@ -47,6 +47,7 @@ const Name = styled(H1)`
 `;
 
 const Status = styled(H4)`
+	font-weight: 300;
 	color: #fff;
 `;
 

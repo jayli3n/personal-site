@@ -6,7 +6,7 @@ export const color_hero_1 = '#1B2023';
 export const color_hero_2 = '#0B0D0F';
 
 export const color_grey_1 = '#333';
-export const color_grey_2 = '#777';
+export const color_grey_2 = '#545454';
 export const color_grey_3 = '#999';
 export const color_grey_4 = '#aaa';
 export const color_grey_5 = '#ccc';

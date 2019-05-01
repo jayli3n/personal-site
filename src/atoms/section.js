@@ -15,13 +15,18 @@ const Section = styled.section`
 	flex-direction: column;
 	background-color: ${props => props.dark ? `${color_grey_6}` : `${color_grey_7}`};
 	padding: 10rem 6rem;
+
+	:not(:last-child){
+		padding: 10rem 6rem 2rem 6rem;
+	};
 `;
 
 const Container = styled.div`
 	padding: 3rem;
-	width: 120rem;
+	max-width: 100rem;
 	background-color: ${color_grey_8};
 	box-shadow: 0 2rem 3rem rgba(0,0,0,.2);
+	border-radius: 2px;
 `;
 
 //------------------------------------------------------------------------------
