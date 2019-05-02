@@ -120,9 +120,7 @@ const Icons = ({className, list}) => (
 	<Wrapper>
 	{list.map(({name, bgColor, svg}, i) => (
 		<IconBox className={className} key={i}>
-			<Icon bgColor={bgColor}>
-				{svg}
-			</Icon>
+			<Icon bgColor={bgColor}>{svg}</Icon>
 			<H3>{name}</H3>
 		</IconBox>
 	))}

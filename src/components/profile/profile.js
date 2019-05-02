@@ -6,6 +6,9 @@ import {
 	P
 } from '../../atoms/typography';
 import {Container} from '../../atoms/container';
+import { ReactComponent as Gmail_svg } from '../../images/icons/gmail.svg';
+import { ReactComponent as Location_svg } from '../../images/icons/pin.svg';
+import { ReactComponent as Translate_svg } from '../../images/icons/google_translate.svg';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -34,7 +37,7 @@ const InfoList = styled.ul`
 const ListItem = styled.li`
 	display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: center;
 
 	:not(:last-child){
 		margin-bottom: 1rem;
@@ -45,15 +48,21 @@ const StyledH2 = styled(H2)`
 	margin-bottom: 2rem;
 `;
 
-const StyledH4 = styled(H4)`
-	flex: 0 1 10rem;
-	margin-right: 2rem;
+const Icon = styled.div`
+	height: auto;
+	width: 2.5rem;
+	margin-right: 1.5rem;
+
+	& > * {
+		display: block;
+		margin: auto;
+	}
 `;
 
-const InfoItem = ({className, property, value}) => {
+const InfoItem = ({className, svg, value}) => {
 	return(
-		<ListItem>
-			<StyledH4>{property}</StyledH4>
+		<ListItem className={className}>
+			<Icon>{svg}</Icon>
 			<P>{value}</P>
 		</ListItem>
 	)
@@ -72,9 +81,9 @@ const Profile = () => {
 				<Info>
 					<StyledH2>Info</StyledH2>
 					<InfoList>
-						<InfoItem property='Email:' value='jay.li23697&#64;gmail.com'/>
-						<InfoItem property='Location:' value='Australia'/>
-						<InfoItem property='Languages:' value='English, Mandarin, Cantonese'/>
+						<InfoItem svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
+						<InfoItem svg={<Location_svg/>} value='Australia'/>
+						<InfoItem svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
 					</InfoList>
 				</Info>
 			</Wrapper>
