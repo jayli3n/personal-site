@@ -8,7 +8,7 @@ import {
 	H1,
 	H4
 } from '../../atoms/typography';
-import ButtonAtom from '../../atoms/button';
+import {Button as ButtonAtom} from '../../atoms/button';
 import styled from 'styled-components';
 import avatar from '../../images/avatar.jpg';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
@@ -109,8 +109,8 @@ const Hero = () => {
 				<Name>Jay Li</Name>
 				<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
 				<Buttons>
-					<Button href='#'>Contact Me</Button>
-					<Button href='#' secondary>Resume</Button>
+					<Button link='#'>Contact Me</Button>
+					<Button link='#' secondary>Resume</Button>
 				</Buttons>
 
 				<Socials>

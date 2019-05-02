@@ -7,7 +7,7 @@ import {
 	color_grey_4
 } from './variables'
 
-const ButtonAtom = styled.a`
+const A = styled.a`
 	:link,
 	:visited{
 		text-decoration: none;
@@ -36,4 +36,10 @@ const ButtonAtom = styled.a`
 	}
 `;
 
-export default ButtonAtom;
+export const Button = ({link, children, className, secondary}) => {
+	return(
+		<A href={link} className={className} secondary={secondary}>
+			{children}
+		</A>
+	)
+}

@@ -13,7 +13,7 @@ const Section = styled.section`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: ${props => props.dark ? `${color_grey_6}` : `${color_grey_7}`};
+	background-color: ${color_grey_7};
 	padding: 10rem 6rem;
 	margin: 0 auto;
 
@@ -22,7 +22,7 @@ const Section = styled.section`
 	};
 `;
 
-const Container = styled.div`
+const Div = styled.div`
 	padding: ${props => props.transparent ? `none` : `3rem`};
 	max-width: 100rem;
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};
@@ -32,15 +32,13 @@ const Container = styled.div`
 
 //------------------------------------------------------------------------------
 
-const StyledSection = ({ children, className, transparent, title }) => {
+export const Container = ({ children, className, transparent, title }) => {
 	return(
 		<Section className={className}>
 			<Title>{title}</Title>
-			<Container transparent={transparent}>
+			<Div transparent={transparent}>
 				{children}
-			</Container>
+			</Div>
 		</Section>
 	)
 }
-
-export default StyledSection;

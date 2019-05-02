@@ -8,7 +8,7 @@ import {
 import {
 	color_grey_7
 } from '../../atoms/variables';
-import StyledSection from '../../atoms/section';
+import {Container} from '../../atoms/container';
 import facial_recog from '../../images/portfolio/facial_recog.jpg';
 
 const Wrapper = styled.div`
@@ -44,7 +44,7 @@ const Details = styled.div`
 
 const Portfolio = () => {
 	return(
-		<StyledSection title='Portfolio' transparent>
+		<Container title='Portfolio' transparent>
 			<Wrapper>
 				<Card>
 					<Image>
@@ -58,7 +58,7 @@ const Portfolio = () => {
 					</Details>
 				</Card>
 			</Wrapper>
-		</StyledSection>
+		</Container>
 	)
 }
 
