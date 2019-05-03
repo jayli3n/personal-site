@@ -23,6 +23,8 @@ const Section = styled.section`
 `;
 
 const Div = styled.div`
+	display: flex;
+	justify-content: center;
 	padding: ${props => props.transparent ? `none` : `3rem`};
 	max-width: 100rem;
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};

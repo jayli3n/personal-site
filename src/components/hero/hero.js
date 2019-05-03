@@ -103,8 +103,8 @@ const Hero = () => {
 				<Name>Jay Li</Name>
 				<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
 				<Buttons>
-					<Button link='#'>Contact Me</Button>
-					<Button link='#' secondary>Resume</Button>
+					<Button link='#' ww='15rem'>Contact Me</Button>
+					<Button link='#' ww='15rem' secondary>Resume</Button>
 				</Buttons>
 
 				<Socials>
