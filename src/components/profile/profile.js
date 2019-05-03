@@ -59,7 +59,7 @@ const Icon = styled.div`
 	}
 `;
 
-const InfoItem = ({className, svg, value}) => {
+const ListItemComponent = ({className, svg, value}) => {
 	return(
 		<ListItem className={className}>
 			<Icon>{svg}</Icon>
@@ -81,9 +81,9 @@ const Profile = () => {
 				<Info>
 					<StyledH2>Info</StyledH2>
 					<InfoList>
-						<InfoItem svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
-						<InfoItem svg={<Location_svg/>} value='Australia'/>
-						<InfoItem svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
+						<ListItemComponent svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
+						<ListItemComponent svg={<Location_svg/>} value='Australia'/>
+						<ListItemComponent svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
 					</InfoList>
 				</Info>
 			</Wrapper>

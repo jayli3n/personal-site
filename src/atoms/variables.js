@@ -10,10 +10,9 @@ export const color_grey_2 = '#545454';
 export const color_grey_3 = '#999';
 export const color_grey_4 = '#aaa';
 export const color_grey_5 = '#ccc';
-export const color_grey_6 = '#f0eeee';
+export const color_grey_6 = '#DFE1E5';
 export const color_grey_7 = '#f4f2f2';
 export const color_grey_8 = '#faf9f9';
-
 
 
 export const max_width = '70%';

@@ -68,12 +68,6 @@ const Button = styled(ButtonAtom)`
 	};
 `;
 
-const svg = ({ className, children }) => (
-  <svg className={className}>
-    {children}
-  </svg>
-);
-
 const Socials = styled.div`
 	display: flex;
 	margin-top: 1.8rem;

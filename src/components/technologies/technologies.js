@@ -117,13 +117,13 @@ const Icon = styled.div`
 `;
 
 const Icons = ({className, list}) => (
-	<Wrapper>
-	{list.map(({name, bgColor, svg}, i) => (
-		<IconBox className={className} key={i}>
-			<Icon bgColor={bgColor}>{svg}</Icon>
-			<H3>{name}</H3>
-		</IconBox>
-	))}
+	<Wrapper className={className}>
+		{list.map(({name, bgColor, svg}, i) => (
+			<IconBox key={i}>
+				<Icon bgColor={bgColor}>{svg}</Icon>
+				<H3>{name}</H3>
+			</IconBox>
+		))}
 	</Wrapper>
 );
 

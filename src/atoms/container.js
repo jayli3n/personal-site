@@ -26,7 +26,7 @@ const Div = styled.div`
 	padding: ${props => props.transparent ? `none` : `3rem`};
 	max-width: 100rem;
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};
-	box-shadow: ${props => props.transparent ? `none` : `0 .5rem 2rem rgba(0,0,0,.1)`};
+	box-shadow: ${props => props.transparent ? `none` : `0 .1rem .15rem rgba(0,0,0,.3)`};
 	border-radius: 2px;
 `;
 
