@@ -59,12 +59,33 @@ const portfolio_array = [
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
+	},
+	{
+		imgPath: test,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: '#',
+		sourceLink: '#',
+	},
+	{
+		imgPath: test,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: '#',
+		sourceLink: '#',
+	},
+	{
+		imgPath: test,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: '#',
+		sourceLink: '#',
 	}
 ];
 
 
 const Wrapper = styled.div`
-	max-width: 94rem;
+	max-width: 97rem;
 	position: relative;
 	display: flex;
 	padding-bottom: 2rem;
@@ -74,7 +95,7 @@ const Wrapper = styled.div`
 const Card = styled.div`
 	display: block;
 	height: 45rem;
-	max-width: 30rem;
+	max-width: 31rem;
 	background-color: #fff;
 	box-shadow: none;
 	border: 1px solid ${color_grey_6};
@@ -191,6 +212,11 @@ const SliderButton = styled.div`
 	:hover{
 		opacity: 1;
 		box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 5px 9px 0 rgba(0,0,0,0.20);
+	};
+
+	:active{
+		opacity: .9;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
 	};
 `;
 
