@@ -19,7 +19,11 @@ import Hero from '../components/hero/hero';
 import Profile from '../components/profile/profile';
 import Technologies from '../components/technologies/technologies';
 import Portfolio from '../components/portfolio/portfolio';
+import Experiences from '../components/experiences/experiences';
 import Extracurricular from '../components/extracurricular/extracurricular';
+import MySystem from '../components/mySystem/mySystem';
+import Footer from '../components/footer/footer';
+
 
 
 const GlobalStyle = createGlobalStyle`
@@ -109,7 +113,10 @@ class App extends Component {
 					<Profile/>
 					<Technologies/>
 					<Portfolio/>
+					<Experiences/>
 					<Extracurricular/>
+					<MySystem/>
+					<Footer/>
 			</>
 		)
 	}

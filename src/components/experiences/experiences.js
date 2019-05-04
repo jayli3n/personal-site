@@ -64,9 +64,9 @@ const ActivityComponent = ({className, reverse, imgPath, title, details}) => {
 
 //------------------------------------------------------------------------------
 
-const Extracurricular = () => {
+const Experiences = () => {
 	return(
-		<Container title='Outside of Work 🎾'>
+		<Container title='Experiences 🚀'>
 			<Wrapper>
 				<ActivityComponent imgPath={placeholder} title='Badminton' details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim sit.'/>
 				<ActivityComponent reverse imgPath={placeholder} title='Workout' details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim sit.'/>
@@ -75,4 +75,4 @@ const Extracurricular = () => {
 	)
 }
 
-export default Extracurricular;
+export default Experiences;
