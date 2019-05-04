@@ -19,6 +19,7 @@ import Hero from '../components/hero/hero';
 import Profile from '../components/profile/profile';
 import Technologies from '../components/technologies/technologies';
 import Portfolio from '../components/portfolio/portfolio';
+import Extracurricular from '../components/extracurricular/extracurricular';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -108,6 +109,7 @@ class App extends Component {
 					<Profile/>
 					<Technologies/>
 					<Portfolio/>
+					<Extracurricular/>
 			</>
 		)
 	}

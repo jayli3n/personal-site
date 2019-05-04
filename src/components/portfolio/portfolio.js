@@ -26,14 +26,14 @@ import test from '../../images/portfolio/test.jpg';
 
 const portfolio_array = [
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Trillo Front End',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Facial Recognition Web App',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
@@ -47,35 +47,35 @@ const portfolio_array = [
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recog,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
