@@ -13,20 +13,20 @@ export const H1 = styled.h1`
 	color: ${color_grey_1};
 `;
 
-export const H2 = styled.h1`
+export const H2 = styled.h2`
 	font-size: 2.9rem;
 	font-weight: 400;
 	color: ${color_grey_1};
 `;
 
-export const H3 = styled.h1`
+export const H3 = styled.h3`
 	font-size: 2.4rem;
 	font-weight: 300;
 	color: ${color_grey_1};
 `;
 
-export const H4 = styled.h1`
-	font-size: 2rem;
+export const H4 = styled.h4`
+	font-size: 2.1rem;
 	font-weight: 400;
 	color: ${color_grey_1};
 `;

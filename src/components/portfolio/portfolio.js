@@ -6,11 +6,16 @@ import {
 	P
 } from '../../atoms/typography';
 import {
+	color_grey_3,
+	color_grey_4,
 	color_grey_6,
-	color_grey_7
+	color_grey_7,
+	color_primary,
+	color_primary_light
 } from '../../atoms/variables';
 import {Container} from '../../atoms/container';
-import {Button as ButtonAtom} from '../../atoms/button';
+import {pulseEffect} from '../../atoms/keyframes';
+import { ReactComponent as Github } from '../../images/icons/github.svg';
 
 import facial_recog from '../../images/portfolio/facial_recog.jpg';
 import test from '../../images/portfolio/test.jpg';
@@ -40,7 +45,14 @@ const portfolio_array = [
 	},
 	{
 		imgPath: test,
-		title: 'Nexter Front End',
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: '#',
+		sourceLink: '#',
+	},
+	{
+		imgPath: test,
+		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
@@ -52,12 +64,11 @@ const Wrapper = styled.div`
 	width: 95%;
 	display: flex;
 	padding-bottom: 2rem;
-	overflow: scroll hidden;
+	overflow: auto hidden;
 `;
 
 const Card = styled.div`
-	display: flex;
-	flex-direction: column;
+	display: block;
 
 	height: 45rem;
 	width: 30rem;
@@ -73,7 +84,7 @@ const Card = styled.div`
 
 const Image = styled.div`
 	width: 100%;
-	height: 20rem;
+	height: 45%;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -94,26 +105,62 @@ const Details = styled.div`
 `;
 
 const StyledH4 = styled(H4)`
-	margin-bottom: .8rem;
+	margin-bottom: 1rem;
 `;
 
 const Buttons = styled.div`
-	align-self: flex-end;
+	display: flex;
+	justify-content: flex-start;
 	margin-top: auto;
 	padding: 1.8rem 1.6rem;	
 `;
 
-const Button = styled(ButtonAtom)`
+const Button = styled.a`
+	display: flex;
+	align-items: center;
+
 	font-size: 1.4rem;
-	color: #aaa;
+	text-decoration: none;
 	padding: .5rem 1rem;
-	border: 1px solid #aaa;
-	border-radius: 3px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: ${props => props.secondary ? color_grey_4 : color_primary_light};
 
 	:not(:last-child){
-		margin-right: 1rem;
+		margin-right: .5rem;
 	};
+
+	:active{
+		background-color: ${props => props.secondary ? color_grey_3 : color_primary};
+		color: ${color_grey_6};
+	};
+	
+	:active #live{
+		background-color: ${color_grey_6};
+	}
+
+	:active #github{
+		fill: ${color_grey_6};
+	}
 `;
+
+const Icon = styled.div`
+	fill: #fff;
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-right: .5rem;
+`;
+
+const WhiteDot = styled.div`
+	height: .75rem;
+	width: .75rem;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-right: .5rem;
+	opacity: 1;
+	animation: ${pulseEffect} 3s infinite;
+`;
+
 
 const DetailsComponent = ({title, text}) => {
 	return(
@@ -126,17 +173,26 @@ const DetailsComponent = ({title, text}) => {
 	)
 }
 
+const ButtonsComponent = ({className, liveLink, sourceLink}) => {
+	return(
+		<Buttons>
+			<Button href={liveLink} target='_blank'>
+				<WhiteDot id='live'/> Live
+			</Button>
+			<Button href={sourceLink} secondary target='_blank'>
+				<Icon id='github'><Github/></Icon> Source
+			</Button>
+		</Buttons>
+	)
+}
+
 const CardComponent = ({className, p_array}) => (
 	<Wrapper className={className}>
 		{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
 			<Card key={i}>
 				<Image><img src={imgPath}/></Image>
 				<DetailsComponent title={title} text={text}/>
-
-				<Buttons>
-					<Button href={liveLink}>Live</Button>
-					<Button href={sourceLink}>Source</Button>
-				</Buttons>
+				<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
 			</Card>
 		))}
 	</Wrapper>

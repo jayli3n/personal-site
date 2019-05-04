@@ -14,8 +14,8 @@ const A = styled.a`
 		padding: 1.5rem 3rem;
 		border-radius: 3px;
 		border: 2px solid ${props => props.secondary ? '#fff' : 'transparent'};
-		border-bottom: 2px solid ${props => props.secondary ? '#fff' : `${color_primary_dark}`};
-		background-color: ${props => props.secondary ? 'rgba(27,32,35, .6)' : `${color_primary}`};
+		border-bottom: 2px solid ${props => props.secondary ? '#fff' : color_primary_dark};
+		background-color: ${props => props.secondary ? 'rgba(27,32,35, .6)' : color_primary};
 		box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
 		width: ${props => props.ww ? props.ww : 'auto'};
 		cursor: pointer;
@@ -29,7 +29,7 @@ const A = styled.a`
 
 	:active{
 		transform: scale(1);
-		background-color: ${props => props.secondary ? 'rgba(27,32,35, .9)' : `${color_primary_dark}`};
+		background-color: ${props => props.secondary ? 'rgba(27,32,35, .9)' : color_primary_dark};
 		border: 2px solid ${props => props.secondary ? `${color_grey_4}` : 'transparent'};
 		color: ${color_grey_4};
 		box-shadow: 0 2rem 2rem rgba(0,0,0,.4);
