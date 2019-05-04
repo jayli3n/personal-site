@@ -24,6 +24,7 @@ const Section = styled.section`
 
 const Div = styled.div`
 	display: flex;
+	position: relative;
 	justify-content: center;
 	padding: ${props => props.transparent ? `none` : `3rem`};
 	max-width: 100rem;

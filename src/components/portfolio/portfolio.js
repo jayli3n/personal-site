@@ -6,6 +6,7 @@ import {
 	P
 } from '../../atoms/typography';
 import {
+	color_grey_2,
 	color_grey_3,
 	color_grey_4,
 	color_grey_6,
@@ -16,6 +17,8 @@ import {
 import {Container} from '../../atoms/container';
 import {pulseEffect} from '../../atoms/keyframes';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
+import { ReactComponent as ArrowBack } from '../../images/icons/arrow_back.svg';
+import { ReactComponent as ArrowForward } from '../../images/icons/arrow_forward.svg';
 
 import facial_recog from '../../images/portfolio/facial_recog.jpg';
 import test from '../../images/portfolio/test.jpg';
@@ -61,7 +64,8 @@ const portfolio_array = [
 
 
 const Wrapper = styled.div`
-	width: 95%;
+	max-width: 94rem;
+	position: relative;
 	display: flex;
 	padding-bottom: 2rem;
 	overflow: auto hidden;
@@ -69,9 +73,8 @@ const Wrapper = styled.div`
 
 const Card = styled.div`
 	display: block;
-
 	height: 45rem;
-	width: 30rem;
+	max-width: 30rem;
 	background-color: #fff;
 	box-shadow: none;
 	border: 1px solid ${color_grey_6};
@@ -112,7 +115,7 @@ const Buttons = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	margin-top: auto;
-	padding: 1.8rem 1.6rem;	
+	padding: 1.8rem 1.6rem;
 `;
 
 const Button = styled.a`
@@ -125,6 +128,10 @@ const Button = styled.a`
 	border-radius: 4px;
 	color: #fff;
 	background-color: ${props => props.secondary ? color_grey_4 : color_primary_light};
+
+	& > * {
+		animation: ${props => props.pulsate ? pulseEffect : 'none'} 3s infinite;
+	}
 
 	:not(:last-child){
 		margin-right: .5rem;
@@ -158,13 +165,45 @@ const WhiteDot = styled.div`
 	background-color: #fff;
 	margin-right: .5rem;
 	opacity: 1;
-	animation: ${pulseEffect} 3s infinite;
+`;
+
+const SliderButton = styled.div`
+	margin: auto 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: ${props => props.direction=='left' ? 0 : 'auto'};
+	right: ${props => props.direction=='right' ? 0 : 'auto'};
+	transform: translateX(${props => props.direction=='right' ? '50%' : props.direction=='left' ? '-50%' : 0});
+	z-index: 99;
+	background-color: #fff;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
+	border-radius: 50%;
+	cursor: pointer;
+	visibility: visible;
+	height: 4.3rem;
+	width: 4.3rem;
+	opacity: .9;
+
+	:hover{
+		opacity: 1;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 5px 9px 0 rgba(0,0,0,0.20);
+	};
+`;
+
+const SliderIcon = styled.div`
+	fill: ${color_grey_2};
+	height: 2.5rem;
+	width: 2.5rem;
 `;
 
 
-const DetailsComponent = ({title, text}) => {
+const DetailsComponent = ({className, title, text}) => {
 	return(
-		<div>
+		<div className={className}>
 			<Details>
 				<StyledH4>{title}</StyledH4>
 				<P>{text}</P>
@@ -175,12 +214,12 @@ const DetailsComponent = ({title, text}) => {
 
 const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 	return(
-		<Buttons>
-			<Button href={liveLink} target='_blank'>
-				<WhiteDot id='live'/> Live
+		<Buttons className={className}>
+			<Button href={liveLink} target='_blank' pulsate>
+				<WhiteDot id='live'/><span>Live</span>
 			</Button>
-			<Button href={sourceLink} secondary target='_blank'>
-				<Icon id='github'><Github/></Icon> Source
+			<Button href={sourceLink} target='_blank' secondary>
+				<Icon id='github'><Github/></Icon><span>Source</span>
 			</Button>
 		</Buttons>
 	)
@@ -188,22 +227,34 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 
 const CardComponent = ({className, p_array}) => (
 	<Wrapper className={className}>
-		{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
-			<Card key={i}>
-				<Image><img src={imgPath}/></Image>
-				<DetailsComponent title={title} text={text}/>
-				<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
-			</Card>
-		))}
+			{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
+				<Card key={i}>
+					<Image><img src={imgPath}/></Image>
+					<DetailsComponent title={title} text={text}/>
+					<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
+				</Card>
+			))}
 	</Wrapper>
 )
+
+const SliderButtonComponent = ({className, direction}) => {
+	return(
+		<SliderButton className={className} direction={direction}>
+			<SliderIcon>
+				{direction=='right' ? <ArrowForward/> : direction=='left' ? <ArrowBack/> : <span/>}
+			</SliderIcon>
+		</SliderButton>
+	)
+}
 
 //------------------------------------------------------------------------------
 
 const Portfolio = () => {
 	return(
 		<Container title='Portfolio' transparent>
+			<SliderButtonComponent direction='left'/>
 			<CardComponent p_array={portfolio_array}/>
+			<SliderButtonComponent direction='right'/>
 		</Container>
 	)
 }
