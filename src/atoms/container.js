@@ -31,6 +31,7 @@ const Div = styled.div`
 	padding: ${props => props.transparent ? `none` : `3rem`};
 	min-width: ${min_width};
 	max-width: ${max_width};
+	width: calc(100vw - 12rem);
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};
 	box-shadow: ${props => props.transparent ? `none` : `0 .1rem .15rem rgba(0,0,0,.3)`};
 	border-radius: 3px;
