@@ -7,70 +7,78 @@ import {
 } from '../../atoms/typography';
 import {
 	color_grey_2,
+	color_primary
 } from '../../atoms/variables';
 
 import placeholder from '../../images/portfolio/facial_recog.jpg';
 
+
+const my_system_list = [
+	{
+		text: 'be humble',
+		link: '#'
+	},
+	{
+		text: 'respectful',
+		link: '#'
+	},
+	{
+		text: 'read everyday',
+		link: '#'
+	},
+	{
+		text: 'pursue passions, not paychecks',
+		link: '#'
+	}
+];
+
 const Wrapper = styled.div`
-	display: flex;
-	flex-direction: column;
+	width: 100%;
 	padding: 1rem 0;
 `;
 
-const Activity = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+const List = styled.ol`
 	padding: 2rem;
+	text-align: center;
+	list-style-position: inside;
+	list-style-type: none;
 `;
 
-const Image = styled.div`
-	flex: 1 1 50%;
-	margin: 1rem;
-	height: 20rem;
-	display: flex;
-	justify-content: center;
+const Item = styled.li`
+	font-size: 3.2rem;
+	font-weight: 200;
+	margin-bottom: .5rem;
 
-	img{
-		height: 100%;
-		width: auto;
-	}
+	a{
+		:link,
+		:visited{
+			text-decoration: none;
+			color: ${color_grey_2};
+			cursor: pointer;
+		}
+
+		:hover{
+			color: ${color_primary};
+		};
+	};
 `;
 
-const Details = styled.div`
-	order: ${props => props.reverse ? '-1' : 0};
-	flex: 1 1 50%;
-`;
-
-const StyledH3 = styled.h3`
-	font-size: 2.5rem;
-	font-weight: 400;
-	margin-bottom: 2rem;
-`;
-
-const ActivityComponent = ({className, reverse, imgPath, title, details}) => {
-	return(
-		<Activity>
-			<Image>
-				<img src={imgPath}/>
-			</Image>
-			<Details reverse={reverse}>
-				<StyledH3>{title}</StyledH3>
-				<P>{details}</P>
-			</Details>
-		</Activity>
-	)
-}
+const MySystemComponent = ({className, my_system_list}) => (
+	<Wrapper className={className}>
+		<List>
+			{my_system_list.map(({text, link}, i) => (
+				<Item key={i}>👉 <a href={link} target='_blank'>{text}</a> 👈</Item>
+			))}
+		</List>
+	</Wrapper>
+)
 
 //------------------------------------------------------------------------------
 
 const MySystem = () => {
 	return(
 		<Container title='This is My System 🧘🏻‍♂️'>
-			<Wrapper>
-				<ActivityComponent imgPath={placeholder} title='Badminton' details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim sit.'/>
-				<ActivityComponent reverse imgPath={placeholder} title='Workout' details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim sit.'/>
-			</Wrapper>
+			<MySystemComponent my_system_list={my_system_list}/>
 		</Container>
 	)
 }

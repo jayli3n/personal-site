@@ -27,7 +27,7 @@ const Div = styled.div`
 	position: relative;
 	justify-content: center;
 	padding: ${props => props.transparent ? `none` : `3rem`};
-	max-width: 100rem;
+	width: 100rem;
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};
 	box-shadow: ${props => props.transparent ? `none` : `0 .1rem .15rem rgba(0,0,0,.3)`};
 	border-radius: 3px;

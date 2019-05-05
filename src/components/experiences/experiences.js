@@ -93,8 +93,8 @@ const StyledH3 = styled.h3`
 `;
 
 const PositionText = styled.p`
-	font-size: 2rem;
-	font-weight: 300;
+	font-size: 1.6rem;
+	font-weight: 400;
 	margin-bottom: .6rem;
 	color: ${color_grey_3}
 `;
@@ -107,7 +107,8 @@ const DurationText = styled.p`
 `;
 
 const Ul = styled.ul`
-	list-style-position: inside;
+	margin-left: 1.7rem;
+	list-style-position: outside;
 `;
 
 const Li = styled.li`
@@ -117,9 +118,9 @@ const Li = styled.li`
 	color: ${color_grey_2};
 `;
 
-const ExperiencesComponent = ({className, ExperiencesList}) => (
+const ExperiencesComponent = ({className, experiences_list}) => (
 	<Wrapper className={className}>
-		{ExperiencesList.map(({logoPath, company, position, duration, details}, i) => (
+		{experiences_list.map(({logoPath, company, position, duration, details}, i) => (
 			<Experience key={i}>
 				<Image>
 					<img src={logoPath}/>
@@ -144,7 +145,7 @@ const ExperiencesComponent = ({className, ExperiencesList}) => (
 const Experiences = () => {
 	return(
 		<Container title='Experiences 🚀'>
-				<ExperiencesComponent ExperiencesList={experiences_list}/>
+				<ExperiencesComponent experiences_list={experiences_list}/>
 		</Container>
 	)
 }
