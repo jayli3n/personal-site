@@ -108,7 +108,7 @@ const IconBox = styled.div`
 
 const Icon = styled.div`
 	text-align: center;
-	border-radius: 50%;
+	border-radius: 1.5rem;
 	padding: 1.7rem;
 	fill: #fff;
 	background-color: ${props => props.bgColor};

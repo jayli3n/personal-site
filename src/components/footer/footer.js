@@ -29,7 +29,7 @@ const Container = styled.section`
 	align-items: center;
 	background-color: ${color_hero_1};
 	background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
-	padding: 8rem 6rem 5rem 6rem;
+	padding: 8rem 6rem 6rem 6rem;
 `;
 
 const Wrapper = styled.div`
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100rem;
+	text-align: center;
 `;
 
 const Title = styled(H1)`
@@ -45,14 +45,22 @@ const Title = styled(H1)`
 	color: #fff;
 `;
 
+const Content = styled(P)`
+	margin-bottom: 3rem;
+	opacity: .8;
+	color: #fff;
+`;
+
 const Copyright = styled(P)`
+	font-size: 1.4rem;
 	color: ${color_grey_4};
 `
 const AdditionalText = styled(P)`
+	font-size: 1.4rem;
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	padding: 2rem;
+	padding: 2rem 2.5rem;
 	text-align: right;
 	color: ${color_grey_3};
 
@@ -72,13 +80,13 @@ const AdditionalText = styled(P)`
 const Socials = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 3rem;
+	margin: 1rem;
 	fill: ${color_grey_4};
 `;
 
 const SocialIcon = styled.div`
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 2rem;
+	width: 2rem;
 	cursor: pointer;
 	transition: all .2s;
 
@@ -102,7 +110,8 @@ const Footer = () => {
 		<Container>
 			<Wrapper>
 				<Title>Let's get in touch!</Title>
-
+				<Content>I'm always open to make new friends.<br/>
+					Shoot me an email at: jay.li23697@gmail.com</Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>
 				<Socials>
 					<SocialIcon><Github /></SocialIcon>
