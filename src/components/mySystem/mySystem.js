@@ -35,12 +35,6 @@ const my_system_list = [
 const Wrapper = styled.div`
 	width: 100%;
 	padding: 1rem 0;
-
-	&::after{
-		content: "";
-		display: block;
-		width: 100rem;
-	};
 `;
 
 const List = styled.ol`

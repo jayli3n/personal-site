@@ -4,6 +4,7 @@ import {
 	color_grey_6,
 	color_grey_7,
 	color_grey_8,
+	min_width,
 	max_width
 } from './variables';
 import {Title} from './typography';
@@ -28,7 +29,8 @@ const Div = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: ${props => props.transparent ? `none` : `3rem`};
-	max-width: 100rem;
+	min-width: ${min_width};
+	max-width: ${max_width};
 	background-color: ${props => props.transparent ? `transparent` : `#fff`};
 	box-shadow: ${props => props.transparent ? `none` : `0 .1rem .15rem rgba(0,0,0,.3)`};
 	border-radius: 3px;

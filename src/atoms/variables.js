@@ -14,8 +14,8 @@ export const color_grey_6 = '#DFE1E5';
 export const color_grey_7 = '#f4f2f2';
 export const color_grey_8 = '#faf9f9';
 
-
-export const max_width = '70%';
+export const min_width = '30rem';
+export const max_width = '100rem';
 
 export const smartphoneSize = 500;
 export const tabletSize = 650;
