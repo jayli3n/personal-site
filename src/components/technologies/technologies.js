@@ -131,7 +131,7 @@ const Icons = ({className, list}) => (
 
 const Technologies = () => {
 	return(
-		<Container title='Professional Skills 🖥'>
+		<Container title='Professional Skills'>
 				<Icons list={svg_icons}/>
 		</Container>
 	)

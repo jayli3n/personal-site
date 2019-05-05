@@ -83,7 +83,7 @@ const Image = styled.div`
 `;
 
 const Details = styled.div`
-	order: ${props => props.reverse ? '-1' : 0};
+	
 `;
 
 const StyledH3 = styled.h3`
@@ -144,7 +144,7 @@ const ExperiencesComponent = ({className, experiences_list}) => (
 
 const Experiences = () => {
 	return(
-		<Container title='Experiences 🚀'>
+		<Container title='Experiences'>
 				<ExperiencesComponent experiences_list={experiences_list}/>
 		</Container>
 	)

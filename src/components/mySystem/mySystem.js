@@ -77,7 +77,7 @@ const MySystemComponent = ({className, my_system_list}) => (
 
 const MySystem = () => {
 	return(
-		<Container title='This is My System 🧘🏻‍♂️'>
+		<Container title='This is My System'>
 			<MySystemComponent my_system_list={my_system_list}/>
 		</Container>
 	)

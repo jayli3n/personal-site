@@ -34,6 +34,7 @@ const InfoBox = styled.div`
 const Avatar = styled.div`
 	display: inline-block;
 	background-image: url('${avatar}');
+	background-position: center;
 	background-size: cover;
 	height: 10rem;
 	width: 10rem;

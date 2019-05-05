@@ -72,7 +72,7 @@ const ListItemComponent = ({className, svg, value}) => {
 
 const Profile = () => {
 	return(
-		<Container title='Get to know me 😊'>
+		<Container title='Get to know me'>
 			<Wrapper>
 				<About>
 					<StyledH2>About</StyledH2>
