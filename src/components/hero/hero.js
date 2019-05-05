@@ -2,6 +2,7 @@ import React from 'react';
 import {
 	color_hero_1,
 	color_hero_2,
+	color_grey_4,
 	color_grey_5
 } from '../../atoms/variables';
 import {
@@ -89,7 +90,7 @@ const SocialIcon = styled.div`
 	;
 
 	:active{
-		fill: ${color_grey_5};
+		fill: ${color_grey_4};
 	;
 `;
 

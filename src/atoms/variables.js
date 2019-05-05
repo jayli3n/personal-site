@@ -6,10 +6,10 @@ export const color_hero_1 = '#1B2023';
 export const color_hero_2 = '#0B0D0F';
 
 export const color_grey_1 = '#333';
-export const color_grey_2 = '#545454';
+export const color_grey_2 = '#606060';
 export const color_grey_3 = '#999';
 export const color_grey_4 = '#aaa';
-export const color_grey_5 = '#ccc';
+export const color_grey_5 = '#bbb';
 export const color_grey_6 = '#DFE1E5';
 export const color_grey_7 = '#f4f2f2';
 export const color_grey_8 = '#faf9f9';

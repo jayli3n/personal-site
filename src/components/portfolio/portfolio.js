@@ -20,20 +20,19 @@ import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as ArrowBack } from '../../images/icons/arrow_back.svg';
 import { ReactComponent as ArrowForward } from '../../images/icons/arrow_forward.svg';
 
-import facial_recog from '../../images/portfolio/facial_recog.jpg';
 import test from '../../images/portfolio/test.jpg';
 
 
 const portfolio_array = [
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Trillo Front End',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Facial Recognition Web App',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
@@ -47,35 +46,35 @@ const portfolio_array = [
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
 	},
 	{
-		imgPath: facial_recog,
+		imgPath: test,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
