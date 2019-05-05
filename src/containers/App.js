@@ -88,6 +88,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Stars = styled.div`
+	background-color: ${color_hero_1};
 	background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
 	position: fixed;
 	top: 0;
