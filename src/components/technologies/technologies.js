@@ -105,10 +105,6 @@ const IconBox = styled.div`
 
 	:hover{
 		transform: scale(1.05);
-
-		div{
-			box-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
-		}
 	};
 `;
 

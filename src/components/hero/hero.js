@@ -40,7 +40,6 @@ const Avatar = styled.div`
 	width: 10rem;
 	border-radius: 50%;
 	margin-bottom: 2rem;
-	box-shadow: 0 .1rem .3rem rgba(255,255,255,.3);
 `;
 
 const Name = styled(H1)`

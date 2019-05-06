@@ -112,13 +112,13 @@ class App extends Component {
 				</Stars>
 				<GlobalStyle/>
 					<Navbar/>
-					<Hero/>
-					<Profile/>
-					<Technologies/>
-					<Portfolio/>
-					<Experiences/>
-					<Extracurricular/>
-					<MySystem/>
+					<Hero id='home'/>
+					<Profile id='about'/>
+					<Technologies id='skills'/>
+					<Portfolio id='portfolio'/>
+					<Experiences id='experiences'/>
+					<Extracurricular id='outside'/>
+					<MySystem id='my_system'/>
 					<Footer/>
 			</>
 		)
