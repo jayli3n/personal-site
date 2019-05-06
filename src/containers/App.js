@@ -15,6 +15,7 @@ import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
 import Particles from 'react-particles-js';
 import particlesOptions from './particlesjs-config';
+import Navbar from '../components/navbar/navbar';
 import Hero from '../components/hero/hero';
 import Profile from '../components/profile/profile';
 import Technologies from '../components/technologies/technologies';
@@ -110,6 +111,7 @@ class App extends Component {
 					<Particles params={particlesOptions}/>
 				</Stars>
 				<GlobalStyle/>
+					<Navbar/>
 					<Hero/>
 					<Profile/>
 					<Technologies/>

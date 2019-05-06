@@ -16,6 +16,7 @@ import { ReactComponent as Html5_svg } from '../../images/technologies/html5.svg
 import { ReactComponent as Css3_svg } from '../../images/technologies/css3.svg';
 import { ReactComponent as Git_svg } from '../../images/technologies/git.svg';
 import { ReactComponent as Bootstrap_svg } from '../../images/technologies/bootstrap.svg';
+import { ReactComponent as Jquery_svg } from '../../images/technologies/jquery.svg';
 
 const svg_icons = [
 	{
@@ -32,6 +33,11 @@ const svg_icons = [
 		name: 'Javascript',
 		bgColor: '#F7DF1E',
 		svg: <JS_svg/>
+	},
+	{
+		name: 'JQuery',
+		bgColor: '#0769AD',
+		svg: <Jquery_svg/>
 	},
 	{
 		name: 'HTML',
