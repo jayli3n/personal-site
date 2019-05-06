@@ -1,6 +1,6 @@
-export const color_primary = '#4B77BE';
-export const color_primary_light = '#548CE5';
-export const color_primary_dark = '#3B62A0';
+export const color_primary = '#5A91E8';
+export const color_primary_light = '#78A5EC';
+export const color_primary_dark = '#4066A3';
 
 export const color_hero_1 = '#232A2D';
 export const color_hero_2 = '#0B0D0F';

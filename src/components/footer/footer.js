@@ -63,19 +63,19 @@ const AdditionalText = styled(P)`
 	padding: 2rem 2.5rem;
 	text-align: right;
 	color: ${color_grey_3};
-
-	a{
-		:link,
-		:visited{
-			color: ${color_primary_light};
-			text-decoration: none;
-		};
-
-		:hover{
-			text-decoration: underline;
-		};
-	};
 `
+
+const A = styled.a`
+	:link,
+	:visited{
+		color: ${color_primary_light};
+		text-decoration: none;
+	};
+
+	:hover{
+		text-decoration: underline;
+	};
+`;
 
 const Socials = styled.div`
 	display: flex;
@@ -111,7 +111,7 @@ const Footer = () => {
 			<Wrapper>
 				<Title>Let's get in touch!</Title>
 				<Content>I'm always open to make new friends.<br/>
-					Shoot me an email at: jay.li23697@gmail.com</Content>
+					Shoot me an email at: <A href = "mailto: jay.li23697@gmail.com">jay.li23697@gmail.com</A></Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>
 				<Socials>
 					<SocialIcon><Github /></SocialIcon>
@@ -120,7 +120,7 @@ const Footer = () => {
 				</Socials>
 			</Wrapper>
 			<AdditionalText>Designed & developed by me.<br/>
-				Source code for the site can be found <a href='https://github.com/jayli3/personal-site' target='_blank'>here</a>.
+				Source code for the site can be found <A href='https://github.com/jayli3/personal-site' target='_blank'>here</A>.
 			</AdditionalText>
 		</Container>
 	)
