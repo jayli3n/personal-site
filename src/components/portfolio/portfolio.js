@@ -84,8 +84,11 @@ const portfolio_array = [
 
 
 const Wrapper = styled.div`
-	max-width: 97rem;
 	position: relative;
+`;
+
+const Cards = styled.div`
+	max-width: 97rem;
 	display: flex;
 	padding-bottom: 2rem;
 	overflow: auto hidden;
@@ -251,7 +254,7 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 }
 
 const CardComponent = ({className, p_array}) => (
-	<Wrapper className={className}>
+	<Cards className={className}>
 			{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
 				<Card key={i}>
 					<Image><img src={imgPath}/></Image>
@@ -259,7 +262,7 @@ const CardComponent = ({className, p_array}) => (
 					<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
 				</Card>
 			))}
-	</Wrapper>
+	</Cards>
 )
 
 const SliderButtonComponent = ({className, direction}) => {
@@ -277,9 +280,11 @@ const SliderButtonComponent = ({className, direction}) => {
 const Portfolio = () => {
 	return(
 		<Container title='Portfolio' transparent>
-			<SliderButtonComponent direction='left'/>
-			<CardComponent p_array={portfolio_array}/>
-			<SliderButtonComponent direction='right'/>
+			<Wrapper>
+				<SliderButtonComponent direction='left'/>
+				<CardComponent p_array={portfolio_array}/>
+				<SliderButtonComponent direction='right'/>
+			</Wrapper>
 		</Container>
 	)
 }

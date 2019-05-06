@@ -47,13 +47,10 @@ const Toggler = styled.button`
 	transition: all 0.2s;
 	border: none;
 	cursor: pointer;
+	outline: none;
 
 	:hover{
 		fill: ${color_grey_6};
-	};
-
-	:focus{
-		outline: none;
 	};
 `;
 
@@ -63,15 +60,16 @@ const Brand = styled.div`
 	align-items: center;
 `;
 
-const Name = styled.a`
-	:link,
-	:visited{
-		white-space: nowrap;
-		font-size: 3.8rem;
-		font-weight: 600;
-		color: inherit;
-		text-decoration: none;
-	}
+const Name = styled.button`
+	font-family: inherit;
+	white-space: nowrap;
+	font-size: 3.8rem;
+	font-weight: 600;
+	color: inherit;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
 `;
 
 const Collapsable = styled.div`
@@ -89,18 +87,19 @@ const Item = styled.li`
 		margin-right: .5rem;
 	};
 
-	a{
+	button{
+		font-family: inherit;
+		font-size: 1.8rem;
+		font-weight: 300;
 		padding: 1rem 1.5rem;
 		border-radius: 4px;
 		transition: all .2s;
-
-		:link,
-		:visited{
-			font-size: 1.8rem;
-			font-weight: 300;
-			text-decoration: none;
-			color: #fff;
-		};
+		white-space: nowrap;
+		color: inherit;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		outline: none;
 		
 		:hover{
 			background-color: rgba(256,256,256, .2);
@@ -122,12 +121,12 @@ const Navbar = () => {
 			</Toggler>
 			<Collapsable>
 				<Menu>
-					<Item><a href='#about'>About</a></Item>
-					<Item><a href='#skills'>Skills</a></Item>
-					<Item><a href='#portfolio'>Portfolio</a></Item>
-					<Item><a href='#experiences'>Experiences</a></Item>
-					<Item><a href='#outside'>Outside of Work</a></Item>
-					<Item><a href='#my_system'>My System</a></Item>
+					<Item><button href='#about'>About</button></Item>
+					<Item><button href='#skills'>Skills</button></Item>
+					<Item><button href='#portfolio'>Portfolio</button></Item>
+					<Item><button href='#experiences'>Experiences</button></Item>
+					<Item><button href='#outside'>Outside of Work</button></Item>
+					<Item><button href='#my_system'>My System</button></Item>
 				</Menu>
 			</Collapsable>
 		</Nav>
