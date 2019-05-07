@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
 	color_hero_1,
 	color_hero_2,
@@ -97,26 +97,28 @@ const SocialIcon = styled.div`
 
 //------------------------------------------------------------------------------
 
-const Hero = () => {
-	return(
-		<StyledSection>
-			<InfoBox>
-				<Avatar/>
-				<Name>Jay Li</Name>
-				<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
-				<Buttons>
-					<Button link='#' ww='15rem'>Contact Me</Button>
-					<Button link='#' ww='15rem' secondary>Resume</Button>
-				</Buttons>
+class Hero extends Component{
+	render(){
+		return(
+			<StyledSection>
+				<InfoBox>
+					<Avatar/>
+					<Name>Jay Li</Name>
+					<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
+					<Buttons>
+						<Button link='#' ww='15rem'>Contact Me</Button>
+						<Button link='#' ww='15rem' secondary>Resume</Button>
+					</Buttons>
 
-				<Socials>
-					<SocialIcon><Github /></SocialIcon>
-					<SocialIcon><Linkedin /></SocialIcon>
-					<SocialIcon><Twitter /></SocialIcon>
-				</Socials>
-			</InfoBox>
-		</StyledSection>
-	)
+					<Socials>
+						<SocialIcon><Github /></SocialIcon>
+						<SocialIcon><Linkedin /></SocialIcon>
+						<SocialIcon><Twitter /></SocialIcon>
+					</Socials>
+				</InfoBox>
+			</StyledSection>
+		)
+	}
 }
 
 export default Hero;

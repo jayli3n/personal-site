@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import App from '../../containers/App';
 import {
 	H1,
 	H4,
@@ -17,7 +18,6 @@ import {
 } from '../../atoms/variables';
 import avatar from '../../images/avatar.jpg';
 import {ReactComponent as Menu_svg} from '../../images/icons/menu.svg';
-
 
 const Nav = styled.nav`
 	position: fixed;
@@ -108,9 +108,50 @@ const Item = styled.li`
 `;
 
 
+//smooth scroll effect
+const smoothScroll = (target, duration) => {
+	console.log(target.current);
+	//distance of section top from the top
+	const targetPosition = target.getBoundingClientRect().top;
+	//distance of windows top from the top
+	const startingPosition = window.pageYOffset;
+	//find distance
+	const displacement = targetPosition - startingPosition;
+
+	let startTime = null;
+
+	const animationScroll = (currentTime) => {
+		if(startTime === null){
+			startTime = currentTime;
+		}
+
+		let timeElapsed = currentTime - startTime;
+		const run = easingFunction(timeElapsed, startingPosition, displacement, duration);
+		window.scrollTo(0, run);
+
+		//keep scrolling until duration reached (also mean until distance reached)
+		if(timeElapsed < duration){
+			requestAnimationFrame(animationScroll);
+		}
+	}
+
+	const easingFunction = (t, b, c, d) => {
+			return c*((t=t/d-1)*t*t*t*t + 1) + b;
+		}
+
+	// (t, b, c, d) => {
+	// 	t /= d /2;
+	// 	if(t<1) return c / 2 * t * t + b;
+	// 	t--;
+	// 	return -c / 2 * (t * (t - 2) - 1) + b;
+	// }
+
+	requestAnimationFrame(animationScroll)
+}
+
 //------------------------------------------------------------------------------
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return(
 		<Nav>
 			<Brand>
@@ -121,12 +162,35 @@ const Navbar = () => {
 			</Toggler>
 			<Collapsable>
 				<Menu>
-					<Item><button href='#about'>About</button></Item>
-					<Item><button href='#skills'>Skills</button></Item>
-					<Item><button href='#portfolio'>Portfolio</button></Item>
-					<Item><button href='#experiences'>Experiences</button></Item>
-					<Item><button href='#outside'>Outside of Work</button></Item>
-					<Item><button href='#my_system'>My System</button></Item>
+					<Item><button onClick={() => {
+							smoothScroll('about', 1000);
+						}}>About</button>
+					</Item>
+					<Item>
+						<button onClick={() => {
+							smoothScroll('skills', 1000);
+						}}>Skills</button>
+					</Item>
+					<Item>
+						<button onClick={() => {
+							smoothScroll('portfolio', 1000);
+						}}>Portfolio</button>
+					</Item>
+					<Item>
+						<button onClick={() => {
+							smoothScroll('experiences', 1000);
+						}}>Experiences</button>
+					</Item>
+					<Item>
+						<button onClick={() => {
+							smoothScroll('outside', 1000);
+						}}>Outside of Work</button>
+					</Item>
+					<Item>
+						<button onClick={() => {
+							smoothScroll(props.refer, 1000);
+						}}>My System</button>
+					</Item>
 				</Menu>
 			</Collapsable>
 		</Nav>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {
 	H2,
@@ -277,16 +277,18 @@ const SliderButtonComponent = ({className, direction}) => {
 
 //------------------------------------------------------------------------------
 
-const Portfolio = () => {
-	return(
-		<Container title='Portfolio' transparent>
-			<Wrapper>
-				<SliderButtonComponent direction='left'/>
-				<CardComponent p_array={portfolio_array}/>
-				<SliderButtonComponent direction='right'/>
-			</Wrapper>
-		</Container>
-	)
+class Portfolio extends Component{
+	render(){
+		return(
+			<Container title='Portfolio' transparent>
+				<Wrapper>
+					<SliderButtonComponent direction='left'/>
+					<CardComponent p_array={portfolio_array}/>
+					<SliderButtonComponent direction='right'/>
+				</Wrapper>
+			</Container>
+		)
+	}
 }
 
 export default Portfolio;

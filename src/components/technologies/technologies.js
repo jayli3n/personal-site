@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {
 	H3
@@ -131,12 +131,14 @@ const Icons = ({className, list}) => (
 
 //------------------------------------------------------------------------------
 
-const Technologies = () => {
-	return(
-		<Container title='Professional Skills'>
-				<Icons list={svg_icons}/>
-		</Container>
-	)
+class Technologies extends Component{
+	render(){
+		return(
+			<Container title='Professional Skills'>
+					<Icons list={svg_icons}/>
+			</Container>
+		)
+	}
 }
 
 export default Technologies;

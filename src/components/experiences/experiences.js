@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {Container} from '../../atoms/container';
 import {
@@ -131,7 +131,7 @@ const ExperiencesComponent = ({className, experiences_list}) => (
 					<DurationText>{duration}</DurationText>
 					<Ul>
 						{details.map((detail, i) => (
-							<Li>{detail}</Li>
+							<Li key={i}>{detail}</Li>
 						))}
 					</Ul>
 				</Details>
@@ -142,12 +142,14 @@ const ExperiencesComponent = ({className, experiences_list}) => (
 
 //------------------------------------------------------------------------------
 
-const Experiences = () => {
-	return(
-		<Container title='Experiences'>
-				<ExperiencesComponent experiences_list={experiences_list}/>
-		</Container>
-	)
+class Experiences extends Component{
+	render(){
+		return(
+			<Container title='Experiences'>
+					<ExperiencesComponent experiences_list={experiences_list}/>
+			</Container>
+		)
+	}
 }
 
 export default Experiences;

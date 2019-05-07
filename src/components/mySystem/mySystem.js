@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {Container} from '../../atoms/container';
 import {
@@ -75,12 +75,14 @@ const MySystemComponent = ({className, my_system_list}) => (
 
 //------------------------------------------------------------------------------
 
-const MySystem = () => {
-	return(
-		<Container title='This is My System'>
-			<MySystemComponent my_system_list={my_system_list}/>
-		</Container>
-	)
+class MySystem extends Component {
+	render(){
+		return(
+			<Container title='This is My System'>
+				<MySystemComponent my_system_list={my_system_list}/>
+			</Container>
+		)
+	}
 }
 
 export default MySystem;

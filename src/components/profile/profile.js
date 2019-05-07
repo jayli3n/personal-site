@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import {
 	H2,
@@ -70,25 +70,27 @@ const ListItemComponent = ({className, svg, value}) => {
 
 //------------------------------------------------------------------------------
 
-const Profile = () => {
-	return(
-		<Container title='Get to know me'>
-			<Wrapper>
-				<About>
-					<StyledH2>About</StyledH2>
-					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Mauris nunc congue nisi vitae suscipit tellus mauris a. Egestas congue quisque egestas diam in. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim.</P>
-				</About>
-				<Info>
-					<StyledH2>Info</StyledH2>
-					<InfoList>
-						<ListItemComponent svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
-						<ListItemComponent svg={<Location_svg/>} value='Australia'/>
-						<ListItemComponent svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
-					</InfoList>
-				</Info>
-			</Wrapper>
-		</Container>
-	)
+class Profile extends Component{
+	render(){
+		return(
+			<Container title='Get to know me'>
+				<Wrapper>
+					<About>
+						<StyledH2>About</StyledH2>
+						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Mauris nunc congue nisi vitae suscipit tellus mauris a. Egestas congue quisque egestas diam in. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim.</P>
+					</About>
+					<Info>
+						<StyledH2>Info</StyledH2>
+						<InfoList>
+							<ListItemComponent svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
+							<ListItemComponent svg={<Location_svg/>} value='Australia'/>
+							<ListItemComponent svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
+						</InfoList>
+					</Info>
+				</Wrapper>
+			</Container>
+		)
+	}
 }
 
 export default Profile;

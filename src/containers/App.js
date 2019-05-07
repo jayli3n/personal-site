@@ -102,23 +102,32 @@ const Stars = styled.div`
 class App extends Component {
 	constructor(){
 		super();
+
+		this.home = React.createRef();
+		this.about = React.createRef();
+		this.skills = React.createRef();
+		this.portfolio = React.createRef();
+		this.experiences = React.createRef();
+		this.outside = React.createRef();
+		this.mySystem = React.createRef();
 	}
 
 	render(){
 		return(
 			<>
+			<button id='aaa'>test</button>
 				<Stars>
 					<Particles params={particlesOptions}/>
 				</Stars>
 				<GlobalStyle/>
-					<Navbar/>
-					<Hero id='home'/>
-					<Profile id='about'/>
-					<Technologies id='skills'/>
-					<Portfolio id='portfolio'/>
-					<Experiences id='experiences'/>
-					<Extracurricular id='outside'/>
-					<MySystem id='my_system'/>
+					<Navbar refer={this.mySystem}/>
+					<Hero ref={this.home}/>
+					<Profile ref={this.about}/>
+					<Technologies ref={this.skills}/>
+					<Portfolio ref={this.portfolio}/>
+					<Experiences ref={this.experiences}/>
+					<Extracurricular ref={this.outside}/>
+					<MySystem ref={this.mySystem}/>
 					<Footer/>
 			</>
 		)
