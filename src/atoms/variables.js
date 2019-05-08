@@ -20,3 +20,5 @@ export const max_width = '100rem';
 export const smartphoneSize = 500;
 export const tabletSize = 650;
 export const pcSize = 900;
+
+export const smooth_scroll_duration = 2000;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import smoothScroll from '../../utils/smoothScroll';
 import App from '../../containers/App';
 import {
 	H1,
@@ -108,54 +109,15 @@ const Item = styled.li`
 `;
 
 
-//smooth scroll effect
-const smoothScroll = (target, duration) => {
-	console.log(target.current);
-	//distance of section top from the top
-	const targetPosition = target.getBoundingClientRect().top;
-	//distance of windows top from the top
-	const startingPosition = window.pageYOffset;
-	//find distance
-	const displacement = targetPosition - startingPosition;
-
-	let startTime = null;
-
-	const animationScroll = (currentTime) => {
-		if(startTime === null){
-			startTime = currentTime;
-		}
-
-		let timeElapsed = currentTime - startTime;
-		const run = easingFunction(timeElapsed, startingPosition, displacement, duration);
-		window.scrollTo(0, run);
-
-		//keep scrolling until duration reached (also mean until distance reached)
-		if(timeElapsed < duration){
-			requestAnimationFrame(animationScroll);
-		}
-	}
-
-	const easingFunction = (t, b, c, d) => {
-			return c*((t=t/d-1)*t*t*t*t + 1) + b;
-		}
-
-	// (t, b, c, d) => {
-	// 	t /= d /2;
-	// 	if(t<1) return c / 2 * t * t + b;
-	// 	t--;
-	// 	return -c / 2 * (t * (t - 2) - 1) + b;
-	// }
-
-	requestAnimationFrame(animationScroll)
-}
-
 //------------------------------------------------------------------------------
 
-const Navbar = (props) => {
+const Navbar = ({refs}) => {
 	return(
 		<Nav>
 			<Brand>
-				<Name href='#home'>Li</Name>
+				<Name onClick={() => {
+						smoothScroll(refs.home);
+					}}>Li</Name>
 			</Brand>
 			<Toggler>
 				<Menu_svg/>
@@ -163,32 +125,32 @@ const Navbar = (props) => {
 			<Collapsable>
 				<Menu>
 					<Item><button onClick={() => {
-							smoothScroll('about', 1000);
+							smoothScroll(refs.about);
 						}}>About</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll('skills', 1000);
+							smoothScroll(refs.skills);
 						}}>Skills</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll('portfolio', 1000);
+							smoothScroll(refs.portfolio);
 						}}>Portfolio</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll('experiences', 1000);
+							smoothScroll(refs.experiences);
 						}}>Experiences</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll('outside', 1000);
+							smoothScroll(refs.outside);
 						}}>Outside of Work</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(props.refer, 1000);
+							smoothScroll(refs.mySystem);
 						}}>My System</button>
 					</Item>
 				</Menu>

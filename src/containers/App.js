@@ -102,32 +102,32 @@ const Stars = styled.div`
 class App extends Component {
 	constructor(){
 		super();
-
-		this.home = React.createRef();
-		this.about = React.createRef();
-		this.skills = React.createRef();
-		this.portfolio = React.createRef();
-		this.experiences = React.createRef();
-		this.outside = React.createRef();
-		this.mySystem = React.createRef();
+		this.state = {
+			home: React.createRef(),
+			about: React.createRef(),
+			skills: React.createRef(),
+			portfolio: React.createRef(),
+			experiences: React.createRef(),
+			outside: React.createRef(),
+			mySystem: React.createRef()
+		}
 	}
 
 	render(){
 		return(
 			<>
-			<button id='aaa'>test</button>
 				<Stars>
 					<Particles params={particlesOptions}/>
 				</Stars>
 				<GlobalStyle/>
-					<Navbar refer={this.mySystem}/>
-					<Hero ref={this.home}/>
-					<Profile ref={this.about}/>
-					<Technologies ref={this.skills}/>
-					<Portfolio ref={this.portfolio}/>
-					<Experiences ref={this.experiences}/>
-					<Extracurricular ref={this.outside}/>
-					<MySystem ref={this.mySystem}/>
+					<Navbar refs={this.state}/>
+					<div ref={this.state.home}><Hero/></div>
+					<div ref={this.state.about}><Profile/></div>
+					<div ref={this.state.skills}><Technologies/></div>
+					<div ref={this.state.portfolio}><Portfolio/></div>
+					<div ref={this.state.experiences}><Experiences/></div>
+					<div ref={this.state.outside}><Extracurricular/></div>
+					<div ref={this.state.mySystem}><MySystem/></div>
 					<Footer/>
 			</>
 		)
