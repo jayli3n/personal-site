@@ -121,13 +121,28 @@ class App extends Component {
 				</Stars>
 				<GlobalStyle/>
 					<Navbar refs={this.state}/>
-					<div ref={this.state.home}><Hero/></div>
-					<div ref={this.state.about}><Profile/></div>
-					<div ref={this.state.skills}><Technologies/></div>
-					<div ref={this.state.portfolio}><Portfolio/></div>
-					<div ref={this.state.experiences}><Experiences/></div>
-					<div ref={this.state.outside}><Extracurricular/></div>
-					<div ref={this.state.mySystem}><MySystem/></div>
+					
+					<span ref={this.state.home}></span>
+					<Hero/>
+
+					<span ref={this.state.about}></span>
+					<Profile/>
+
+					<span ref={this.state.skills}></span>
+					<Technologies/>
+
+					<span ref={this.state.portfolio}></span>
+					<Portfolio/>
+
+					<span ref={this.state.experiences}></span>
+					<Experiences/>
+
+					<span ref={this.state.outside}></span>
+					<Extracurricular/>
+
+					<span ref={this.state.mySystem}></span>
+					<MySystem/>
+
 					<Footer/>
 			</>
 		)

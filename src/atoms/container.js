@@ -43,7 +43,7 @@ const Div = styled.div`
 
 //------------------------------------------------------------------------------
 
-export const Container = ({ children, className, transparent, title }) => {
+export const Container = ({ children, className, transparent, title, ref }) => {
 	return(
 		<Section className={className}>
 			<Title>{title}</Title>
