@@ -92,10 +92,10 @@ const Item = styled.li`
 		font-family: inherit;
 		font-size: 1.8rem;
 		font-weight: 300;
+		white-space: nowrap;
 		padding: 1rem 1.5rem;
 		border-radius: 4px;
 		transition: all .2s;
-		white-space: nowrap;
 		color: inherit;
 		background: transparent;
 		border: none;
@@ -105,18 +105,22 @@ const Item = styled.li`
 		:hover{
 			background-color: rgba(256,256,256, .2);
 		};
+
+		:active{
+			background-color: rgba(256,256,256, .15);
+		};
 	}
 `;
 
 
 //------------------------------------------------------------------------------
 
-const Navbar = ({refs}) => {
+const Navbar = () => {
 	return(
 		<Nav>
 			<Brand>
 				<Name onClick={() => {
-						smoothScroll(refs.home);
+						smoothScroll('home');
 					}}>Li</Name>
 			</Brand>
 			<Toggler>
@@ -125,32 +129,32 @@ const Navbar = ({refs}) => {
 			<Collapsable>
 				<Menu>
 					<Item><button onClick={() => {
-							smoothScroll(refs.about);
+							smoothScroll('about');
 						}}>About</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(refs.skills);
+							smoothScroll('skills');
 						}}>Skills</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(refs.portfolio);
+							smoothScroll('portfolio');
 						}}>Portfolio</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(refs.experiences);
+							smoothScroll('experiences');
 						}}>Experiences</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(refs.outside);
+							smoothScroll('outside');
 						}}>Outside of Work</button>
 					</Item>
 					<Item>
 						<button onClick={() => {
-							smoothScroll(refs.mySystem);
+							smoothScroll('mySystem');
 						}}>My System</button>
 					</Item>
 				</Menu>

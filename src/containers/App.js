@@ -100,19 +100,6 @@ const Stars = styled.div`
 `;
 
 class App extends Component {
-	constructor(){
-		super();
-		this.state = {
-			home: React.createRef(),
-			about: React.createRef(),
-			skills: React.createRef(),
-			portfolio: React.createRef(),
-			experiences: React.createRef(),
-			outside: React.createRef(),
-			mySystem: React.createRef()
-		}
-	}
-
 	render(){
 		return(
 			<>
@@ -120,27 +107,27 @@ class App extends Component {
 					<Particles params={particlesOptions}/>
 				</Stars>
 				<GlobalStyle/>
-					<Navbar refs={this.state}/>
-					
-					<span ref={this.state.home}></span>
+					<Navbar/>
+
+					<span id='home'></span>
 					<Hero/>
 
-					<span ref={this.state.about}></span>
+					<span id='about'></span>
 					<Profile/>
 
-					<span ref={this.state.skills}></span>
+					<span id='skills'></span>
 					<Technologies/>
 
-					<span ref={this.state.portfolio}></span>
+					<span id='portfolio'></span>
 					<Portfolio/>
 
-					<span ref={this.state.experiences}></span>
+					<span id='experiences'></span>
 					<Experiences/>
 
-					<span ref={this.state.outside}></span>
+					<span id='outside'></span>
 					<Extracurricular/>
 
-					<span ref={this.state.mySystem}></span>
+					<span id='mySystem'></span>
 					<MySystem/>
 
 					<Footer/>

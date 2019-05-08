@@ -2,9 +2,10 @@ import {smooth_scroll_duration} from '../atoms/variables';
 
 
 //smooth scroll effect
-const smoothScroll = (target, duration = smooth_scroll_duration) => {
+const smoothScroll = (id, duration = smooth_scroll_duration) => {
+	const target = document.getElementById(id);
 	//distance of section top from the top
-	const targetPosition = target.current.offsetTop;
+	const targetPosition = target.offsetTop;
 	//distance of windows top from the top
 	const startingPosition = window.pageYOffset;
 	//find distance
