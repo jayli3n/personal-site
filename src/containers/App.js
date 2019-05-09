@@ -3,7 +3,8 @@ import styled, {createGlobalStyle} from 'styled-components';
 import {
 	color_hero_1,
 	color_hero_2,
-	color_grey_1
+	color_grey_1,
+	color_grey_7
 } from '../atoms/variables'
 
 import font_bold from '../fonts/StratumNo1 Bold.ttf';
@@ -99,6 +100,14 @@ const Stars = styled.div`
 	z-index: -10;
 `;
 
+const Section = styled.section`
+	background-color: ${props => props.transparent ? `transparent` : color_grey_7};
+
+	:nth-last-of-type(2){
+		padding-bottom: 10rem;
+	};
+`;
+
 class App extends Component {
 	render(){
 		return(
@@ -108,28 +117,13 @@ class App extends Component {
 				</Stars>
 				<GlobalStyle/>
 					<Navbar/>
-
-					<span id='home'></span>
-					<Hero/>
-
-					<span id='about'></span>
-					<Profile/>
-
-					<span id='skills'></span>
-					<Technologies/>
-
-					<span id='portfolio'></span>
-					<Portfolio/>
-
-					<span id='experiences'></span>
-					<Experiences/>
-
-					<span id='outside'></span>
-					<Extracurricular/>
-
-					<span id='mySystem'></span>
-					<MySystem/>
-
+					<Section id='home' transparent><Hero/></Section>
+					<Section id='about'><Profile/></Section>
+					<Section id='skills'><Technologies/></Section>
+					<Section id='portfolio'><Portfolio/></Section>
+					<Section id='experiences'><Experiences/></Section>
+					<Section id='outside'><Extracurricular/></Section>
+					<Section id='mySystem'><MySystem/></Section>
 					<Footer/>
 			</>
 		)

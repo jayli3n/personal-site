@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Scrollspy from 'react-scrollspy'
+
 import smoothScroll from '../../utils/smoothScroll';
+import './navbar.css'
 import App from '../../containers/App';
 import {
 	H1,
@@ -77,10 +80,10 @@ const Collapsable = styled.div`
 	display: flex;
 `;
 
-const Menu = styled.ul`
-	display: flex;
-	list-style: none;
-`;
+ const Menu = styled.ul`
+ 	display: flex;
+ 	list-style: none;
+ `;
 
 const Item = styled.li`
 
@@ -113,6 +116,14 @@ const Item = styled.li`
 `;
 
 
+const NavButton = ({className, refID, text}) => {
+	return(
+		<button onClick={() => {
+			smoothScroll(refID);
+		}}>{text}</button>
+	)
+}
+
 //------------------------------------------------------------------------------
 
 const Navbar = () => {
@@ -120,44 +131,27 @@ const Navbar = () => {
 		<Nav>
 			<Brand>
 				<Name onClick={() => {
-						smoothScroll('home');
-					}}>Li</Name>
+					smoothScroll('home');
+				}}>Li</Name>
 			</Brand>
 			<Toggler>
 				<Menu_svg/>
 			</Toggler>
 			<Collapsable>
-				<Menu>
-					<Item><button onClick={() => {
-							smoothScroll('about');
-						}}>About</button>
-					</Item>
-					<Item>
-						<button onClick={() => {
-							smoothScroll('skills');
-						}}>Skills</button>
-					</Item>
-					<Item>
-						<button onClick={() => {
-							smoothScroll('portfolio');
-						}}>Portfolio</button>
-					</Item>
-					<Item>
-						<button onClick={() => {
-							smoothScroll('experiences');
-						}}>Experiences</button>
-					</Item>
-					<Item>
-						<button onClick={() => {
-							smoothScroll('outside');
-						}}>Outside of Work</button>
-					</Item>
-					<Item>
-						<button onClick={() => {
-							smoothScroll('mySystem');
-						}}>My System</button>
-					</Item>
-				</Menu>
+				<Scrollspy
+					componentTag={Menu}
+		    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
+		    		currentClassName="scrollspy--active"
+		    		offset={ -250 }
+				    >
+				    <li></li>
+				    <Item><NavButton refID='about' text='About'/></Item>
+				    <Item><NavButton refID='skills' text='Skills'/></Item>
+				    <Item><NavButton refID='portfolio' text='Portfolio'/></Item>
+				    <Item><NavButton refID='experiences' text='Experiences'/></Item>
+				    <Item><NavButton refID='outside' text='Outside of Work'/></Item>
+				    <Item><NavButton refID='mySystem' text='My System'/></Item>
+				</Scrollspy>
 			</Collapsable>
 		</Nav>
 	)

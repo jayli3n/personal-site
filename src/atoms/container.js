@@ -9,21 +9,16 @@ import {
 } from './variables';
 import {Title} from './typography';
 
-const Section = styled.section`
+const OutterDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: ${color_grey_7};
 	padding: 10rem 6rem 2rem 6rem;
 	margin: 0 auto;
-
-	:nth-last-of-type(2){
-		padding-bottom: 10rem;
-	};
 `;
 
-const Div = styled.div`
+const InnerDiv = styled.div`
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -45,11 +40,11 @@ const Div = styled.div`
 
 export const Container = ({ children, className, transparent, title, ref }) => {
 	return(
-		<Section className={className}>
+		<OutterDiv className={className}>
 			<Title>{title}</Title>
-			<Div transparent={transparent}>
+			<InnerDiv transparent={transparent}>
 				{children}
-			</Div>
-		</Section>
+			</InnerDiv>
+		</OutterDiv>
 	)
 }
