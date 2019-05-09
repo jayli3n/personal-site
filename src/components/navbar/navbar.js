@@ -3,7 +3,6 @@ import styled, {css} from 'styled-components';
 import Scrollspy from 'react-scrollspy'
 
 import smoothScroll from '../../utils/smoothScroll';
-import './navbar.css'
 import App from '../../containers/App';
 import {
 	H1,
