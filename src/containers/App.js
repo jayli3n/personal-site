@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
+import {media} from '../utils/mediaQueriesBuilder';
 import {
 	color_hero_1,
 	color_hero_2,
@@ -82,6 +83,18 @@ const GlobalStyle = createGlobalStyle`
 		font-family: "Stratum", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		font-weight: 300;
 		line-height: 1;
+
+		${media.sizeI
+			`font-size: 59%;`
+		}
+
+		${media.sizeII
+			`font-size: 55%;`
+		}
+
+		${media.sizeIII
+			`font-size: 50%;`
+		}
 	}
 
 	body{

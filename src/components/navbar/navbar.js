@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import Scrollspy from 'react-scrollspy'
 
 import smoothScroll from '../../utils/smoothScroll';
@@ -83,6 +83,11 @@ const Collapsable = styled.div`
  const Menu = styled.ul`
  	display: flex;
  	list-style: none;
+
+ 	.scrollspy--active{
+		border-radius: 4px;
+		background-color: rgba(256,256,256, .15);
+	}
  `;
 
 const Item = styled.li`
@@ -141,7 +146,7 @@ const Navbar = () => {
 				<Scrollspy
 					componentTag={Menu}
 		    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
-		    		currentClassName="scrollspy--active"
+		    		currentClassName='scrollspy--active'
 		    		offset={ -250 }
 				    >
 				    <li></li>
