@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import styled, {css} from 'styled-components';
 import {media} from '../../utils/mediaQueriesBuilder';
 import Scrollspy from 'react-scrollspy'
@@ -56,13 +57,12 @@ const Wrapper = styled.div`
 				top: 100%;
 				right: 0;
 				display: flex;
-				padding: 2rem;
+				padding: 1rem;
 				flex-direction: column;
 				z-index: 9999;
 				background-color: ${color_primary};
 				box-shadow: 0 0 0 0.5px rgba(50,50,93,.12), 0 2px 5px 0 rgba(50,50,93,.07), 0 3px 9px 0 rgba(50,50,93,.03), 0 1px 1.5px 0 rgba(0,0,0,.03), 0 1px 2px 0 rgba(0,0,0,.03);
 				border-radius: 3px;
-				color: red;
 			}
 		`}
 
@@ -117,20 +117,24 @@ const Item = styled.li`
 		margin-right: .5rem;
 	};
 
+	${media.sizeIII`
+		width: 100%;
+	`}
+
 	button{
 		font-family: inherit;
 		font-size: 1.8rem;
 		font-weight: 300;
 		white-space: nowrap;
 		padding: 1rem 1.5rem;
-		border-radius: 4px;
-		transition: all .2s;
-		color: inherit;
 		background: transparent;
+		color: inherit;
 		border: none;
 		cursor: pointer;
 		outline: none;
-		
+		border-radius: 4px;
+		transition: all .2s;
+
 		:hover{
 			background-color: rgba(256,256,256, .2);
 		};
@@ -138,6 +142,11 @@ const Item = styled.li`
 		:active{
 			background-color: rgba(256,256,256, .15);
 		};
+
+		${media.sizeIII`
+			width: 100%;
+			text-align: left;
+		`}
 	}
 `;
 
@@ -155,12 +164,14 @@ class Navbar extends Component {
 	constructor(){
 		super();
 		this.state = {
-			isActive: false
+			isToggle: false
 		}
 	}
 
 	toggleNav = () => {
-		this.setState({isActive: !this.state.isActive});
+		this.setState({
+			isToggle: !this.state.isToggle
+		});
 	}
 
 	render(){
@@ -176,7 +187,7 @@ class Navbar extends Component {
 						<Menu_svg/>
 					</Toggler>
 						<Scrollspy
-							className={this.state.isActive ? 'scrollspy--toggle' : 'scrollspy'}
+							className={this.state.isToggle ? classNames('scrollspy', 'scrollspy--toggle') : classNames('scrollspy')}
 				    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
 				    		currentClassName='scrollspy--item-active'
 				    		offset={ -250 }
