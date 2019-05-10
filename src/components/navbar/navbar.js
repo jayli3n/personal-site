@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
+import {media} from '../../utils/mediaQueriesBuilder';
 import Scrollspy from 'react-scrollspy'
 
 import smoothScroll from '../../utils/smoothScroll';
@@ -27,20 +28,53 @@ const Nav = styled.nav`
 	top: 0;
 	left: 0;
 	right: 0;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 9999;
-	padding: 1.6rem 3rem;
+	z-index: 999;
 	color: #fff;
 	background-color: ${color_primary};
 	box-shadow: 0 .1rem .15rem rgba(0,0,0,.3);
 `;
 
+const Wrapper = styled.div`
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.6rem 3rem;
+
+	//not creating a separate styled component here for styling because it's neater to keep ul styles and .toggle styles all here.
+	.scrollspy{
+		position: relative;
+		display: flex;
+		list-style: none;
+
+		${media.sizeIII`
+			display: none;
+
+			&--toggle{
+				position: absolute;
+				top: 100%;
+				right: 0;
+				display: flex;
+				padding: 2rem;
+				flex-direction: column;
+				z-index: 9999;
+				background-color: ${color_primary};
+				box-shadow: 0 0 0 0.5px rgba(50,50,93,.12), 0 2px 5px 0 rgba(50,50,93,.07), 0 3px 9px 0 rgba(50,50,93,.03), 0 1px 1.5px 0 rgba(0,0,0,.03), 0 1px 2px 0 rgba(0,0,0,.03);
+				border-radius: 3px;
+				color: red;
+			}
+		`}
+
+		&--item-active{
+			border-radius: 4px;
+			background-color: rgba(256,256,256, .15);
+		}
+	}
+`;
+
 const Toggler = styled.button`
 	display: none;
-
 	position: relative;
 	fill: #fff;
 	background-color: transparent;
@@ -55,12 +89,14 @@ const Toggler = styled.button`
 	:hover{
 		fill: ${color_grey_6};
 	};
+
+	${media.sizeIII
+		`display: block;`
+	}
 `;
 
 const Brand = styled.div`
-	display: flex;
 	height: 100%;
-	align-items: center;
 `;
 
 const Name = styled.button`
@@ -74,20 +110,6 @@ const Name = styled.button`
 	cursor: pointer;
 	outline: none;
 `;
-
-const Collapsable = styled.div`
-	display: flex;
-`;
-
- const Menu = styled.ul`
- 	display: flex;
- 	list-style: none;
-
- 	.scrollspy--active{
-		border-radius: 4px;
-		background-color: rgba(256,256,256, .15);
-	}
- `;
 
 const Item = styled.li`
 
@@ -119,7 +141,6 @@ const Item = styled.li`
 	}
 `;
 
-
 const NavButton = ({className, refID, text}) => {
 	return(
 		<button onClick={() => {
@@ -130,35 +151,48 @@ const NavButton = ({className, refID, text}) => {
 
 //------------------------------------------------------------------------------
 
-const Navbar = () => {
-	return(
-		<Nav>
-			<Brand>
-				<Name onClick={() => {
-					smoothScroll('home');
-				}}>Li</Name>
-			</Brand>
-			<Toggler>
-				<Menu_svg/>
-			</Toggler>
-			<Collapsable>
-				<Scrollspy
-					componentTag={Menu}
-		    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
-		    		currentClassName='scrollspy--active'
-		    		offset={ -250 }
-				    >
-				    <li></li>
-				    <Item><NavButton refID='about' text='About'/></Item>
-				    <Item><NavButton refID='skills' text='Skills'/></Item>
-				    <Item><NavButton refID='portfolio' text='Portfolio'/></Item>
-				    <Item><NavButton refID='experiences' text='Experiences'/></Item>
-				    <Item><NavButton refID='outside' text='Outside of Work'/></Item>
-				    <Item><NavButton refID='mySystem' text='My System'/></Item>
-				</Scrollspy>
-			</Collapsable>
-		</Nav>
-	)
+class Navbar extends Component {
+	constructor(){
+		super();
+		this.state = {
+			isActive: false
+		}
+	}
+
+	toggleNav = () => {
+		this.setState({isActive: !this.state.isActive});
+	}
+
+	render(){
+		return(
+			<Nav>
+				<Wrapper>
+					<Brand>
+						<Name onClick={() => {
+							smoothScroll('home');
+						}}>Li</Name>
+					</Brand>
+					<Toggler onClick={this.toggleNav}>
+						<Menu_svg/>
+					</Toggler>
+						<Scrollspy
+							className={this.state.isActive ? 'scrollspy--toggle' : 'scrollspy'}
+				    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
+				    		currentClassName='scrollspy--item-active'
+				    		offset={ -250 }
+						    >
+						    <li></li>
+						    <Item><NavButton refID='about' text='About'/></Item>
+						    <Item><NavButton refID='skills' text='Skills'/></Item>
+						    <Item><NavButton refID='portfolio' text='Portfolio'/></Item>
+						    <Item><NavButton refID='experiences' text='Experiences'/></Item>
+						    <Item><NavButton refID='outside' text='Outside of Work'/></Item>
+						    <Item><NavButton refID='mySystem' text='My System'/></Item>
+						</Scrollspy>
+				</Wrapper>
+			</Nav>
+		)
+	}
 }
 
 export default Navbar;

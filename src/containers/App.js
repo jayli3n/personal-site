@@ -84,12 +84,12 @@ const GlobalStyle = createGlobalStyle`
 		font-weight: 300;
 		line-height: 1;
 
-		${media.sizeII
+		${media.sizeI
 			`font-size: 57%;`
 		}
 
-		${media.sizeIV
-			`font-size: 50%;`
+		${media.sizeII
+			`font-size: 50.5%;`
 		}
 	}
 

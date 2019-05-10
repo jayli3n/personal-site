@@ -20,13 +20,14 @@ export const max_width = '100rem';
 export const smooth_scroll_duration = 2000;
 
 export const sizes = {
-	sizeI: 1500,
-	sizeII: 1200,
-	sizeIII: 1000,
-	sizeIV: 500,
+	sizeI: 1080,
+	sizeII: 700,
+	sizeIII: 615,
+	sizeIV: 0,
 	sizeV: 0,
 	sizeVI: 0,
 	sizeVII: 0,
 	sizeIIX: 0,
 	sizeIX: 0,
+	sizeX: 0
 }
