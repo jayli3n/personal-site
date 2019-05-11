@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
+import ScrollReveal from 'scrollreveal';
 import {media} from '../utils/mediaQueriesBuilder';
 import {
 	color_hero_1,
@@ -117,7 +118,24 @@ const Section = styled.section`
 	};
 `;
 
+const sr = ScrollReveal();
+
 class App extends Component {
+	componentDidMount() {
+	    const config = {
+	      origin: 'top',
+	      distance: '20px',
+	      duration: 500,
+	      delay: 200,
+	      scale: 1,
+	      opacity: 0,
+	      easing: 'ease',
+	      reset: true
+	    };
+
+	    sr.reveal('.scrollreveal', config);
+	}
+
 	render(){
 		return(
 			<>

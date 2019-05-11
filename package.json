@@ -9,6 +9,7 @@
     "react-particles-js": "^2.6.0",
     "react-scripts": "3.0.0",
     "react-scrollspy": "^3.4.0",
+    "scrollreveal": "^4.0.5",
     "styled-components": "^4.2.0"
   },
   "scripts": {
