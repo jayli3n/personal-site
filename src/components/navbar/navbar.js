@@ -180,21 +180,28 @@ window.onscroll = function() {
 	}
 };
 
-const toggleNav = (hideCollapsible) => {
-	const collapsibleNav = document.getElementsByClassName('collapsible')[0];
-
-	if(collapsibleNav.classList.contains("collapsible--toggle")){
-		collapsibleNav.classList.remove("collapsible--toggle");
-	}else if(hideCollapsible){
-		collapsibleNav.classList.remove("collapsible--toggle");
-	}else{
-		collapsibleNav.classList.add("collapsible--toggle");
-	}
-}
-
 //------------------------------------------------------------------------------
 
 class Navbar extends Component {
+	constructor(){
+		super();
+		this.state = {
+			toggleOn: false
+		}
+	}
+
+	toggleNav = (show) => {
+		if(show && this.state.toggleOn){
+			this.setState({
+				toggleOn: !show
+			});
+		}else{
+			this.setState({
+				toggleOn: show
+			});
+		}
+	}
+
 	render(){
 		return(
 			<Nav id='navbar'>
@@ -205,13 +212,13 @@ class Navbar extends Component {
 						}}>Li</Name>
 					</Brand>
 					<Toggler onClick={() => {
-							toggleNav(false)
+							this.toggleNav(true)
 						}} onBlur={() => {
-							toggleNav(true)
+							this.toggleNav(false)
 						}}>
 						<Menu_svg/>
 					</Toggler>
-					<div className='collapsible'>
+					<div className={this.state.toggleOn ? classNames('collapsible', 'collapsible--toggle') : 'collapsible'}>
 						<Scrollspy
 							className={'scrollspy'}
 				    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
