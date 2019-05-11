@@ -31,8 +31,9 @@ const Nav = styled.nav`
 	right: 0;
 	z-index: 999;
 	color: #fff;
-	background-color: ${props => props.isBlueNav ? color_primary : 'transparent'};
-	box-shadow: 0 .1rem .15rem rgba(0,0,0,.3);
+	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
+	box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
+	transition: all .2s;
 `;
 
 const Wrapper = styled.div`
@@ -52,8 +53,8 @@ const Wrapper = styled.div`
 			margin: .5rem;
 			padding: 1rem;
 			z-index: 9999;
-			background-color: ${color_primary};
-			box-shadow: 0 1px 2px rgba(0,0,0,.3);
+			background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
+			box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
 			border-radius: 3px;
 			transition: all .2s;
 			visibility: hidden;
@@ -106,7 +107,7 @@ const Toggler = styled.button`
 	backface-visibility: hidden;
 	height: 3rem;
 	width: 3rem;
-	transition: all 0.2s;
+	transition: all 1s;
 	border: none;
 	cursor: pointer;
 	outline: none;
@@ -199,15 +200,16 @@ class Navbar extends Component {
 
 	toggleNav = () => {
 		const HeroElement = document.getElementById("home");
+		console.log(HeroElement.getBoundingClientRect().bottom);
 		this.setState({
-			isBlueNav: (HeroElement.getBoundingClientRect().bottom <= 20)
+			isBlueNav: (HeroElement.getBoundingClientRect().bottom <= 70)
 		});
 	}
 
 	render(){
 		return(
 			<Nav isBlueNav={this.state.isBlueNav}>
-				<Wrapper>
+				<Wrapper isBlueNav={this.state.isBlueNav}>
 					<Brand>
 						<Name onClick={() => {
 							smoothScroll('home');
