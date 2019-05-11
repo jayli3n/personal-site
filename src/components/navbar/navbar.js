@@ -3,7 +3,6 @@ import classNames from 'classnames';
 import styled, {css} from 'styled-components';
 import {media} from '../../utils/mediaQueriesBuilder';
 import Scrollspy from 'react-scrollspy'
-
 import smoothScroll from '../../utils/smoothScroll';
 import App from '../../containers/App';
 import {
@@ -15,6 +14,7 @@ import {
 	color_grey_2,
 	color_grey_3,
 	color_grey_4,
+	color_grey_5,
 	color_grey_6,
 	color_grey_7,
 	color_primary,
@@ -43,27 +43,36 @@ const Wrapper = styled.div`
 	justify-content: space-between;
 	padding: 1.6rem 3rem;
 
-	//not creating a separate styled component here for styling because it's neater to keep ul styles and .toggle styles all here.
+	.collapsible{
+		${media.sizeIII`
+			position: absolute;
+			display: inline;
+			top: 100%;
+			right: 0;
+			margin: .5rem;
+			padding: 1rem;
+			z-index: 9999;
+			background-color: ${color_primary};
+			box-shadow: 0 1px 2px rgba(0,0,0,.3);
+			border-radius: 3px;
+			transition: all .2s;
+			visibility: hidden;
+			opacity: 0;
+		`}
+
+		&--toggle{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
 	.scrollspy{
 		position: relative;
 		display: flex;
 		list-style: none;
 
 		${media.sizeIII`
-			display: none;
-
-			&--toggle{
-				position: absolute;
-				top: 100%;
-				right: 0;
-				display: flex;
-				padding: 1rem;
-				flex-direction: column;
-				z-index: 9999;
-				background-color: ${color_primary};
-				box-shadow: 0 0 0 0.5px rgba(50,50,93,.12), 0 2px 5px 0 rgba(50,50,93,.07), 0 3px 9px 0 rgba(50,50,93,.03), 0 1px 1.5px 0 rgba(0,0,0,.03), 0 1px 2px 0 rgba(0,0,0,.03);
-				border-radius: 3px;
-			}
+			flex-direction: column;
 		`}
 
 		&--item-active{
@@ -71,6 +80,22 @@ const Wrapper = styled.div`
 			background-color: rgba(256,256,256, .15);
 		}
 	}
+`;
+
+const Brand = styled.div`
+	height: 100%;
+`;
+
+const Name = styled.button`
+	font-family: inherit;
+	white-space: nowrap;
+	font-size: 3.8rem;
+	font-weight: 600;
+	color: inherit;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
 `;
 
 const Toggler = styled.button`
@@ -95,22 +120,6 @@ const Toggler = styled.button`
 	}
 `;
 
-const Brand = styled.div`
-	height: 100%;
-`;
-
-const Name = styled.button`
-	font-family: inherit;
-	white-space: nowrap;
-	font-size: 3.8rem;
-	font-weight: 600;
-	color: inherit;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	outline: none;
-`;
-
 const Item = styled.li`
 
 	:not(:last-child){
@@ -119,6 +128,9 @@ const Item = styled.li`
 
 	${media.sizeIII`
 		width: 100%;
+		:not(:last-child){
+			margin-bottom: .38rem;
+		};
 	`}
 
 	button{
@@ -158,36 +170,50 @@ const NavButton = ({className, refID, text}) => {
 	)
 }
 
+window.onscroll = function() {
+	const NavElement = document.getElementById("navbar");
+	const HeroElement = document.getElementById("home");
+	if (HeroElement.getBoundingClientRect().bottom <= 0) {
+		NavElement.classList.add("scroll");
+	}else {
+		NavElement.classList.remove("scroll");
+	}
+};
+
+const toggleNav = (hideCollapsible) => {
+	const collapsibleNav = document.getElementsByClassName('collapsible')[0];
+
+	if(collapsibleNav.classList.contains("collapsible--toggle")){
+		collapsibleNav.classList.remove("collapsible--toggle");
+	}else if(hideCollapsible){
+		collapsibleNav.classList.remove("collapsible--toggle");
+	}else{
+		collapsibleNav.classList.add("collapsible--toggle");
+	}
+}
+
 //------------------------------------------------------------------------------
 
 class Navbar extends Component {
-	constructor(){
-		super();
-		this.state = {
-			isToggle: false
-		}
-	}
-
-	toggleNav = () => {
-		this.setState({
-			isToggle: !this.state.isToggle
-		});
-	}
-
 	render(){
 		return(
-			<Nav>
+			<Nav id='navbar'>
 				<Wrapper>
 					<Brand>
 						<Name onClick={() => {
 							smoothScroll('home');
 						}}>Li</Name>
 					</Brand>
-					<Toggler onClick={this.toggleNav}>
+					<Toggler onClick={() => {
+							toggleNav(false)
+						}} onBlur={() => {
+							toggleNav(true)
+						}}>
 						<Menu_svg/>
 					</Toggler>
+					<div className='collapsible'>
 						<Scrollspy
-							className={this.state.isToggle ? classNames('scrollspy', 'scrollspy--toggle') : classNames('scrollspy')}
+							className={'scrollspy'}
 				    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
 				    		currentClassName='scrollspy--item-active'
 				    		offset={ -250 }
@@ -200,6 +226,7 @@ class Navbar extends Component {
 						    <Item><NavButton refID='outside' text='Outside of Work'/></Item>
 						    <Item><NavButton refID='mySystem' text='My System'/></Item>
 						</Scrollspy>
+					</div>
 				</Wrapper>
 			</Nav>
 		)

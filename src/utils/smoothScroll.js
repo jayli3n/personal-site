@@ -11,8 +11,6 @@ const smoothScroll = (id, duration = smooth_scroll_duration) => {
 	//find distance
 	const displacement = targetPosition - startingPosition;
 
-	console.log(displacement);
-
 	let startTime = null;
 
 	const animationScroll = (currentTime) => {
