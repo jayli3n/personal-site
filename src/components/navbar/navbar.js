@@ -31,7 +31,7 @@ const Nav = styled.nav`
 	right: 0;
 	z-index: 999;
 	color: #fff;
-	background-color: ${color_primary};
+	background-color: ${props => props.isBlueNav ? color_primary : 'transparent'};
 	box-shadow: 0 .1rem .15rem rgba(0,0,0,.3);
 `;
 
@@ -170,41 +170,43 @@ const NavButton = ({className, refID, text}) => {
 	)
 }
 
-window.onscroll = function() {
-	const NavElement = document.getElementById("navbar");
-	const HeroElement = document.getElementById("home");
-	if (HeroElement.getBoundingClientRect().bottom <= 0) {
-		NavElement.classList.add("scroll");
-	}else {
-		NavElement.classList.remove("scroll");
-	}
-};
-
 //------------------------------------------------------------------------------
 
 class Navbar extends Component {
 	constructor(){
 		super();
 		this.state = {
-			toggleOn: false
+			isBlueNav: false,
+			isToggleOn: false
 		}
+
+		window.onscroll = () => {
+			this.toggleNav();
+		};
 	}
 
-	toggleNav = (show) => {
-		if(show && this.state.toggleOn){
+	toggleCollapsible = (show) => {
+		if(show && this.state.isToggleOn){
 			this.setState({
-				toggleOn: !show
+				isToggleOn: !show
 			});
 		}else{
 			this.setState({
-				toggleOn: show
+				isToggleOn: show
 			});
 		}
+	}
+
+	toggleNav = () => {
+		const HeroElement = document.getElementById("home");
+		this.setState({
+			isBlueNav: (HeroElement.getBoundingClientRect().bottom <= 20)
+		});
 	}
 
 	render(){
 		return(
-			<Nav id='navbar'>
+			<Nav isBlueNav={this.state.isBlueNav}>
 				<Wrapper>
 					<Brand>
 						<Name onClick={() => {
@@ -212,13 +214,13 @@ class Navbar extends Component {
 						}}>Li</Name>
 					</Brand>
 					<Toggler onClick={() => {
-							this.toggleNav(true)
+							this.toggleCollapsible(true)
 						}} onBlur={() => {
-							this.toggleNav(false)
+							this.toggleCollapsible(false)
 						}}>
 						<Menu_svg/>
 					</Toggler>
-					<div className={this.state.toggleOn ? classNames('collapsible', 'collapsible--toggle') : 'collapsible'}>
+					<div className={this.state.isToggleOn ? classNames('collapsible', 'collapsible--toggle') : 'collapsible'}>
 						<Scrollspy
 							className={'scrollspy'}
 				    		items={ ['home', 'about', 'skills', 'portfolio', 'experiences', 'outside', 'mySystem'] }
