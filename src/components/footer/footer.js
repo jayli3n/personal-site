@@ -119,7 +119,7 @@ const Footer = () => {
 					<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>
 				</Socials>
 			</Wrapper>
-			<AdditionalText>Designed & developed by me.<br/>
+			<AdditionalText>Designed & developed by me from scratch.<br/>
 				Source code for the site can be found <A href='https://github.com/jayli3/personal-site' target='_blank'>here</A>.
 			</AdditionalText>
 		</Container>
