@@ -85,6 +85,8 @@ const portfolio_array = [
 
 const Wrapper = styled.div`
 	position: relative;
+	width: 100%;
+	max-width: 97rem;
 `;
 
 const Cards = styled.div`
@@ -281,11 +283,11 @@ class Portfolio extends Component{
 	render(){
 		return(
 			<Container title='Portfolio' transparent>
-				<Wrapper>
-					<SliderButtonComponent direction='left'/>
-					<CardComponent p_array={portfolio_array}/>
-					<SliderButtonComponent direction='right'/>
-				</Wrapper>
+			<Wrapper>
+				<SliderButtonComponent direction='left'/>
+				<CardComponent p_array={portfolio_array}/>
+				<SliderButtonComponent direction='right'/>
+			</Wrapper>
 			</Container>
 		)
 	}
