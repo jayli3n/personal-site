@@ -47,7 +47,7 @@ const experiences_list = [
 	{
 		logoPath: tutor_logo,
 		company: 'Private Tutor',
-		link: '',
+		link: '#experiences',
 		duration: 'September 2017 - July 2018',
 		details: [
 			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
