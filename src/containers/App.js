@@ -100,14 +100,16 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Stars = styled.div`
-	background-color: ${color_hero_1};
-	background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -10;
+	.particles-js{
+		background-color: ${color_hero_1};
+		background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -9;
+	}
 `;
 
 const Section = styled.section`
@@ -139,10 +141,10 @@ class App extends Component {
 	render(){
 		return(
 			<>
-				<Stars>
-					<Particles params={particlesOptions}/>
-				</Stars>
 				<GlobalStyle/>
+					<Stars>
+						<Particles className='particles-js' params={particlesOptions}/>
+					</Stars>
 					<Navbar/>
 					<Section id='home' transparent><Hero/></Section>
 					<Section id='about'><Profile/></Section>

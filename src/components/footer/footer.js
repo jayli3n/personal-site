@@ -27,8 +27,7 @@ const Container = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: ${color_hero_1};
-	background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
+	background-color: rgba(0,0,0,.3);
 	padding: 8rem 6rem 7rem 6rem;
 `;
 
