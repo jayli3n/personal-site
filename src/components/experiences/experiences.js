@@ -21,7 +21,7 @@ const experiences_list = [
 	{
 		logoPath: wood_logo,
 		company: 'Wood PLC',
-		link: 'https://www.ultrave.com',
+		link: 'https://www.woodplc.com/',
 		position: 'Technical Analyst',
 		duration: 'Feb 2018 - Present',
 		details: [
@@ -34,7 +34,7 @@ const experiences_list = [
 	{
 		logoPath: ultrave_logo,
 		company: 'UltraVe',
-		link: 'https://www.ultrave.com',
+		link: 'https://www.ultrave.com/',
 		position: 'Founder',
 		duration: 'September 2017 - July 2018',
 		details: [
@@ -47,7 +47,7 @@ const experiences_list = [
 	{
 		logoPath: tutor_logo,
 		company: 'Private Tutor',
-		link: 'https://www.ultrave.com',
+		link: '',
 		duration: 'September 2017 - July 2018',
 		details: [
 			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
