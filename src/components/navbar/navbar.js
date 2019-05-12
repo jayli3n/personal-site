@@ -33,7 +33,7 @@ const Nav = styled.nav`
 	color: #fff;
 	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
 	box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
-	transition: all .2s;
+	transition: all .3s;
 `;
 
 const Wrapper = styled.div`
