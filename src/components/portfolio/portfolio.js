@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {media} from '../../utils/mediaQueriesBuilder';
 import {
 	H2,
 	H4,
@@ -17,8 +18,6 @@ import {
 import {Container} from '../../atoms/container';
 import {pulseEffect} from '../../atoms/keyframes';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
-import { ReactComponent as ArrowBack } from '../../images/icons/arrow_back.svg';
-import { ReactComponent as ArrowForward } from '../../images/icons/arrow_forward.svg';
 
 import test from '../../images/portfolio/test.jpg';
 
@@ -79,35 +78,38 @@ const portfolio_array = [
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
 		sourceLink: '#',
+	},
+	{
+		imgPath: test,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: '#',
+		sourceLink: '#',
 	}
 ];
 
 
 const Wrapper = styled.div`
-	position: relative;
-	width: 100%;
-	max-width: 97rem;
+
 `;
 
 const Cards = styled.div`
-	max-width: 97rem;
 	display: flex;
-	padding-bottom: 2rem;
-	overflow: auto hidden;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: ${props => props.isShowAll ? '' : '94rem'};
 `;
 
 const Card = styled.div`
 	display: block;
 	height: 45rem;
-	max-width: 31rem;
+	margin: 0 1rem 2rem 1rem;
+	width: 31.3333rem;
 	background-color: #fff;
 	box-shadow: none;
 	border: 1px solid ${color_grey_6};
 	border-radius: 8px;
-
-	:not(:last-child){
-		margin-right: 2rem;
-	};
 `;
 
 const Image = styled.div`
@@ -192,42 +194,28 @@ const WhiteDot = styled.div`
 	opacity: 1;
 `;
 
-const SliderButton = styled.div`
-	margin: auto 0;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-	bottom: 0;
-	left: ${props => props.direction=='left' ? 0 : 'auto'};
-	right: ${props => props.direction=='right' ? 0 : 'auto'};
-	transform: translateX(${props => props.direction=='right' ? '50%' : props.direction=='left' ? '-50%' : 0});
-	z-index: 99;
-	background-color: #fff;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
-	border-radius: 50%;
+const ShowAllBtn = styled.button`
+	display: block;
+	margin: 0 auto;
+	font-family: inherit;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: transparent;
+	outline: none;
 	cursor: pointer;
-	visibility: visible;
-	height: 4.3rem;
-	width: 4.3rem;
-	opacity: .9;
+	color: ${color_grey_4};
+	border: none;
 
 	:hover{
-		opacity: 1;
-		box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 5px 9px 0 rgba(0,0,0,0.20);
+		color: ${color_grey_2};
+		border-bottom: 1px solid ${color_grey_2};;
 	};
 
 	:active{
-		opacity: .9;
-		box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
+		color: ${color_grey_3};
+		border-bottom: 1px solid ${color_grey_3};;
 	};
-`;
-
-const SliderIcon = styled.div`
-	fill: ${color_grey_2};
-	height: 2.5rem;
-	width: 2.5rem;
 `;
 
 
@@ -255,8 +243,8 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 	)
 }
 
-const CardComponent = ({className, p_array}) => (
-	<Cards className={className}>
+const CardComponent = ({className, p_array, isShowAll}) => (
+	<Cards className={className} isShowAll={isShowAll}>
 			{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
 				<Card key={i}>
 					<Image><img src={imgPath}/></Image>
@@ -267,27 +255,38 @@ const CardComponent = ({className, p_array}) => (
 	</Cards>
 )
 
-const SliderButtonComponent = ({className, direction}) => {
-	return(
-		<SliderButton className={className} direction={direction}>
-			<SliderIcon>
-				{direction=='right' ? <ArrowForward/> : direction=='left' ? <ArrowBack/> : <span/>}
-			</SliderIcon>
-		</SliderButton>
-	)
-}
-
 //------------------------------------------------------------------------------
 
 class Portfolio extends Component{
+	constructor(){
+		super();
+		this.state = {
+			showAllText: 'Show All',
+			isShowAll: false
+		}
+	}
+
+	showAll = () => {
+		if(this.state.isShowAll){
+			this.setState({
+				showAllText: 'Show All',
+				isShowAll: false
+			});
+		}else{
+			this.setState({
+				showAllText: 'Hide',
+				isShowAll: true
+			});
+		}
+	}
+
 	render(){
 		return(
 			<Container title='Portfolio' transparent>
-			<Wrapper>
-				<SliderButtonComponent direction='left'/>
-				<CardComponent p_array={portfolio_array}/>
-				<SliderButtonComponent direction='right'/>
-			</Wrapper>
+				<Wrapper>
+					<CardComponent p_array={portfolio_array} isShowAll={this.state.isShowAll}/>
+					<ShowAllBtn onClick={this.showAll}>{this.state.showAllText}</ShowAllBtn>
+				</Wrapper>
 			</Container>
 		)
 	}
