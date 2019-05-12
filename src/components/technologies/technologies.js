@@ -95,7 +95,7 @@ const IconBox = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 2rem;
+	margin: 1.5rem;
 	min-width: 11rem;
 	transition: all .2s;
 
