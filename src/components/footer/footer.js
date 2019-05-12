@@ -81,14 +81,14 @@ const Socials = styled.div`
 	display: flex;
 	justify-content: center;
 	margin: 1rem;
-	fill: ${color_grey_4};
 `;
 
-const SocialIcon = styled.div`
+const SocialIcon = styled.a`
 	height: 2rem;
 	width: 2rem;
 	cursor: pointer;
 	transition: all .2s;
+	fill: ${color_grey_4};
 
 	:not(:last-child){
 		margin-right: 2rem;
@@ -114,9 +114,9 @@ const Footer = () => {
 					Shoot me an email at: <A href = "mailto: jay.li23697@gmail.com">jay.li23697@gmail.com</A></Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>
 				<Socials>
-					<SocialIcon><Github /></SocialIcon>
-					<SocialIcon><Linkedin /></SocialIcon>
-					<SocialIcon><Twitter /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3' target='_blank'><Github /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3' target='_blank'><Linkedin /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>
 				</Socials>
 			</Wrapper>
 			<AdditionalText>Designed & developed by me.<br/>

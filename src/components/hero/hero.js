@@ -75,7 +75,7 @@ const Socials = styled.div`
 	justify-content: center;
 `;
 
-const SocialIcon = styled.div`
+const SocialIcon = styled.a`
 	fill: ${color_grey_5};
 	height: 2.5rem;
 	width: 2.5rem;
@@ -111,9 +111,9 @@ class Hero extends Component{
 					</Buttons>
 
 					<Socials>
-						<SocialIcon><Github /></SocialIcon>
-						<SocialIcon><Linkedin /></SocialIcon>
-						<SocialIcon><Twitter /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3' target='_blank'><Github /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3' target='_blank'><Linkedin /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>
 					</Socials>
 				</InfoBox>
 			</StyledSection>
