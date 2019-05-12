@@ -24,7 +24,7 @@ const StyledSection = styled.div`
 	flex-direction: column;
 	padding: 10rem 6rem;
 	min-height: 100vh;
-	background-color: rgba(0,0,0,.08);
+	background-color: rgba(0,0,0,.02);
 `;
 
 const InfoBox = styled.div`
