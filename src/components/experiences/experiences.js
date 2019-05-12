@@ -21,36 +21,39 @@ const experiences_list = [
 	{
 		logoPath: wood_logo,
 		company: 'Wood PLC',
+		link: 'https://www.ultrave.com',
 		position: 'Technical Analyst',
-		duration: 'September 2017 - July 2018',
+		duration: 'Feb 2018 - Present',
 		details: [
-			'Had been involved in the YARA Pilbara Turnaround Shutdown Project.',
-			'Taken on the role of "Technical Assistant" in the office & as a Work Pack Coordinator onsite.',
-			'Create many programs and scripts with VBA to reduce the complexity and time of repetitive tasks.',
-			'Have also been a Document Controller for OJIFS project.'
+			'Worked within asset management teams to deliver inspection and turnaround maintenance scopes.',
+			'Primarily worked on database management and data manipulation as well as querying SQL data to create progress reports.',
+			'Developed scripts and programs to reduce complexity and time of repetitive tasks.',
+			'I’m grateful for the time I spent working with different clients alongside brilliant engineers; whose work gave me a glimpse into the challenges and rewards of an engineer’s life.'
 		]
 	},
 	{
 		logoPath: ultrave_logo,
 		company: 'UltraVe',
+		link: 'https://www.ultrave.com',
 		position: 'Founder',
 		duration: 'September 2017 - July 2018',
 		details: [
-			'Had been involved in the YARA Pilbara Turnaround Shutdown Project.',
-			'Taken on the role of "Technical Assistant" in the office & as a Work Pack Coordinator onsite.',
-			'Create many programs and scripts with VBA to reduce the complexity and time of repetitive tasks.',
-			'Have also been a Document Controller for OJIFS project.'
+			'UltraVe is a social media community and online clothing company that promotes healthy eating and a cruelty-free lifestyle.',
+			'I have learnt the importance of online marketing and online presence that comes from search engine optimization (SEO) and ongoing community building.',
+			'This small project has taught me how to work on tasks independently: site creation, product sponsoring, graphic designs, customer support etc.',
+			'As a way to give back, a portion of the proceeds go to animal rescue and shelters.'
 		]
 	},
 	{
 		logoPath: tutor_logo,
 		company: 'Private Tutor',
+		link: 'https://www.ultrave.com',
 		duration: 'September 2017 - July 2018',
 		details: [
-			'Had been involved in the YARA Pilbara Turnaround Shutdown Project.',
-			'Taken on the role of "Technical Assistant" in the office & as a Work Pack Coordinator onsite.',
-			'Create many programs and scripts with VBA to reduce the complexity and time of repetitive tasks.',
-			'Have also been a Document Controller for OJIFS project.'
+			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
+			'Primarily focused on 12th grade Mathematics, Physics and Chemistry.',
+			'By the end of school semester, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of the year group).',
+			'1000+ hours of teaching experience.'
 		]
 	}
 ]
@@ -86,14 +89,22 @@ const Details = styled.div`
 	
 `;
 
-const StyledH3 = styled.h3`
-	font-size: 2.5rem;
-	font-weight: 400;
-	color: ${color_primary};
+const Company = styled.a`
+	:link,
+	:visited{
+		font-size: 2.5rem;
+		font-weight: 400;
+		color: ${color_primary};
+		text-decoration: none;
+	};
+
+	:hover{
+		text-decoration: underline;
+	};
 `;
 
 const PositionText = styled.p`
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	font-weight: 400;
 	margin-bottom: .6rem;
 	color: ${color_grey_3}
@@ -120,13 +131,13 @@ const Li = styled.li`
 
 const ExperiencesComponent = ({className, experiences_list}) => (
 	<Wrapper className={className}>
-		{experiences_list.map(({logoPath, company, position, duration, details}, i) => (
+		{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
 			<Experience key={i}>
 				<Image>
 					<img src={logoPath}/>
 				</Image>
 				<Details>
-					<StyledH3>{company}</StyledH3>
+					<Company target='_blank' href={link}>{company}</Company>
 					<PositionText>{position}</PositionText>
 					<DurationText>{duration}</DurationText>
 					<Ul>
@@ -145,7 +156,7 @@ const ExperiencesComponent = ({className, experiences_list}) => (
 class Experiences extends Component{
 	render(){
 		return(
-			<Container title='Experiences'>
+			<Container title='What I&apos;ve done so far'>
 					<ExperiencesComponent experiences_list={experiences_list}/>
 			</Container>
 		)

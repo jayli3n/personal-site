@@ -76,8 +76,12 @@ class Profile extends Component{
 			<Container title='Get to know me'>
 				<Wrapper>
 					<About>
-						<StyledH2>About</StyledH2>
-						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Mauris nunc congue nisi vitae suscipit tellus mauris a. Egestas congue quisque egestas diam in. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim.</P>
+						<StyledH2>Profile</StyledH2>
+						<P>
+							Hi, I’m Jay. It’s great to see you on my page!<br/>
+							I’m a holistic software engineer who loves to see magic happen and problems solved from my lines of code. 
+							On top of that, I love to learn; it could be little things but I always strive to become a slightly better version of myself than I was the day before.
+						</P>
 					</About>
 					<Info>
 						<StyledH2>Info</StyledH2>
