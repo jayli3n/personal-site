@@ -17,7 +17,7 @@ import font_regular from '../fonts/StratumNo1 Regular.ttf';
 import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
 import Particles from 'react-particles-js';
-//import meteorShower from '../utils/meteorShower'
+import {Meteor1} from '../utils/meteorShower'
 import particlesOptions from './particlesjs-config';
 import Navbar from '../components/navbar/navbar';
 import Hero from '../components/hero/hero';
@@ -29,7 +29,7 @@ import Extracurricular from '../components/extracurricular/extracurricular';
 import MySystem from '../components/mySystem/mySystem';
 import Footer from '../components/footer/footer';
 
-
+const sr = ScrollReveal();
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {
@@ -109,12 +109,6 @@ const GlobalStyle = createGlobalStyle`
 		right: 0;
 		z-index: -9;
 	}
-
-	canvas{
-		position:absolute;
-		top:0;
-		left:0;
-	}
 `;
 
 const Section = styled.section`
@@ -128,8 +122,6 @@ const Section = styled.section`
 		padding-bottom: 10rem;
 	};
 `;
-
-const sr = ScrollReveal();
 
 class App extends Component {
 	componentDidMount() {
@@ -152,8 +144,7 @@ class App extends Component {
 			<>
 				<GlobalStyle/>
 					<Particles className='particles-js' params={particlesOptions}/>
-					<canvas id="bgCanvas"></canvas>
-					<canvas id="terCanvas"></canvas>
+					<Meteor1/>
 					<Navbar/>
 					<Section id='home' transparent><Hero/></Section>
 					<Section id='about'><Profile/></Section>

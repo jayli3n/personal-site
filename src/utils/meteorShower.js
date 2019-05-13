@@ -1,146 +1,96 @@
-(function() {
-	const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || 
-								  window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function( callback ){
-	            window.setTimeout(callback, 1000 / 60);
-	          };
-	window.requestAnimationFrame = requestAnimationFrame;
-})();
+import React, {Component} from 'react';
+import styled, { keyframes } from 'styled-components';
 
-// Terrain stuff.
-let terrain = document.getElementById("terCanvas");
-let background = document.getElementById("bgCanvas");
-let terCtx = terrain.getContext("2d");
-let bgCtx = background.getContext("2d");
-let width = window.innerWidth;
-let height = document.body.offsetHeight;
-height = (height < 400) ? 400 : height;
-
-terrain.width = background.width = width;
-terrain.height = background.height = height;
-
-// Some random points
-var points = [],
-	displacement = 140,
-	power = Math.pow(2,Math.ceil(Math.log(width)/(Math.log(2))));
-
-// set the start height and end height for the terrain
-points[0] = (height - (Math.random()*height/2))-displacement;
-points[power] = (height - (Math.random()*height/2))-displacement;
-
-// create the rest of the points
-for(var i = 1; i<power; i*=2){
-	for(var j = (power/i)/2; j <power; j+=power/i){
-		points[j] = ((points[j - (power/i)/2] + points[j + (power/i)/2]) / 2) + Math.floor(Math.random()*-displacement+displacement );
-	}
-	displacement *= 0.6;
+const getRandomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// draw the terrain
-terCtx.beginPath();
-				
-for(var i = 0; i<=width; i++){
-	if(i === 0){
-		terCtx.moveTo(0, points[0]);
-	}else if(points[i] !== undefined){
-		terCtx.lineTo(i, points[i]);
-	}
-}
+const Meteor = styled.i`
+  position: absolute;
+  width: 3px;
+  animation-delay: ${() => `${getRandomInt(0, 30)}s`};
+  animation-duration: ${() => `${getRandomInt(0, 10) + 20}s`};
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in;
+  opacity: 0;
+`;
 
-terCtx.lineTo(width,terrain.height);
-terCtx.lineTo(0,terrain.height);
-terCtx.lineTo(0,points[0]);
-terCtx.fill();
+const meteor1Animation = keyframes`
+  from {
+    transform: scale(0) translate3d(0, 0, 0);
+  }
 
+  1% {
+    opacity: ${(getRandomInt(0, 30) + 30) * 0.01};
+  }
 
-// Second canvas used for the stars
-bgCtx.fillStyle = '#05004c';
-bgCtx.fillRect(0,0,width,height);
+  5% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
 
-// stars
-function Star(options){
-	this.size = Math.random()*2;
-	this.speed = Math.random()*.1;
-	this.x = options.x;
-	this.y = options.y;
-}
+  10% {
+    opacity: 0;
+  }
 
-Star.prototype.reset = function(){
-	this.size = Math.random()*2;
-	this.speed = Math.random()*.1;
-	this.x = width;
-	this.y = Math.random()*height;
-}
+  to {
+    opacity: 0;
+  }
+`;
 
-Star.prototype.update = function(){
-	this.x-=this.speed;
-	if(this.x<0){
-	  this.reset();
-	}else{
-	  bgCtx.fillRect(this.x,this.y,this.size,this.size); 
-	}
-}
+const Meteor1Sub = styled(Meteor)`
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  height: 300px;
+  animation-name: ${() => meteor1Animation};
+`;
 
-function ShootingStar(){
-	this.reset();
-}
+const Meteor1Wrapper = styled.div`
+  position: absolute;
+  left: ${() => `calc(${getRandomInt(0, 100)}%)`};
+  top: ${() => `calc(${getRandomInt(0, 60)}%)`};
+  transform: ${() => `rotate(${getRandomInt(0, 360)}deg)`};
+`;
 
-ShootingStar.prototype.reset = function(){
-	this.x = Math.random()*width;
-	this.y = 0;
-	this.len = (Math.random()*80)+10;
-	this.speed = (Math.random()*10)+6;
-	this.size = (Math.random()*1)+0.1;
-// this is used so the shooting stars arent constant
-	this.waitTime =  new Date().getTime() + (Math.random()*3000)+500;
-	this.active = false;
-}
+const meteor2Animation = keyframes`
+  from {
+    transform: rotate(0deg) translateX(150px);
+  }
 
-ShootingStar.prototype.update = function(){
-	if(this.active){
-		this.x-=this.speed;
-		this.y+=this.speed;
-		if(this.x<0 || this.y >= height){
-		  this.reset();
-		}else{
-		bgCtx.lineWidth = this.size;
-			bgCtx.beginPath();
-			bgCtx.moveTo(this.x,this.y);
-			bgCtx.lineTo(this.x+this.len, this.y-this.len);
-			bgCtx.stroke();
-		}
-	}else{
-		if(this.waitTime < new Date().getTime()){
-			this.active = true;
-		}			
+  1% {
+    opacity: ${(getRandomInt(0, 30) + 30) * 0.01};
+  }
+
+  10% {
+    opacity: 0;
+    transform: rotate(${getRandomInt(0, 120)}deg) translateX(150px);
+  }
+
+  to {
+    opacity: 0;
+  }
+`;
+
+const Meteor2Sub = styled(Meteor)`
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  height: 50px;
+  animation-name: ${() => meteor2Animation};
+  left: ${() => `calc(${getRandomInt(0, 100)}%)`};
+  top: ${() => `calc(${getRandomInt(0, 70)}%)`};
+`;
+
+export class Meteor1 extends Component {
+	render(){
+		return(
+			<Meteor1Wrapper>
+			<Meteor1Sub />
+			</Meteor1Wrapper>
+		)
 	}
 }
 
-var entities = [];
-
-// init the stars
-for(var i=0; i < height; i++){
-	entities.push(new Star({x:Math.random()*width, y:Math.random()*height}));
-}
-
-// Add 2 shooting stars that just cycle.
-entities.push(new ShootingStar());
-entities.push(new ShootingStar());
-
-//animate background
-function animate(){
-	bgCtx.fillStyle = '#05004c';
-	bgCtx.fillRect(0,0,width,height);
-	bgCtx.fillStyle = '#ffffff';
-	bgCtx.strokeStyle = '#ffffff';
-
-	var entLen = entities.length;
-  
-	while(entLen--){
-		entities[entLen].update();
+export class Meteor2 extends Component {
+	render(){
+		return(
+			<Meteor2Sub />
+		)
 	}
-	
-	requestAnimationFrame(animate);
 }
-
-animate();
-
