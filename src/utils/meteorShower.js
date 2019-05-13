@@ -34,10 +34,10 @@ const Meteor = styled.i`
 	position: fixed;
 	width: ${() => `calc(${getRandomInt(2, 6)}px)`};
 	z-index: -99;
-	height: 100rem;
+	height: 90rem;
   	animation-name: ${() => meteor1Animation};
-	animation-delay: ${() => `${getRandomInt(0, 10)}s`};
-	animation-duration: ${() => `${getRandomInt(10, 30)}s`};
+	animation-delay: ${() => `${getRandomInt(0, 20)}s`};
+	animation-duration: ${() => `${getRandomInt(10, 25)}s`};
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
 	background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #fff 80%);
@@ -46,8 +46,8 @@ const Meteor = styled.i`
 
 const MeteorWrapper = styled.div`
   position: fixed;
-  left: ${() => `calc(${getRandomInt(0, 100)}%)`};
-  top: ${() => `calc(${getRandomInt(0, 100)}%)`};
+  left: ${() => `calc(${getRandomInt(20, 80)}%)`};
+  top: ${() => `calc(${getRandomInt(10, 90)}%)`};
   transform: rotate(220deg);
 `;
 
