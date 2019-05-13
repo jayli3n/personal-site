@@ -33,7 +33,6 @@ const meteor1Animation = keyframes`
 const Meteor = styled.i`
 	position: fixed;
 	width: ${() => `calc(${getRandomInt(2, 6)}px)`};
-	z-index: -99;
 	height: 90rem;
   	animation-name: ${() => meteor1Animation};
 	animation-delay: ${() => `${getRandomInt(0, 20)}s`};
@@ -48,6 +47,7 @@ const MeteorWrapper = styled.div`
   position: fixed;
   left: ${() => `calc(${getRandomInt(20, 80)}%)`};
   top: ${() => `calc(${getRandomInt(10, 90)}%)`};
+  z-index: -99;
   transform: rotate(220deg);
 `;
 
