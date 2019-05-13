@@ -31,7 +31,7 @@ const Nav = styled.nav`
 	right: 0;
 	z-index: 999;
 	color: #fff;
-	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
+	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.02)'};
 	box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
 	animation: ${props => props.isBlueNav ? navReveal : 'none'} .3s ease-out 0s;
 `;

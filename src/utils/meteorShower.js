@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const default_meteors = 9;
+const default_meteors = 5;
 
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -36,7 +36,7 @@ const Meteor = styled.i`
 	z-index: -99;
 	height: 100rem;
   	animation-name: ${() => meteor1Animation};
-	animation-delay: ${() => `${getRandomInt(0, 15)}s`};
+	animation-delay: ${() => `${getRandomInt(0, 10)}s`};
 	animation-duration: ${() => `${getRandomInt(10, 30)}s`};
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
@@ -44,26 +44,25 @@ const Meteor = styled.i`
 	opacity: 0;
 `;
 
-const Meteor1Wrapper = styled.div`
+const MeteorWrapper = styled.div`
   position: fixed;
   left: ${() => `calc(${getRandomInt(0, 100)}%)`};
   top: ${() => `calc(${getRandomInt(0, 100)}%)`};
   transform: rotate(220deg);
 `;
 
-export class MeteorComponent extends Component{
-	render(){
-		const num = (this.props.num > 0 ? this.props.num : default_meteors);
-		return(
-			<>
-				{[...Array(num)].map((_, i) => {
-					return(
-						<Meteor1Wrapper key={i}>
-							<Meteor />
-						</Meteor1Wrapper>
-					)
-				})}
-			</>
-		)
-	}
+export const MeteorComponent = (props) => {
+	const num = (props.num > 0 ? props.num : default_meteors);
+	return(
+		<>
+			{[...Array(num)].map((_, i) => {
+				return(
+					<MeteorWrapper key={i}>
+						<Meteor />
+					</MeteorWrapper>
+				)
+			})}
+		</>
+	)
+
 }

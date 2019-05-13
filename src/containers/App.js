@@ -144,7 +144,7 @@ class App extends Component {
 			<>
 				<GlobalStyle/>
 					<Particles className='particles-js' params={particlesOptions}/>
-					<MeteorComponent num={50}/>
+					<MeteorComponent num={10}/>
 					<Navbar/>
 					<Section id='home' transparent><Hero/></Section>
 					<Section id='about'><Profile/></Section>

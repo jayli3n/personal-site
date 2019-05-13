@@ -2,7 +2,7 @@ export const color_primary = '#5A91E8';
 export const color_primary_light = '#78A5EC';
 export const color_primary_dark = '#4066A3';
 
-export const color_hero_1 = '#232A2D';
+export const color_hero_1 = '#1E2026';
 export const color_hero_2 = '#0B0D0F';
 
 export const color_grey_1 = '#333';
