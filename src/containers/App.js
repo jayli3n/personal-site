@@ -17,6 +17,7 @@ import font_regular from '../fonts/StratumNo1 Regular.ttf';
 import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
 import Particles from 'react-particles-js';
+//import meteorShower from '../utils/meteorShower'
 import particlesOptions from './particlesjs-config';
 import Navbar from '../components/navbar/navbar';
 import Hero from '../components/hero/hero';
@@ -97,9 +98,7 @@ const GlobalStyle = createGlobalStyle`
 	body{
 		min-height: 300vh;
 	}
-`;
 
-const Stars = styled.div`
 	.particles-js{
 		background-color: ${color_hero_1};
 		background-image: linear-gradient(to bottom, ${color_hero_1}, ${color_hero_2});
@@ -110,10 +109,20 @@ const Stars = styled.div`
 		right: 0;
 		z-index: -9;
 	}
+
+	canvas{
+		position:absolute;
+		top:0;
+		left:0;
+	}
 `;
 
 const Section = styled.section`
 	background-color: ${props => props.transparent ? `transparent` : color_grey_7};
+
+	:nth-of-type(2){
+		padding-top: 10rem;
+	};
 
 	:nth-last-of-type(2){
 		padding-bottom: 10rem;
@@ -142,9 +151,9 @@ class App extends Component {
 		return(
 			<>
 				<GlobalStyle/>
-					<Stars>
-						<Particles className='particles-js' params={particlesOptions}/>
-					</Stars>
+					<Particles className='particles-js' params={particlesOptions}/>
+					<canvas id="bgCanvas"></canvas>
+					<canvas id="terCanvas"></canvas>
 					<Navbar/>
 					<Section id='home' transparent><Hero/></Section>
 					<Section id='about'><Profile/></Section>

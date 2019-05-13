@@ -5,6 +5,7 @@ import {media} from '../../utils/mediaQueriesBuilder';
 import Scrollspy from 'react-scrollspy'
 import smoothScroll from '../../utils/smoothScroll';
 import App from '../../containers/App';
+import {navReveal} from '../../atoms/keyframes';
 import {
 	H1,
 	H4,
@@ -25,15 +26,14 @@ import avatar from '../../images/avatar.jpg';
 import {ReactComponent as Menu_svg} from '../../images/icons/menu.svg';
 
 const Nav = styled.nav`
-	position: fixed;
-	top: 0;
+	position: ${props => props.isBlueNav ? 'fixed' : 'absolute'};
 	left: 0;
 	right: 0;
 	z-index: 999;
 	color: #fff;
 	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
 	box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
-	transition: all .3s;
+	animation: ${props => props.isBlueNav ? navReveal : 'none'} .3s ease-out 0s;
 `;
 
 const Wrapper = styled.div`
