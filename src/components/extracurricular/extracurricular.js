@@ -66,8 +66,8 @@ class Extracurricular extends Component{
 		return(
 			<Container title='Outside of Work'>
 				<Wrapper>
-					<ActivityComponent imgPath={lit_img} title='Friends' details='I find time to sped with my friends for occasional movie marathons, board games and other stuff that friends do.'/>
-					<ActivityComponent imgPath={workout_img} title='Workout' details='Incredibly important to keep the body moving when I spend my time working at a desk all day.'/>
+					<ActivityComponent imgPath={lit_img} title='Friends' details='I find time to spend with my friends for occasional movie marathons, board games and other stuff that friends do.'/>
+					<ActivityComponent imgPath={workout_img} title='Workout' details='Incredibly important to keep my body moving especially when I spend my time working at a desk all day.'/>
 					<ActivityComponent imgPath={racket_img} title='Sports' details='I enjoy racket sports such as tennis and badminton. I play badminton at a local club and attempted a few tournaments, did not go well.'/>
 					<ActivityComponent imgPath={book_img} title='Learning' details='The rest of my time are spent discovering new ideas and picking up skills from various online platforms, podcasts and audiobooks.'/>
 				</Wrapper>
