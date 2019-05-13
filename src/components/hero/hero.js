@@ -25,6 +25,7 @@ const StyledSection = styled.div`
 	padding: 10rem 6rem;
 	min-height: 100vh;
 	background-color: rgba(0,0,0,.02);
+	z-index: 9;
 `;
 
 const InfoBox = styled.div`

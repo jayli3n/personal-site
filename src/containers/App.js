@@ -17,7 +17,7 @@ import font_regular from '../fonts/StratumNo1 Regular.ttf';
 import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
 import Particles from 'react-particles-js';
-import {Meteor1} from '../utils/meteorShower'
+import {MeteorComponent} from '../utils/meteorShower'
 import particlesOptions from './particlesjs-config';
 import Navbar from '../components/navbar/navbar';
 import Hero from '../components/hero/hero';
@@ -107,7 +107,7 @@ const GlobalStyle = createGlobalStyle`
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: -9;
+		z-index: -99;
 	}
 `;
 
@@ -144,7 +144,7 @@ class App extends Component {
 			<>
 				<GlobalStyle/>
 					<Particles className='particles-js' params={particlesOptions}/>
-					<Meteor1/>
+					<MeteorComponent num={50}/>
 					<Navbar/>
 					<Section id='home' transparent><Hero/></Section>
 					<Section id='about'><Profile/></Section>

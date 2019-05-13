@@ -27,7 +27,7 @@ const Container = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.2);
 	padding: 8rem 6rem 7rem 6rem;
 `;
 
