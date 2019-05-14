@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const About = styled.div`
-	flex: 1 0 60%;
+	flex: 1 1 60%;
 	padding: 2rem;
 `;
 
@@ -36,8 +36,7 @@ const InfoList = styled.ul`
 
 const ListItem = styled.li`
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 
 	:not(:last-child){
 		margin-bottom: 1rem;
