@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {media} from '../utils/mediaQueriesBuilder';
 import {
 	color_grey_6,
 	color_grey_7,
@@ -16,6 +17,14 @@ const OutterDiv = styled.div`
 	align-items: center;
 	padding: 10rem 6rem 2rem 6rem;
 	margin: 0 auto;
+
+	${media.sizeIV`
+		padding: 8rem 3rem 2rem 3rem;
+	`}
+
+	${media.sizeIII`
+		padding: 8rem 1.5rem 2rem 1.5rem;
+	`}
 `;
 
 const InnerDiv = styled.div`
