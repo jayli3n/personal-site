@@ -32,7 +32,7 @@ import trillo_img from '../../images/portfolio/trillo-hotel-booking_snapshot.jpg
 const portfolio_array = [
 	{
 		imgPath: trillo_img,
-		icons: [1,2,3],
+		icons: [4,5,6,9],
 		title: 'Trillo Front End',
 		text: 'A simple and clean front-end for a mockup hotel booking website.',
 		liveLink: 'https://jayli3.github.io/trillo-front-end/',
@@ -40,7 +40,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: facial_recognition_img,
-		icons: [1,2,3],
+		icons: [0,4,2,7,8,9],
 		title: 'Facial Recognition Web App',
 		text: 'Detects human faces in an input image and put boxes around them.',
 		liveLink: 'https://jayli3.github.io/facial-recognition-web-app/',
@@ -48,7 +48,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: nexter_img,
-		icons: [1,2,3],
+		icons: [4,5,6,9],
 		title: 'Nexter Real Estate',
 		text: 'A mockup real estate website.',
 		liveLink: 'https://jayli3.github.io/nexter-front-end/',
@@ -56,7 +56,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: natours_img,
-		icons: [1,2,3],
+		icons: [4,5,9],
 		title: 'Natours Startup',
 		text: 'A mockup landing page for a travel agency startup.',
 		liveLink: 'https://jayli3.github.io/natours-startup/',
@@ -64,7 +64,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: starwars_img,
-		icons: [1,2,3],
+		icons: [0,4,2,7,9],
 		title: 'Star Wars Database',
 		text: 'A fun & light-weight web app to display all the Star Wars data you\'ll ever want!',
 		liveLink: 'https://jayli3.github.io/starwars/',
@@ -72,7 +72,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: jayli3_site_img,
-		icons: [1,2,3],
+		icons: [0,4,5,2,6,7,9],
 		title: 'My Personal Site',
 		text: 'It is the site you\'re on right now!',
 		liveLink: '#',
@@ -80,7 +80,7 @@ const portfolio_array = [
 	},
 	{
 		imgPath: linear_gradient_img,
-		icons: [1,2,3],
+		icons: [4,5,2],
 		title: 'Gradient Background Generator',
 		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient().',
 		liveLink: 'https://jayli3.github.io/linear-background-generator/',
@@ -231,7 +231,7 @@ const DetailsComponent = ({className, icons, title, text}) => {
 		<Details className={className}>
 			<IconsBox>
 				{icons.map((index, i) => (
-					<Icon color={svg_icons[index].color} key='i'>{svg_icons[index].svg}</Icon>
+					<Icon color={color_grey_2} key='i'>{svg_icons[index].svg}</Icon>
 				))}
 			</IconsBox>
 			<StyledH4>{title}</StyledH4>
