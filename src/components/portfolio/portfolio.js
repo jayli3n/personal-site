@@ -19,72 +19,64 @@ import {Container} from '../../atoms/container';
 import {pulseEffect} from '../../atoms/keyframes';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 
-import test from '../../images/portfolio/test.jpg';
+import jayli3_site_img from '../../images/portfolio/jayli3-site.jpg';
+import facial_recognition_img from '../../images/portfolio/facial-recognition-web-app_snapshot.jpg';
+import linear_gradient_img from '../../images/portfolio/linear-gradient_snapshot.jpg';
+import natours_img from '../../images/portfolio/natours-tour-startup_snapshot.jpg';
+import nexter_img from '../../images/portfolio/nexter-real-estate_snapshot.jpg';
+import starwars_img from '../../images/portfolio/starwars-api_snapshot.jpg';
+import trillo_img from '../../images/portfolio/trillo-hotel-booking_snapshot.jpg';
 
 
 const portfolio_array = [
 	{
-		imgPath: test,
+		imgPath: trillo_img,
 		title: 'Trillo Front End',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
+		liveLink: 'https://jayli3.github.io/trillo-front-end/',
+		sourceLink: 'https://github.com/jayli3/trillo-front-end',
 	},
 	{
-		imgPath: test,
+		imgPath: facial_recognition_img,
 		title: 'Facial Recognition Web App',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
+		liveLink: 'https://jayli3.github.io/facial-recognition-web-app/',
+		sourceLink: 'https://github.com/jayli3/facial-recognition-web-app',
 	},
 	{
-		imgPath: test,
+		imgPath: nexter_img,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: 'https://jayli3.github.io/nexter-front-end/',
+		sourceLink: 'https://github.com/jayli3/nexter-front-end',
+	},
+	{
+		imgPath: natours_img,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: 'https://jayli3.github.io/natours-startup/',
+		sourceLink: 'https://github.com/jayli3/natours-startup',
+	},
+	{
+		imgPath: starwars_img,
+		title: 'Star Wars API',
+		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		liveLink: 'https://jayli3.github.io/starwars/',
+		sourceLink: 'https://github.com/jayli3/starwars',
+	},
+	{
+		imgPath: jayli3_site_img,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
 		liveLink: '#',
-		sourceLink: '#',
+		sourceLink: 'https://github.com/jayli3/personal-site',
 	},
 	{
-		imgPath: test,
+		imgPath: linear_gradient_img,
 		title: 'Star Wars API',
 		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
-	},
-	{
-		imgPath: test,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
-	},
-	{
-		imgPath: test,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
-	},
-	{
-		imgPath: test,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
-	},
-	{
-		imgPath: test,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
-	},
-	{
-		imgPath: test,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
-		liveLink: '#',
-		sourceLink: '#',
+		liveLink: 'https://jayli3.github.io/linear-background-generator/',
+		sourceLink: 'https://github.com/jayli3/linear-background-generator',
 	}
 ];
 
@@ -110,6 +102,7 @@ const Card = styled.div`
 	box-shadow: none;
 	border: 1px solid ${color_grey_6};
 	border-radius: 8px;
+	overflow: hidden;
 `;
 
 const Image = styled.div`
@@ -117,9 +110,8 @@ const Image = styled.div`
 	height: 45%;
 	display: flex;
 	justify-content: center;
+	margin-top: .5rem;
 	overflow: hidden;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 
 	img{
 		height: 100%;

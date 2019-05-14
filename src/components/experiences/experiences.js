@@ -27,8 +27,8 @@ const experiences_list = [
 		details: [
 			'Worked within asset management teams to deliver inspection and turnaround maintenance scopes.',
 			'Primarily worked on database management and data manipulation as well as querying SQL data to create progress reports.',
-			'Developed scripts and programs to reduce complexity and time of repetitive tasks.',
-			'I’m grateful for the time I spent working with different clients alongside brilliant engineers; whose work gave me a glimpse into the challenges and rewards of an engineer’s life.'
+			'Developed scripts and programs for the team to reduce complexity and time of repetitive tasks.',
+			'I’m grateful for the time I spent with different clients alongside brilliant engineers; whose work gave me a glimpse into the challenges and rewards of an engineer’s life.'
 		]
 	},
 	{

@@ -10,8 +10,6 @@ import {
 	color_primary
 } from '../../atoms/variables';
 
-import placeholder from '../../images/portfolio/facial_recog.jpg';
-
 
 const my_system_list = [
 	{

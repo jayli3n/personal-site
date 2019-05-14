@@ -15,7 +15,6 @@ import {
 	color_primary_light
 } from '../../atoms/variables';
 
-import placeholder from '../../images/portfolio/facial_recog.jpg';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
