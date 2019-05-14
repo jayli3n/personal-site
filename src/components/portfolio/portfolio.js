@@ -17,7 +17,8 @@ import {
 } from '../../atoms/variables';
 import {Container} from '../../atoms/container';
 import {pulseEffect} from '../../atoms/keyframes';
-import { ReactComponent as Github } from '../../images/icons/github.svg';
+import {svg_icons} from '../../atoms/techIcons';
+import { ReactComponent as Github_svg } from '../../images/icons/github.svg';
 
 import jayli3_site_img from '../../images/portfolio/jayli3-site.jpg';
 import facial_recognition_img from '../../images/portfolio/facial-recognition-web-app_snapshot.jpg';
@@ -31,50 +32,57 @@ import trillo_img from '../../images/portfolio/trillo-hotel-booking_snapshot.jpg
 const portfolio_array = [
 	{
 		imgPath: trillo_img,
+		icons: [1,2,3],
 		title: 'Trillo Front End',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		text: 'A simple and clean front-end for a mockup hotel booking website.',
 		liveLink: 'https://jayli3.github.io/trillo-front-end/',
 		sourceLink: 'https://github.com/jayli3/trillo-front-end',
 	},
 	{
 		imgPath: facial_recognition_img,
+		icons: [1,2,3],
 		title: 'Facial Recognition Web App',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		text: 'Detects human faces in an input image and put boxes around them.',
 		liveLink: 'https://jayli3.github.io/facial-recognition-web-app/',
 		sourceLink: 'https://github.com/jayli3/facial-recognition-web-app',
 	},
 	{
 		imgPath: nexter_img,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		icons: [1,2,3],
+		title: 'Nexter Real Estate',
+		text: 'A mockup real estate website.',
 		liveLink: 'https://jayli3.github.io/nexter-front-end/',
 		sourceLink: 'https://github.com/jayli3/nexter-front-end',
 	},
 	{
 		imgPath: natours_img,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		icons: [1,2,3],
+		title: 'Natours Startup',
+		text: 'A mockup landing page for a travel agency startup.',
 		liveLink: 'https://jayli3.github.io/natours-startup/',
 		sourceLink: 'https://github.com/jayli3/natours-startup',
 	},
 	{
 		imgPath: starwars_img,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		icons: [1,2,3],
+		title: 'Star Wars Database',
+		text: 'A fun & light-weight web app to display all the Star Wars data you\'ll ever want!',
 		liveLink: 'https://jayli3.github.io/starwars/',
 		sourceLink: 'https://github.com/jayli3/starwars',
 	},
 	{
 		imgPath: jayli3_site_img,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		icons: [1,2,3],
+		title: 'My Personal Site',
+		text: 'It is the site you\'re on right now!',
 		liveLink: '#',
 		sourceLink: 'https://github.com/jayli3/personal-site',
 	},
 	{
 		imgPath: linear_gradient_img,
-		title: 'Star Wars API',
-		text: 'Lorem ipsum dolor sit amet, consectetur adiommodo viverra maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.',
+		icons: [1,2,3],
+		title: 'Gradient Background Generator',
+		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient().',
 		liveLink: 'https://jayli3.github.io/linear-background-generator/',
 		sourceLink: 'https://github.com/jayli3/linear-background-generator',
 	}
@@ -94,7 +102,8 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-	display: block;
+	display: flex;
+	flex-direction: column;
 	height: 45rem;
 	margin: 0 1rem 2rem 1rem;
 	width: 31.3333rem;
@@ -123,10 +132,11 @@ const Details = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 1.8rem 1.6rem;	
+	padding: 1.2rem 1.6rem 1.8rem 1.6rem;	
 `;
 
 const StyledH4 = styled(H4)`
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 `;
 
@@ -170,10 +180,15 @@ const Button = styled.a`
 	}
 `;
 
+const IconsBox = styled.div`
+	display: flex;
+`
+
 const Icon = styled.div`
-	fill: #fff;
 	height: 1.5rem;
 	width: 1.5rem;
+	fill: ${props => props.color ? props.color : '#fff'};
+	text-align: center;
 	margin-right: .5rem;
 `;
 
@@ -211,14 +226,17 @@ const ShowAllBtn = styled.button`
 `;
 
 
-const DetailsComponent = ({className, title, text}) => {
+const DetailsComponent = ({className, icons, title, text}) => {
 	return(
-		<div className={className}>
-			<Details>
-				<StyledH4>{title}</StyledH4>
-				<P>{text}</P>
-			</Details>
-		</div>
+		<Details className={className}>
+			<IconsBox>
+				{icons.map((index, i) => (
+					<Icon color={svg_icons[index].color} key='i'>{svg_icons[index].svg}</Icon>
+				))}
+			</IconsBox>
+			<StyledH4>{title}</StyledH4>
+			<P>{text}</P>
+		</Details>
 	)
 }
 
@@ -229,7 +247,7 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 				<WhiteDot id='live'/><span>Live</span>
 			</Button>
 			<Button href={sourceLink} target='_blank' secondary>
-				<Icon id='github'><Github/></Icon><span>Source</span>
+				<Icon id='github'><Github_svg/></Icon><span>Source</span>
 			</Button>
 		</Buttons>
 	)
@@ -237,10 +255,10 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 
 const CardComponent = ({className, p_array, isShowAll}) => (
 	<Cards className={className} isShowAll={isShowAll}>
-			{p_array.map(({imgPath, title, text, liveLink, sourceLink}, i) => (
+			{p_array.map(({imgPath, icons, title, text, liveLink, sourceLink}, i) => (
 				<Card key={i}>
 					<Image><img src={imgPath}/></Image>
-					<DetailsComponent title={title} text={text}/>
+					<DetailsComponent icons={icons} title={title} text={text}/>
 					<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
 				</Card>
 			))}
