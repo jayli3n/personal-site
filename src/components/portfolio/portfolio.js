@@ -34,7 +34,7 @@ const portfolio_array = [
 		imgPath: trillo_img,
 		icons: [4,5,6,9],
 		title: 'Trillo Front End',
-		text: 'A simple and clean front-end for a mockup hotel booking website.',
+		text: 'A simple and clean front-end for a mockup hotel booking website. Has nice animations.',
 		liveLink: 'https://jayli3.github.io/trillo-front-end/',
 		sourceLink: 'https://github.com/jayli3/trillo-front-end',
 	},
@@ -42,7 +42,7 @@ const portfolio_array = [
 		imgPath: facial_recognition_img,
 		icons: [0,4,2,7,8,9],
 		title: 'Facial Recognition Web App',
-		text: 'Detects human faces in an input image and put boxes around them.',
+		text: 'Detects human faces in an input image and put boxes around them. Uses Clarifai API.',
 		liveLink: 'https://jayli3.github.io/facial-recognition-web-app/',
 		sourceLink: 'https://github.com/jayli3/facial-recognition-web-app',
 	},
@@ -50,7 +50,7 @@ const portfolio_array = [
 		imgPath: nexter_img,
 		icons: [4,5,6,9],
 		title: 'Nexter Real Estate',
-		text: 'A mockup real estate website.',
+		text: 'A mockup real estate website. Made responsive using tons of CSS Grid.',
 		liveLink: 'https://jayli3.github.io/nexter-front-end/',
 		sourceLink: 'https://github.com/jayli3/nexter-front-end',
 	},
@@ -58,7 +58,7 @@ const portfolio_array = [
 		imgPath: natours_img,
 		icons: [4,5,9],
 		title: 'Natours Startup',
-		text: 'A mockup landing page for a travel agency startup.',
+		text: 'A mockup landing page for a startup travel agency. Uses old css techniques for responsiveness.',
 		liveLink: 'https://jayli3.github.io/natours-startup/',
 		sourceLink: 'https://github.com/jayli3/natours-startup',
 	},
@@ -66,7 +66,7 @@ const portfolio_array = [
 		imgPath: starwars_img,
 		icons: [0,4,2,7,9],
 		title: 'Star Wars Database',
-		text: 'A fun & light-weight web app to display all the Star Wars data you\'ll ever want!',
+		text: 'A fun and light-weight web app to display all the Star Wars data you\'ll ever want! Uses SWAPI.',
 		liveLink: 'https://jayli3.github.io/starwars/',
 		sourceLink: 'https://github.com/jayli3/starwars',
 	},
@@ -74,7 +74,7 @@ const portfolio_array = [
 		imgPath: jayli3_site_img,
 		icons: [0,4,5,2,6,7,9],
 		title: 'My Personal Site',
-		text: 'It is the site you\'re on right now!',
+		text: 'It\'s the site you\'re on right now! Designed and built from scratch using React and Styled Components.',
 		liveLink: '#',
 		sourceLink: 'https://github.com/jayli3/personal-site',
 	},
@@ -82,7 +82,7 @@ const portfolio_array = [
 		imgPath: linear_gradient_img,
 		icons: [4,5,2],
 		title: 'Gradient Background Generator',
-		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient().',
+		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient( ).',
 		liveLink: 'https://jayli3.github.io/linear-background-generator/',
 		sourceLink: 'https://github.com/jayli3/linear-background-generator',
 	}
@@ -120,6 +120,7 @@ const Image = styled.div`
 	display: flex;
 	justify-content: center;
 	margin-top: .5rem;
+	opacity: .88;
 	overflow: hidden;
 
 	img{
