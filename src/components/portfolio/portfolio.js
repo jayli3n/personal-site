@@ -89,16 +89,12 @@ const portfolio_array = [
 ];
 
 
-const Wrapper = styled.div`
-
-`;
-
 const Cards = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	overflow: hidden;
-	height: ${props => props.isShowAll ? '' : '94rem'};
+	height: ${props => props.isShowAll ? '' : '93.8rem'};
 `;
 
 const Card = styled.div`
@@ -108,7 +104,7 @@ const Card = styled.div`
 	margin: 0 1rem 2rem 1rem;
 	width: 31.3333rem;
 	background-color: #fff;
-	box-shadow: none;
+	box-shadow: 0 0.5px 1px rgba(0,0,0,.15);
 	border: 1px solid ${color_grey_6};
 	border-radius: 8px;
 	overflow: hidden;
@@ -294,10 +290,10 @@ class Portfolio extends Component{
 	render(){
 		return(
 			<Container title='Portfolio' transparent>
-				<Wrapper>
+				<div>
 					<CardComponent p_array={portfolio_array} isShowAll={this.state.isShowAll}/>
 					<ShowAllBtn onClick={this.showAll}>{this.state.showAllText}</ShowAllBtn>
-				</Wrapper>
+				</div>
 			</Container>
 		)
 	}
