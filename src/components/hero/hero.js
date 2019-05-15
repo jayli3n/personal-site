@@ -71,11 +71,7 @@ const Button = styled(ButtonAtom)`
 	};
 
 	${media.sizeV`
-		width: 14rem;
-
-		:not(:last-child){
-			margin-right: 1.2rem;
-		};
+		width: 13rem;
 	`}
 `;
 

@@ -11,7 +11,7 @@ const A = styled.a`
 	:link,
 	:visited{
 		text-decoration: none;
-		padding: 1.5rem 3rem;
+		padding: 1.5rem 0;
 		border-radius: 3px;
 		border: 2px solid ${props => props.secondary ? '#fff' : 'transparent'};
 		border-bottom: 2px solid ${props => props.secondary ? '#fff' : color_primary_dark};
