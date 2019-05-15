@@ -14,19 +14,19 @@ import {
 const my_system_list = [
 	{
 		text: 'be humble',
-		link: '#'
+		link: 'https://www.franksonnenbergonline.com/blog/be-humble-dont-let-success-go-to-your-head/'
 	},
 	{
-		text: 'respectful',
-		link: '#'
+		text: 'be respectful',
+		link: 'https://www.azquotes.com/picture-quotes/quote-everyone-has-something-to-teach-you-if-you-are-humble-enough-to-learn-mark-driscoll-81-13-11.jpg'
 	},
 	{
-		text: 'read everyday',
-		link: '#'
+		text: 'always learning',
+		link: 'https://www.entrepreneur.com/article/300360/'
 	},
 	{
-		text: 'pursue passions, not paychecks',
-		link: '#'
+		text: 'enjoy the ride!',
+		link: 'https://guardianlv.com/2014/04/life-is-a-journey-buckle-up-and-enjoy-the-ride/'
 	}
 ];
 
@@ -43,7 +43,7 @@ const List = styled.ol`
 `;
 
 const Item = styled.li`
-	font-size: 3.2rem;
+	font-size: 2.8rem;
 	font-weight: 200;
 	margin-bottom: .5rem;
 
