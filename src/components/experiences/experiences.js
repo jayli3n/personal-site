@@ -69,7 +69,7 @@ const Experience = styled.div`
 	align-items: center;
 	padding: 2rem;
 
-	${media.sizeVI`
+	${media.sizeV`
 		flex-direction: column;
 	`}
 `;
@@ -94,7 +94,7 @@ const Image = styled.div`
 		width: 10rem;
 	`}
 
-	${media.sizeVI`
+	${media.sizeV`
 		flex-direction: column;
 		margin: 3rem 0 1rem 0;
 	`}
