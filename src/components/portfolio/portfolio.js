@@ -75,7 +75,7 @@ const portfolio_array = [
 		icons: [0,4,5,2,6,7,9],
 		title: 'My Personal Site',
 		text: 'It\'s the site you\'re on right now! Designed and built from scratch using React and Styled Components.',
-		liveLink: '#',
+		liveLink: 'https://jayli3.github.io/personal-site/',
 		sourceLink: 'https://github.com/jayli3/personal-site',
 	},
 	{
