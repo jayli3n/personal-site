@@ -66,7 +66,7 @@ const portfolio_array = [
 		imgPath: starwars_img,
 		icons: [0,4,2,7,9],
 		title: 'Star Wars Database',
-		text: 'A fun and light-weight web app to display all the Star Wars data you\'ll ever want! Uses SWAPI.',
+		text: 'A fun and light-weight web app to display all the Star Wars data you\'ll ever want! Uses AJAX and SWAPI.',
 		liveLink: 'https://jayli3.github.io/starwars/',
 		sourceLink: 'https://github.com/jayli3/starwars',
 	},
