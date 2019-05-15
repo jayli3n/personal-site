@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {media} from '../../utils/mediaQueriesBuilder';
 import {
 	color_hero_1,
 	color_hero_2,
@@ -55,7 +56,6 @@ const Status = styled(H4)`
 
 const Buttons = styled.div`
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 2rem;
 	width: auto;
@@ -64,10 +64,19 @@ const Buttons = styled.div`
 const Button = styled(ButtonAtom)`
 	color: #fff;
 	font-size: 1.6rem;
+	width: 15rem;
 
 	:not(:last-child){
 		margin-right: 2rem;
 	};
+
+	${media.sizeV`
+		width: 14rem;
+
+		:not(:last-child){
+			margin-right: 1.2rem;
+		};
+	`}
 `;
 
 const Socials = styled.div`
@@ -107,8 +116,8 @@ class Hero extends Component{
 					<Name>Jay Li</Name>
 					<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
 					<Buttons>
-						<Button link='#' ww='15rem'>Contact Me</Button>
-						<Button link='#' ww='15rem' secondary>Resume</Button>
+						<Button link='#'>Contact Me</Button>
+						<Button link='#' secondary>Resume</Button>
 					</Buttons>
 
 					<Socials>

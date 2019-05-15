@@ -17,7 +17,6 @@ const A = styled.a`
 		border-bottom: 2px solid ${props => props.secondary ? '#fff' : color_primary_dark};
 		background-color: ${props => props.secondary ? 'rgba(27,32,35, .6)' : color_primary};
 		box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
-		width: ${props => props.ww ? props.ww : 'auto'};
 		cursor: pointer;
 		transition: all .2s;
 	}
