@@ -51,7 +51,7 @@ const experiences_list = [
 		duration: 'September 2017 - July 2018',
 		details: [
 			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
-			'Primarily focused on 12th grade Mathematics, Physics and Chemistry.',
+			'Focused on 12th grade Mathematics, Physics and Chemistry.',
 			'By the end of school semester, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of the year group).',
 			'1000+ hours of teaching experience.'
 		]
