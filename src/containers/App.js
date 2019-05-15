@@ -153,7 +153,7 @@ class App extends Component {
 					<Section id='experiences'><Experiences/></Section>
 					<Section id='outside'><Extracurricular/></Section>
 					<Section id='mySystem'><MySystem/></Section>
-					<Footer/>
+					<Section id ='footer' transparent><Footer/></Section>
 			</>
 		)
 	}

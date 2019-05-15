@@ -20,7 +20,7 @@ import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
 
 
-const Container = styled.section`
+const Container = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;

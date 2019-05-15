@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 import {media} from '../../utils/mediaQueriesBuilder';
+import smoothScroll from '../../utils/smoothScroll';
 import {
 	color_hero_1,
 	color_hero_2,
 	color_grey_4,
-	color_grey_5
+	color_grey_5,
+	color_primary,
+	color_primary_dark
 } from '../../atoms/variables';
 import {
 	H1,
 	H4
 } from '../../atoms/typography';
-import {Button as ButtonAtom} from '../../atoms/button';
-import styled from 'styled-components';
 import avatar from '../../images/avatar.jpg';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
@@ -61,14 +63,36 @@ const Buttons = styled.div`
 	width: auto;
 `;
 
-const Button = styled(ButtonAtom)`
+const Button = styled.button`
 	color: #fff;
 	font-size: 1.6rem;
+	font-family: inherit;
+	font-weight: inherit;
 	width: 15rem;
+	text-decoration: none;
+	padding: 1.5rem 0;
+	border-radius: 3px;
+	border: 2px solid ${props => props.secondary ? '#fff' : 'transparent'};
+	border-bottom: 2px solid ${props => props.secondary ? '#fff' : color_primary_dark};
+	background-color: ${props => props.secondary ? 'rgba(27,32,35, .6)' : color_primary};
+	cursor: pointer;
+	transition: all .2s;
+	outline: none;
 
 	:not(:last-child){
 		margin-right: 2rem;
 	};
+
+	:hover{
+		transform: scale(1.05);
+	}
+
+	:active{
+		transform: scale(1);
+		background-color: ${props => props.secondary ? 'rgba(27,32,35, .9)' : color_primary_dark};
+		border: 2px solid ${props => props.secondary ? `${color_grey_4}` : 'transparent'};
+		color: ${color_grey_4};
+	}
 
 	${media.sizeV`
 		width: 13rem;
@@ -112,8 +136,10 @@ class Hero extends Component{
 					<Name>Jay Li</Name>
 					<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
 					<Buttons>
-						<Button link='#'>Contact Me</Button>
-						<Button link='#' secondary>Resume</Button>
+						<Button onClick={() => {
+								smoothScroll('footer');
+							}}>Contact Me</Button>
+						<Button secondary>Resume</Button>
 					</Buttons>
 
 					<Socials>
