@@ -11,6 +11,7 @@ import {
 	color_grey_3,
 	color_grey_4,
 	color_grey_5,
+	color_grey_7,
 	color_primary
 } from '../../atoms/variables';
 
@@ -59,18 +60,27 @@ const experiences_list = [
 	}
 ]
 
-const Wrapper = styled.div`
-	width: 100%;
-	padding: 1rem 0;
-`;
-
 const Experience = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 2rem;
+	padding: 4rem 3rem;
+
+	:first-child{
+		padding-top: 3rem;
+	}
+
+	:last-child{
+		padding-bottom: 3rem;
+	}
+
+	:not(:last-child){
+		border-bottom: 1px solid ${color_grey_7};
+	}
 
 	${media.sizeV`
 		flex-direction: column;
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
 	`}
 `;
 
@@ -96,12 +106,8 @@ const Image = styled.div`
 
 	${media.sizeV`
 		flex-direction: column;
-		margin: 3rem 0 1rem 0;
+		margin: 0 auto 1rem auto;
 	`}
-`;
-
-const Details = styled.div`
-	
 `;
 
 const Company = styled.a`
@@ -150,13 +156,13 @@ class Experiences extends Component{
 	render(){
 		return(
 			<Container title='What I&apos;ve done so far'>
-					<Wrapper>
+					<div>
 						{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
 							<Experience key={i}>
 								<Image>
 									<img src={logoPath}/>
 								</Image>
-								<Details>
+								<div>
 									<Company target='_blank' href={link}>{company}</Company>
 									<PositionText>{position}</PositionText>
 									<DurationText>{duration}</DurationText>
@@ -165,10 +171,10 @@ class Experiences extends Component{
 											<Li key={i}>{detail}</Li>
 										))}
 									</Ul>
-								</Details>
+								</div>
 							</Experience>
 						))}
-					</Wrapper>
+					</div>
 			</Container>
 		)
 	}
