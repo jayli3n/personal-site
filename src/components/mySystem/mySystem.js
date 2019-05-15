@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {media} from '../../utils/mediaQueriesBuilder';
 import {Container} from '../../atoms/container';
 import {
 	H4,
@@ -43,7 +44,7 @@ const List = styled.ol`
 `;
 
 const Item = styled.li`
-	font-size: 2.8rem;
+	font-size: 3.2rem;
 	font-weight: 200;
 	margin-bottom: .5rem;
 
@@ -59,6 +60,10 @@ const Item = styled.li`
 			color: ${color_primary};
 		};
 	};
+
+	${media.sizeII`
+		font-size: 2.8rem;
+	`}
 `;
 
 const MySystemComponent = ({className, my_system_list}) => (

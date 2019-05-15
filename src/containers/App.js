@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	body{
-		min-height: 300vh;
+		min-width: 320px;
 	}
 
 	.particles-js{
