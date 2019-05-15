@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {media} from '../../utils/mediaQueriesBuilder';
 import {Container} from '../../atoms/container';
 import {
 	H4,
@@ -67,6 +68,10 @@ const Experience = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 2rem;
+
+	${media.sizeVI`
+		flex-direction: column;
+	`}
 `;
 
 const Image = styled.div`
@@ -83,6 +88,16 @@ const Image = styled.div`
 		height: 100%;
 		width: auto;
 	}
+
+	${media.sizeIV`
+		height: 10rem;
+		width: 10rem;
+	`}
+
+	${media.sizeVI`
+		flex-direction: column;
+		margin: 3rem 0 1rem 0;
+	`}
 `;
 
 const Details = styled.div`
@@ -129,35 +144,31 @@ const Li = styled.li`
 	color: ${color_grey_2};
 `;
 
-const ExperiencesComponent = ({className, experiences_list}) => (
-	<Wrapper className={className}>
-		{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
-			<Experience key={i}>
-				<Image>
-					<img src={logoPath}/>
-				</Image>
-				<Details>
-					<Company target='_blank' href={link}>{company}</Company>
-					<PositionText>{position}</PositionText>
-					<DurationText>{duration}</DurationText>
-					<Ul>
-						{details.map((detail, i) => (
-							<Li key={i}>{detail}</Li>
-						))}
-					</Ul>
-				</Details>
-			</Experience>
-		))}
-	</Wrapper>
-)
-
 //------------------------------------------------------------------------------
 
 class Experiences extends Component{
 	render(){
 		return(
 			<Container title='What I&apos;ve done so far'>
-					<ExperiencesComponent experiences_list={experiences_list}/>
+					<Wrapper>
+						{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
+							<Experience key={i}>
+								<Image>
+									<img src={logoPath}/>
+								</Image>
+								<Details>
+									<Company target='_blank' href={link}>{company}</Company>
+									<PositionText>{position}</PositionText>
+									<DurationText>{duration}</DurationText>
+									<Ul>
+										{details.map((detail, i) => (
+											<Li key={i}>{detail}</Li>
+										))}
+									</Ul>
+								</Details>
+							</Experience>
+						))}
+					</Wrapper>
 			</Container>
 		)
 	}

@@ -25,7 +25,7 @@ export const sizes = {
 	sizeIII: 638,
 	sizeIV: 900,
 	sizeV: 438,
-	sizeVI: 0,
+	sizeVI: 550,
 	sizeVII: 0,
 	sizeIIX: 0,
 	sizeIX: 0,
