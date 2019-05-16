@@ -29,8 +29,8 @@ import Experiences from '../components/experiences/experiences';
 import Extracurricular from '../components/extracurricular/extracurricular';
 import MySystem from '../components/mySystem/mySystem';
 import Footer from '../components/footer/footer';
-
 import ReactGA from 'react-ga';
+
 ReactGA.initialize('UA-140313888-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
