@@ -43,6 +43,10 @@ const InnerDiv = styled.div`
 	:hover{
 		box-shadow: ${props => props.transparent ? `none` : `0 0 0 0.5px rgba(50,50,93,.17), 0 2px 5px 0 rgba(50,50,93,.12), 0 3px 9px 0 rgba(50,50,93,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08)`};
 	};
+
+	${media.sizeVI`
+		padding: ${props => props.transparent ? `none` : `2.5rem`};
+	`}
 `;
 
 //------------------------------------------------------------------------------

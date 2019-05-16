@@ -11,6 +11,9 @@ import { ReactComponent as Css3_svg } from '../images/technologies/css3.svg';
 import { ReactComponent as Git_svg } from '../images/technologies/git.svg';
 import { ReactComponent as Bootstrap_svg } from '../images/technologies/bootstrap.svg';
 import { ReactComponent as Jquery_svg } from '../images/technologies/jquery.svg';
+import { ReactComponent as Android_svg } from '../images/technologies/android.svg';
+import { ReactComponent as Access_svg } from '../images/technologies/microsoftaccess.svg';
+import { ReactComponent as Firebase_svg } from '../images/technologies/firebase.svg';
 
 export const svg_icons = [
 	{
@@ -54,7 +57,7 @@ export const svg_icons = [
 		svg: <NodeJS_svg/>
 	},
 	{
-		name: 'PostgreSQL',
+		name: 'PSQL',
 		color: '#336791',
 		svg: <PostgreSQL_svg/>
 	},
@@ -72,5 +75,20 @@ export const svg_icons = [
 		name: 'Shopify',
 		color: '#7AB55C',
 		svg: <Shopify_svg/>
+	},
+	{
+		name: 'Android',
+		color: '#A4C639',
+		svg: <Android_svg/>
+	},
+	{
+		name: 'Firebase',
+		color: '#FFCA28',
+		svg: <Firebase_svg/>
+	},
+	{
+		name: 'Access',
+		color: '#BA141A',
+		svg: <Access_svg/>
 	}
 ];

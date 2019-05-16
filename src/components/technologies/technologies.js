@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {media} from '../../utils/mediaQueriesBuilder';
 import {
 	H3
 } from '../../atoms/typography';
@@ -30,6 +31,10 @@ const IconBox = styled.div`
 	:hover{
 		transform: scale(1.05);
 	};
+
+	${media.sizeVI`
+		min-width: 9rem;
+	`}
 `;
 
 const Icon = styled.div`
@@ -40,6 +45,13 @@ const Icon = styled.div`
 	background-color: ${props => props.color};
 	height: 7rem;
 	width: 7rem;
+
+	${media.sizeVI`
+		padding: 1.2rem;
+		border-radius: 1rem;
+		height: 6rem;
+		width: 6rem;
+	`}
 `;
 
 const Icons = ({className, list}) => (
