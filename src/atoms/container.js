@@ -51,7 +51,7 @@ export const Container = ({ children, className, transparent, title, ref }) => {
 	return(
 		<OutterDiv className={className}>
 			<Title>{title}</Title>
-			<InnerDiv transparent={transparent}>
+			<InnerDiv className='scrollreveal' transparent={transparent}>
 				{children}
 			</InnerDiv>
 		</OutterDiv>

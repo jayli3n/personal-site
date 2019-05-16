@@ -159,10 +159,10 @@ class Experiences extends Component{
 					<div>
 						{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
 							<Experience key={i}>
-								<Image>
+								<Image className='scrollreveal'>
 									<img src={logoPath}/>
 								</Image>
-								<div>
+								<div className='scrollreveal'>
 									<Company target='_blank' href={link}>{company}</Company>
 									<PositionText>{position}</PositionText>
 									<DurationText>{duration}</DurationText>

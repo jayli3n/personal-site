@@ -106,8 +106,8 @@ const SocialIcon = styled.a`
 const Footer = () => {
 	return(
 		<Container>
-			<Wrapper>
-				<Title>Let's get in touch!</Title>
+			<Wrapper className='scrollreveal'>
+				<Title className='scrollreveal'>Let's get in touch!</Title>
 				<Content>I'm always open to make new friends.<br/>
 					Shoot me an email at: <A href = "mailto: jay.li23697@gmail.com">jay.li23697@gmail.com</A></Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>

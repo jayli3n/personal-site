@@ -74,7 +74,7 @@ class Profile extends Component{
 		return(
 			<Container title='Get to know me'>
 				<Wrapper>
-					<About>
+					<About className='scrollreveal'>
 						<StyledH2>Profile</StyledH2>
 						<P>
 							Hi, I’m Jay. It’s great to see you on my page!<br/>
@@ -82,7 +82,7 @@ class Profile extends Component{
 							On top of that, I love to learn; it could be little things but I always strive to become a slightly better version of myself than I was the day before.
 						</P>
 					</About>
-					<Info>
+					<Info className='scrollreveal'>
 						<StyledH2>Info</StyledH2>
 						<InfoList>
 							<ListItemComponent svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>

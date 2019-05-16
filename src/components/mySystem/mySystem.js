@@ -70,7 +70,7 @@ const MySystemComponent = ({className, my_system_list}) => (
 	<Wrapper className={className}>
 		<List>
 			{my_system_list.map(({text, link}, i) => (
-				<Item key={i}>👉 <a href={link} target='_blank'>{text}</a> 👈</Item>
+				<Item key={i} className='scrollreveal'>👉 <a href={link} target='_blank'>{text}</a> 👈</Item>
 			))}
 		</List>
 	</Wrapper>

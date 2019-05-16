@@ -94,7 +94,7 @@ const Cards = styled.div`
 	justify-content: center;
 	flex-wrap: wrap;
 	overflow: hidden;
-	height: ${props => props.isShowAll ? '' : '93.8rem'};
+	height: ${props => props.isShowAll ? '' : '92rem'};
 `;
 
 const Card = styled.div`
@@ -200,7 +200,7 @@ const WhiteDot = styled.div`
 
 const ShowAllBtn = styled.button`
 	display: block;
-	margin: 0 auto;
+	margin: 1.8rem auto;
 	font-family: inherit;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -253,7 +253,7 @@ const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 const CardComponent = ({className, p_array, isShowAll}) => (
 	<Cards className={className} isShowAll={isShowAll}>
 			{p_array.map(({imgPath, icons, title, text, liveLink, sourceLink}, i) => (
-				<Card key={i}>
+				<Card key={i} className='scrollreveal'>
 					<Image><img src={imgPath}/></Image>
 					<DetailsComponent icons={icons} title={title} text={text}/>
 					<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>

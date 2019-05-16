@@ -132,17 +132,17 @@ class Hero extends Component{
 		return(
 			<StyledSection>
 				<InfoBox>
-					<Avatar/>
-					<Name>Jay Li</Name>
-					<Status>&lt; Full-Stack Web Developer &#47;&gt;</Status>
-					<Buttons>
+					<Avatar className='scrollreveal'/>
+					<Name className='scrollreveal'>Jay Li</Name>
+					<Status className='scrollreveal'>&lt; Full-Stack Web Developer &#47;&gt;</Status>
+					<Buttons className='scrollreveal'>
 						<Button onClick={() => {
 								smoothScroll('footer');
 							}}>Contact Me</Button>
 						<Button secondary>Resume</Button>
 					</Buttons>
 
-					<Socials>
+					<Socials className='scrollreveal'>
 						<SocialIcon href='https://github.com/jayli3' target='_blank'><Github /></SocialIcon>
 						<SocialIcon href='https://github.com/jayli3' target='_blank'><Linkedin /></SocialIcon>
 						<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>

@@ -49,7 +49,7 @@ const StyledH3 = styled.h3`
 
 const ActivityComponent = ({className, imgPath, title, details}) => {
 	return(
-		<Activity>
+		<Activity className='scrollreveal'>
 			<Image imgPath={imgPath}/>
 			<Details>
 				<StyledH3>{title}</StyledH3>
