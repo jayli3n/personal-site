@@ -128,7 +128,7 @@ class App extends Component {
 	    const config = {
 	      origin: 'top',
 	      distance: '20px',
-	      duration: 500,
+	      duration: 450,
 	      delay: 200,
 	      scale: 1,
 	      opacity: 0,
