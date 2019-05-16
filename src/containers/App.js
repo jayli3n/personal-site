@@ -6,7 +6,8 @@ import {
 	color_hero_1,
 	color_hero_2,
 	color_grey_1,
-	color_grey_7
+	color_grey_7,
+	color_primary,
 } from '../atoms/variables'
 
 import font_bold from '../fonts/StratumNo1 Bold.ttf';
@@ -75,6 +76,11 @@ const GlobalStyle = createGlobalStyle`
 		padding: 0;
 		box-sizing: inherit;
 		font-weight: inherit;
+	}
+
+	::selection{
+		background-color: ${color_primary};
+		color: #fff;
 	}
 
 	html{
