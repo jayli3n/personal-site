@@ -240,10 +240,10 @@ const DetailsComponent = ({className, icons, title, text}) => {
 const ButtonsComponent = ({className, liveLink, sourceLink}) => {
 	return(
 		<Buttons className={className}>
-			<Button href={liveLink} target='_blank' pulsate>
+			<Button href={liveLink} target='_blank' rel="noopener" pulsate>
 				<WhiteDot id='live'/><span>Live</span>
 			</Button>
-			<Button href={sourceLink} target='_blank' secondary>
+			<Button href={sourceLink} target='_blank' rel="noopener" secondary>
 				<Icon id='github'><Github_svg/></Icon><span>Source</span>
 			</Button>
 		</Buttons>

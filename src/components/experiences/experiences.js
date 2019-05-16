@@ -163,7 +163,7 @@ class Experiences extends Component{
 									<img src={logoPath}/>
 								</Image>
 								<div className='scrollreveal'>
-									<Company target='_blank' href={link}>{company}</Company>
+									<Company target='_blank' rel="noopener" href={link}>{company}</Company>
 									<PositionText>{position}</PositionText>
 									<DurationText>{duration}</DurationText>
 									<Ul>
