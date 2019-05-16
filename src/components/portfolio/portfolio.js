@@ -20,7 +20,7 @@ import {pulseEffect} from '../../atoms/keyframes';
 import {svg_icons} from '../../atoms/techIcons';
 import { ReactComponent as Github_svg } from '../../images/icons/github.svg';
 
-import jayli3_site_img from '../../images/portfolio/jayli3-site.jpg';
+import jayli3n_site_img from '../../images/portfolio/jayli3n-site.jpg';
 import facial_recognition_img from '../../images/portfolio/facial-recognition-web-app_snapshot.jpg';
 import linear_gradient_img from '../../images/portfolio/linear-gradient_snapshot.jpg';
 import natours_img from '../../images/portfolio/natours-tour-startup_snapshot.jpg';
@@ -35,56 +35,56 @@ const portfolio_array = [
 		icons: [4,5,6,9],
 		title: 'Trillo Front End',
 		text: 'A simple and clean front-end for a mockup hotel booking website. Has nice animations.',
-		liveLink: 'https://jayli3.github.io/trillo-front-end/',
-		sourceLink: 'https://github.com/jayli3/trillo-front-end',
+		liveLink: 'https://jayli3n.github.io/trillo-front-end/',
+		sourceLink: 'https://github.com/jayli3n/trillo-front-end',
 	},
 	{
 		imgPath: facial_recognition_img,
 		icons: [0,4,2,7,8,9],
 		title: 'Facial Recognition Web App',
 		text: 'Detects human faces in an input image and put boxes around them. Uses Clarifai API.',
-		liveLink: 'https://jayli3.github.io/facial-recognition-web-app/',
-		sourceLink: 'https://github.com/jayli3/facial-recognition-web-app',
+		liveLink: 'https://jayli3n.github.io/facial-recognition-web-app/',
+		sourceLink: 'https://github.com/jayli3n/facial-recognition-web-app',
 	},
 	{
 		imgPath: nexter_img,
 		icons: [4,5,6,9],
 		title: 'Nexter Real Estate',
 		text: 'A mockup real estate website. Made responsive using tons of CSS Grid.',
-		liveLink: 'https://jayli3.github.io/nexter-front-end/',
-		sourceLink: 'https://github.com/jayli3/nexter-front-end',
+		liveLink: 'https://jayli3n.github.io/nexter-front-end/',
+		sourceLink: 'https://github.com/jayli3n/nexter-front-end',
 	},
 	{
 		imgPath: natours_img,
 		icons: [4,5,9],
 		title: 'Natours Startup',
 		text: 'A mockup landing page for a startup travel agency. Uses old css techniques for responsiveness.',
-		liveLink: 'https://jayli3.github.io/natours-startup/',
-		sourceLink: 'https://github.com/jayli3/natours-startup',
+		liveLink: 'https://jayli3n.github.io/natours-startup/',
+		sourceLink: 'https://github.com/jayli3n/natours-startup',
 	},
 	{
 		imgPath: starwars_img,
 		icons: [0,4,2,7,9],
 		title: 'Star Wars Database',
 		text: 'A fun and light-weight web app to display all the Star Wars data you\'ll ever want! Uses AJAX and SWAPI.',
-		liveLink: 'https://jayli3.github.io/starwars/',
-		sourceLink: 'https://github.com/jayli3/starwars',
+		liveLink: 'https://jayli3n.github.io/starwars/',
+		sourceLink: 'https://github.com/jayli3n/starwars',
 	},
 	{
-		imgPath: jayli3_site_img,
+		imgPath: jayli3n_site_img,
 		icons: [0,4,5,2,6,7,9],
 		title: 'My Personal Site',
 		text: 'It\'s the site you\'re on right now! Designed and built from scratch using React and Styled Components.',
-		liveLink: 'https://jayli3.github.io/personal-site/',
-		sourceLink: 'https://github.com/jayli3/personal-site',
+		liveLink: 'https://jayli3n.github.io/personal-site/',
+		sourceLink: 'https://github.com/jayli3n/personal-site',
 	},
 	{
 		imgPath: linear_gradient_img,
 		icons: [4,5,2],
 		title: 'Gradient Background Generator',
 		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient( ).',
-		liveLink: 'https://jayli3.github.io/linear-background-generator/',
-		sourceLink: 'https://github.com/jayli3/linear-background-generator',
+		liveLink: 'https://jayli3n.github.io/linear-background-generator/',
+		sourceLink: 'https://github.com/jayli3n/linear-background-generator',
 	}
 ];
 

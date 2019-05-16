@@ -109,16 +109,16 @@ const Footer = () => {
 			<Wrapper className='scrollreveal'>
 				<Title className='scrollreveal'>Let's get in touch!</Title>
 				<Content>I'm always open to make new friends.<br/>
-					Shoot me an email at: <A href = "mailto: jay.li23697@gmail.com">jay.li23697@gmail.com</A></Content>
+					Shoot me an email at: <A href = "mailto: jayli3n@gmail.com">jayli3n@gmail.com</A></Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>
 				<Socials>
-					<SocialIcon href='https://github.com/jayli3' target='_blank'><Github /></SocialIcon>
-					<SocialIcon href='https://github.com/jayli3' target='_blank'><Linkedin /></SocialIcon>
-					<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3n' target='_blank'><Github /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3n' target='_blank'><Linkedin /></SocialIcon>
+					<SocialIcon href='https://github.com/jayli3n' target='_blank'><Twitter /></SocialIcon>
 				</Socials>
 			</Wrapper>
 			<AdditionalText>Designed & developed by me from scratch.<br/>
-				Source code for the site can be found <A href='https://github.com/jayli3/personal-site' target='_blank'>here</A>.
+				Source code for the site can be found <A href='https://github.com/jayli3n/personal-site' target='_blank'>here</A>.
 			</AdditionalText>
 		</Container>
 	)

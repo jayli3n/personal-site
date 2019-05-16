@@ -143,9 +143,9 @@ class Hero extends Component{
 					</Buttons>
 
 					<Socials className='scrollreveal'>
-						<SocialIcon href='https://github.com/jayli3' target='_blank'><Github /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3' target='_blank'><Linkedin /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3' target='_blank'><Twitter /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank'><Github /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank'><Linkedin /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank'><Twitter /></SocialIcon>
 					</Socials>
 				</InfoBox>
 			</StyledSection>

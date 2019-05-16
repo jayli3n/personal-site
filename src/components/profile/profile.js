@@ -85,7 +85,7 @@ class Profile extends Component{
 					<Info className='scrollreveal'>
 						<StyledH2>Info</StyledH2>
 						<InfoList>
-							<ListItemComponent svg={<Gmail_svg/>} value='jay.li23697&#64;gmail.com'/>
+							<ListItemComponent svg={<Gmail_svg/>} value='jayli3n&#64;gmail.com'/>
 							<ListItemComponent svg={<Location_svg/>} value='Australia'/>
 							<ListItemComponent svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
 						</InfoList>
