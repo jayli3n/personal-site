@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import smoothScroll from '../../utils/smoothScroll';
 import {
@@ -138,14 +139,39 @@ class Hero extends Component{
 					<Buttons className='scrollreveal'>
 						<Button onClick={() => {
 								smoothScroll('footer');
+								ReactGA.event({
+						            category: 'Hero',
+						            action: 'Contact Me click',
+						        });
 							}}>Contact Me</Button>
-						<Button secondary>Resume</Button>
+						<Button secondary onClick={() => {
+								smoothScroll('footer');
+								ReactGA.event({
+						            category: 'Hero',
+						            action: 'Resume click',
+						        });
+							}}>Resume</Button>
 					</Buttons>
 
 					<Socials className='scrollreveal'>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener"><Github /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener"><Linkedin /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener"><Twitter /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
+							ReactGA.event({
+					            category: 'Hero',
+					            action: 'GitHub icon',
+					        });
+						}}><Github /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
+							ReactGA.event({
+					            category: 'Hero',
+					            action: 'LinkedIn icon',
+					        });
+						}}><Linkedin /></SocialIcon>
+						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
+							ReactGA.event({
+					            category: 'Hero',
+					            action: 'Twitter icon',
+					        });
+						}}><Twitter /></SocialIcon>
 					</Socials>
 				</InfoBox>
 			</StyledSection>

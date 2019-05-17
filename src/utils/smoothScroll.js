@@ -23,7 +23,7 @@ const smoothScroll = (id, duration = smooth_scroll_duration) => {
 		window.scrollTo(0, run);
 
 		//keep scrolling until duration reached (also mean until distance reached)
-		if(timeElapsed < duration && (window.pageYOffset - targetPosition) != 0){
+		if(timeElapsed < duration && (window.pageYOffset - targetPosition) !== 0){
 			requestAnimationFrame(animationScroll);
 		}
 	}

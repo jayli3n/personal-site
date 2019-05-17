@@ -200,7 +200,6 @@ class Navbar extends Component {
 
 	toggleNav = () => {
 		const HeroElement = document.getElementById("home");
-		console.log(HeroElement.getBoundingClientRect().bottom);
 		this.setState({
 			isBlueNav: (HeroElement.getBoundingClientRect().bottom <= 70)
 		});

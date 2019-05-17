@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import {
 	H2,
@@ -228,7 +229,7 @@ const DetailsComponent = ({className, icons, title, text}) => {
 		<Details className={className}>
 			<IconsBox>
 				{icons.map((index, i) => (
-					<Icon color={color_grey_2} key='i'>{svg_icons[index].svg}</Icon>
+					<Icon color={color_grey_2} key={i}>{svg_icons[index].svg}</Icon>
 				))}
 			</IconsBox>
 			<StyledH4>{title}</StyledH4>
@@ -237,13 +238,25 @@ const DetailsComponent = ({className, icons, title, text}) => {
 	)
 }
 
-const ButtonsComponent = ({className, liveLink, sourceLink}) => {
+const ButtonsComponent = ({className, title, liveLink, sourceLink}) => {
 	return(
 		<Buttons className={className}>
-			<Button href={liveLink} target='_blank' rel="noopener" pulsate>
+			<Button href={liveLink} target='_blank' rel="noopener" pulsate 
+				onClick={() => {
+					ReactGA.event({
+			            category: 'Portfolio',
+			            action: `Live: ${title}`,
+			        });
+				}}>
 				<WhiteDot id='live'/><span>Live</span>
 			</Button>
-			<Button href={sourceLink} target='_blank' rel="noopener" secondary>
+			<Button href={sourceLink} target='_blank' rel="noopener" secondary 
+				onClick={() => {
+					ReactGA.event({
+			            category: 'Portfolio',
+			            action: `Source: ${title}`,
+			        });
+				}}>
 				<Icon id='github'><Github_svg/></Icon><span>Source</span>
 			</Button>
 		</Buttons>
@@ -256,7 +269,7 @@ const CardComponent = ({className, p_array, isShowAll}) => (
 				<Card key={i} className='scrollreveal'>
 					<Image><img src={imgPath}/></Image>
 					<DetailsComponent icons={icons} title={title} text={text}/>
-					<ButtonsComponent liveLink={liveLink} sourceLink={sourceLink}/>
+					<ButtonsComponent title={title} liveLink={liveLink} sourceLink={sourceLink}/>
 				</Card>
 			))}
 	</Cards>

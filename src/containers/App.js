@@ -32,7 +32,6 @@ import Footer from '../components/footer/footer';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-140313888-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const sr = ScrollReveal();
 
@@ -147,6 +146,7 @@ class App extends Component {
 	    };
 
 	    sr.reveal('.scrollreveal', config);
+	    ReactGA.pageview(window.location.pathname + window.location.search);
 	}
 
 	render(){
