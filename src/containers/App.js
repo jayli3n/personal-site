@@ -34,7 +34,7 @@ import Extracurricular from '../components/extracurricular/extracurricular';
 import MySystem from '../components/mySystem/mySystem';
 import Footer from '../components/footer/footer';
 
-// initialize GA (Google Analytics) for site tracking
+// initialize GA (Google Analytics) to collect traffic data
 ReactGA.initialize('UA-140313888-1');
 const sr = ScrollReveal();
 
