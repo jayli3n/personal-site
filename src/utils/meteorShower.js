@@ -10,7 +10,7 @@ const getRandomInt = (min, max) => {
 }
 
 // animation for the each meteor
-const meteor1Animation = keyframes`
+const meteorAnimation = keyframes`
   from {
     transform: scale(0);
   }
@@ -33,12 +33,12 @@ const meteor1Animation = keyframes`
   }
 `;
 
-// the meteor
+// the meteor, each meteor will have different width, animation duration and delay
 const Meteor = styled.i`
 	position: fixed;
 	width: ${() => `calc(${getRandomInt(2, 6)}px)`};
 	height: 90rem;
-  	animation-name: ${() => meteor1Animation};
+  animation-name: ${() => meteorAnimation};
 	animation-delay: ${() => `${getRandomInt(0, 20)}s`};
 	animation-duration: ${() => `${getRandomInt(10, 25)}s`};
 	animation-iteration-count: infinite;
