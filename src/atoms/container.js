@@ -10,6 +10,7 @@ import {
 } from './variables';
 import {Title} from './typography';
 
+
 const OutterDiv = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -27,6 +28,8 @@ const OutterDiv = styled.div`
 	`}
 `;
 
+// a paper looking container in the center of each section
+// transparent essentially makes it invisible, just useful for it's structure and styles
 const InnerDiv = styled.div`
 	display: flex;
 	position: relative;

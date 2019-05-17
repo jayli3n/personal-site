@@ -15,6 +15,8 @@ import { ReactComponent as Android_svg } from '../images/technologies/android.sv
 import { ReactComponent as Access_svg } from '../images/technologies/microsoftaccess.svg';
 import { ReactComponent as Firebase_svg } from '../images/technologies/firebase.svg';
 
+// export of all tech icons and their color scheme
+// icons are from: https://simpleicons.org/
 export const svg_icons = [
 	{
 		name: 'React',

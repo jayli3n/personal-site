@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
+import ReactGA from 'react-ga';
 import ScrollReveal from 'scrollreveal';
 import {media} from '../utils/mediaQueriesBuilder';
 import {
@@ -10,6 +11,8 @@ import {
 	color_primary,
 } from '../atoms/variables'
 
+
+// import primary font and its variants
 import font_bold from '../fonts/StratumNo1 Bold.ttf';
 import font_heavy from '../fonts/StratumNo1 Heavy.ttf';
 import font_light from '../fonts/StratumNo1 Light.ttf';
@@ -17,6 +20,7 @@ import font_medium from '../fonts/StratumNo1 Medium.ttf';
 import font_regular from '../fonts/StratumNo1 Regular.ttf';
 import font_thin from '../fonts/StratumNo1 Thin.ttf';
 
+// import all components
 import Particles from 'react-particles-js';
 import {MeteorComponent} from '../utils/meteorShower'
 import particlesOptions from './particlesjs-config';
@@ -29,12 +33,12 @@ import Experiences from '../components/experiences/experiences';
 import Extracurricular from '../components/extracurricular/extracurricular';
 import MySystem from '../components/mySystem/mySystem';
 import Footer from '../components/footer/footer';
-import ReactGA from 'react-ga';
 
+// initialize GA (Google Analytics) for site tracking
 ReactGA.initialize('UA-140313888-1');
-
 const sr = ScrollReveal();
 
+// applies a global reset and global styles
 const GlobalStyle = createGlobalStyle`
 	@font-face {
 	    font-family: "Stratum";
@@ -134,6 +138,7 @@ const Section = styled.section`
 
 class App extends Component {
 	componentDidMount() {
+		// configuration for scrollreveal
 	    const config = {
 	      origin: 'top',
 	      distance: '20px',
@@ -146,6 +151,7 @@ class App extends Component {
 	    };
 
 	    sr.reveal('.scrollreveal', config);
+	    // register a pageview event for GA
 	    ReactGA.pageview(window.location.pathname + window.location.search);
 	}
 

@@ -25,6 +25,7 @@ import {
 import avatar from '../../images/avatar.jpg';
 import {ReactComponent as Menu_svg} from '../../images/icons/menu.svg';
 
+// once user scrolls pass hero section, navbar sticks at top and is blue
 const Nav = styled.nav`
 	position: ${props => props.isBlueNav ? 'fixed' : 'absolute'};
 	left: 0;
@@ -36,6 +37,7 @@ const Nav = styled.nav`
 	animation: ${props => props.isBlueNav ? navReveal : 'none'} .3s ease-out 0s;
 `;
 
+// nav becomes collapsible via toggle button if screen is small
 const Wrapper = styled.div`
 	position: relative;
 	display: flex;
@@ -163,6 +165,7 @@ const Item = styled.li`
 	}
 `;
 
+// each nav button activates scrollspy onClick and scrolls to element with the provided id
 const NavButton = ({className, refID, text}) => {
 	return(
 		<button onClick={() => {
@@ -181,6 +184,7 @@ class Navbar extends Component {
 			isToggleOn: false
 		}
 
+		// scroll listener to see if user has scrolled passes hero section so that the nav can stick to top
 		window.onscroll = () => {
 			this.toggleNav();
 		};
@@ -198,6 +202,7 @@ class Navbar extends Component {
 		}
 	}
 
+	// 70 is an offset to make scrollspy activate early
 	toggleNav = () => {
 		const HeroElement = document.getElementById("home");
 		this.setState({

@@ -14,11 +14,13 @@ export const color_grey_6 = '#DFE1E5';
 export const color_grey_7 = '#f4f2f2';
 export const color_grey_8 = '#faf9f9';
 
+// used in container.js for set the width of the paper
 export const min_width = '30rem';
 export const max_width = '100rem';
 
 export const smooth_scroll_duration = 2000;
 
+// media breakpoints
 export const sizes = {
 	sizeI: 1080,
 	sizeII: 700,

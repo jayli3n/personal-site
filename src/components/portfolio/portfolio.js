@@ -29,7 +29,8 @@ import nexter_img from '../../images/portfolio/nexter-real-estate_snapshot.jpg';
 import starwars_img from '../../images/portfolio/starwars-api_snapshot.jpg';
 import trillo_img from '../../images/portfolio/trillo-hotel-booking_snapshot.jpg';
 
-
+// add or remove this array to update portfolio
+// icons are from "../../atoms/techIcons" and follows the order of the exported icons array
 const portfolio_array = [
 	{
 		imgPath: trillo_img,
@@ -238,6 +239,7 @@ const DetailsComponent = ({className, icons, title, text}) => {
 	)
 }
 
+// buttons component for the live / source code buttons
 const ButtonsComponent = ({className, title, liveLink, sourceLink}) => {
 	return(
 		<Buttons className={className}>

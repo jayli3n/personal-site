@@ -12,7 +12,7 @@ import {
 	color_primary
 } from '../../atoms/variables';
 
-
+// an array to make add annd remove easier in the future
 const my_system_list = [
 	{
 		text: 'be humble',

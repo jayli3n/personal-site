@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
 
+// number of meteors to display if it's not specified
 const default_meteors = 5;
 
+// random whole number generator
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// animation for the each meteor
 const meteor1Animation = keyframes`
   from {
     transform: scale(0);
@@ -30,6 +33,7 @@ const meteor1Animation = keyframes`
   }
 `;
 
+// the meteor
 const Meteor = styled.i`
 	position: fixed;
 	width: ${() => `calc(${getRandomInt(2, 6)}px)`};
@@ -43,6 +47,7 @@ const Meteor = styled.i`
 	opacity: 0;
 `;
 
+// div wrapper for meteor, spawns at random location on screen and goes diagonal down
 const MeteorWrapper = styled.div`
   position: fixed;
   left: ${() => `calc(${getRandomInt(20, 80)}%)`};
@@ -51,6 +56,7 @@ const MeteorWrapper = styled.div`
   transform: rotate(220deg);
 `;
 
+// constructs specified number of meteors
 export const MeteorComponent = (props) => {
 	const num = (props.num > 0 ? props.num : default_meteors);
 	return(

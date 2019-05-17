@@ -12,6 +12,7 @@ export const pulseEffect = keyframes`
 	}
 `;
 
+// nav slides from top into view
 export const navReveal = keyframes`
 	0% {
 		top: -10rem;

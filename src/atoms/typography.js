@@ -6,7 +6,7 @@ import {
 	color_grey_8
 } from './variables';
 
-
+// list of reusuable font styles
 export const H1 = styled.h1`
 	font-size: 3.4rem;
 	font-weight: 400;

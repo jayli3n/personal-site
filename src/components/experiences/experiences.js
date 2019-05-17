@@ -20,6 +20,7 @@ import tutor_logo from '../../images/experiences/tutor.png';
 import ultrave_logo from '../../images/experiences/ultrave.jpg';
 import wood_logo from '../../images/experiences/woodplc.jpg';
 
+// array of experiences, makes it easy to add or remove in the future
 const experiences_list = [
 	{
 		logoPath: wood_logo,

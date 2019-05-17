@@ -54,6 +54,7 @@ const Icon = styled.div`
 	`}
 `;
 
+// construct an icon tag for each icon in the array
 const Icons = ({className, list}) => (
 	<Wrapper className={className}>
 		{list.map(({name, color, svg}, i) => (
