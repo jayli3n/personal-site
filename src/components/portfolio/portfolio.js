@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import ReactGA from 'react-ga';
-import {media} from '../../utils/mediaQueriesBuilder';
 import {
-	H2,
 	H4,
 	P
 } from '../../atoms/typography';
@@ -12,14 +10,13 @@ import {
 	color_grey_3,
 	color_grey_4,
 	color_grey_6,
-	color_grey_7,
 	color_primary,
 	color_primary_light
 } from '../../atoms/variables';
 import {Container} from '../../atoms/container';
 import {pulseEffect} from '../../atoms/keyframes';
 import {svg_icons} from '../../atoms/techIcons';
-import { ReactComponent as Github_svg } from '../../images/icons/github.svg';
+import { ReactComponent as GithubSvg } from '../../images/icons/github.svg';
 
 import jayli3n_site_img from '../../images/portfolio/jayli3n-site.jpg';
 import facial_recognition_img from '../../images/portfolio/facial-recognition-web-app_snapshot.jpg';
@@ -259,7 +256,7 @@ const ButtonsComponent = ({className, title, liveLink, sourceLink}) => {
 			            action: `Source: ${title}`,
 			        });
 				}}>
-				<Icon id='github'><Github_svg/></Icon><span>Source</span>
+				<Icon id='github'><GithubSvg/></Icon><span>Source</span>
 			</Button>
 		</Buttons>
 	)
@@ -269,7 +266,7 @@ const CardComponent = ({className, p_array, isShowAll}) => (
 	<Cards className={className} isShowAll={isShowAll}>
 			{p_array.map(({imgPath, icons, title, text, liveLink, sourceLink}, i) => (
 				<Card key={i} className='scrollreveal'>
-					<Image><img src={imgPath}/></Image>
+					<Image><img src={imgPath} alt={text}/></Image>
 					<DetailsComponent icons={icons} title={title} text={text}/>
 					<ButtonsComponent title={title} liveLink={liveLink} sourceLink={sourceLink}/>
 				</Card>

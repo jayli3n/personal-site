@@ -4,10 +4,6 @@ import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import {Container} from '../../atoms/container';
 import {
-	H4,
-	P
-} from '../../atoms/typography';
-import {
 	color_grey_2,
 	color_primary
 } from '../../atoms/variables';
@@ -71,12 +67,12 @@ const MySystemComponent = ({className, my_system_list}) => (
 	<Wrapper className={className}>
 		<List>
 			{my_system_list.map(({text, link}, i) => (
-				<Item key={i} className='scrollreveal'>👉 <a href={link} target='_blank' onClick={() => {
+				<Item key={i} className='scrollreveal'><span role="img" aria-label="point right">👉</span> <a href={link} target='_blank' rel="noopener noreferrer" onClick={() => {
 					ReactGA.event({
 			            category: 'My System',
 			            action: text,
 			        });
-				}}>{text}</a> 👈</Item>
+				}}>{text}</a> <span role="img" aria-label="point right">👈</span></Item>
 			))}
 		</List>
 	</Wrapper>

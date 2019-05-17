@@ -2,13 +2,8 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {Container} from '../../atoms/container';
 import {
-	H4,
 	P
 } from '../../atoms/typography';
-import {
-	color_grey_2,
-} from '../../atoms/variables';
-
 import lit_img from '../../images/outside/lit.png';
 import book_img from '../../images/outside/book.png';
 import racket_img from '../../images/outside/racket.png';

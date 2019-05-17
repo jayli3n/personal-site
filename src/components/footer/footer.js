@@ -3,16 +3,11 @@ import styled from 'styled-components';
 import ReactGA from 'react-ga';
 import {
 	H1,
-	H4,
 	P
 } from '../../atoms/typography';
 import {
-	color_hero_1,
-	color_hero_2,
-	color_grey_2,
 	color_grey_3,
 	color_grey_4,
-	color_grey_5,
 	color_primary_light
 } from '../../atoms/variables';
 

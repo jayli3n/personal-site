@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {media} from '../utils/mediaQueriesBuilder';
 import {
-	color_grey_6,
-	color_grey_7,
-	color_grey_8,
 	min_width,
 	max_width
 } from './variables';

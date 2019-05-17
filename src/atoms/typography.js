@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import {
 	color_grey_1,
-	color_grey_2,
-	color_grey_7,
-	color_grey_8
+	color_grey_2
 } from './variables';
 
 // list of reusuable font styles

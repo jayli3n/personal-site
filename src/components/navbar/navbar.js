@@ -1,29 +1,15 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {media} from '../../utils/mediaQueriesBuilder';
 import Scrollspy from 'react-scrollspy'
 import smoothScroll from '../../utils/smoothScroll';
-import App from '../../containers/App';
 import {navReveal} from '../../atoms/keyframes';
 import {
-	H1,
-	H4,
-	P
-} from '../../atoms/typography';
-import {
-	color_grey_2,
-	color_grey_3,
-	color_grey_4,
-	color_grey_5,
 	color_grey_6,
-	color_grey_7,
-	color_primary,
-	color_primary_light,
-	color_primary_dark
+	color_primary
 } from '../../atoms/variables';
-import avatar from '../../images/avatar.jpg';
-import {ReactComponent as Menu_svg} from '../../images/icons/menu.svg';
+import {ReactComponent as MenuSvg} from '../../images/icons/menu.svg';
 
 // once user scrolls pass hero section, navbar sticks at top and is blue
 const Nav = styled.nav`
@@ -118,9 +104,9 @@ const Toggler = styled.button`
 		fill: ${color_grey_6};
 	};
 
-	${media.sizeIII
-		`display: block;`
-	}
+	${media.sizeIII`
+		display: block;
+	`}
 `;
 
 const Item = styled.li`
@@ -224,7 +210,7 @@ class Navbar extends Component {
 						}} onBlur={() => {
 							this.toggleCollapsible(false)
 						}}>
-						<Menu_svg/>
+						<MenuSvg/>
 					</Toggler>
 					<div className={this.state.isToggleOn ? classNames('collapsible', 'collapsible--toggle') : 'collapsible'}>
 						<Scrollspy

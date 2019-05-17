@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {
 	H2,
-	H4,
 	P
 } from '../../atoms/typography';
 import {Container} from '../../atoms/container';
-import { ReactComponent as Gmail_svg } from '../../images/icons/gmail.svg';
-import { ReactComponent as Location_svg } from '../../images/icons/pin.svg';
-import { ReactComponent as Translate_svg } from '../../images/icons/google_translate.svg';
+import { ReactComponent as GmailSvg } from '../../images/icons/gmail.svg';
+import { ReactComponent as LocationSvg } from '../../images/icons/pin.svg';
+import { ReactComponent as TranslateSvg } from '../../images/icons/google_translate.svg';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -85,9 +84,9 @@ class Profile extends Component{
 					<Info className='scrollreveal'>
 						<StyledH2>Info</StyledH2>
 						<InfoList>
-							<ListItemComponent svg={<Gmail_svg/>} value='jayli3n&#64;gmail.com'/>
-							<ListItemComponent svg={<Location_svg/>} value='Australia'/>
-							<ListItemComponent svg={<Translate_svg/>} value='English, Mandarin, Cantonese'/>
+							<ListItemComponent svg={<GmailSvg/>} value='jayli3n&#64;gmail.com'/>
+							<ListItemComponent svg={<LocationSvg/>} value='Australia'/>
+							<ListItemComponent svg={<TranslateSvg/>} value='English, Mandarin, Cantonese'/>
 						</InfoList>
 					</Info>
 				</Wrapper>

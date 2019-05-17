@@ -4,13 +4,8 @@ import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import {Container} from '../../atoms/container';
 import {
-	H4,
-	P
-} from '../../atoms/typography';
-import {
 	color_grey_2,
 	color_grey_3,
-	color_grey_4,
 	color_grey_5,
 	color_grey_7,
 	color_primary
@@ -162,7 +157,7 @@ class Experiences extends Component{
 						{experiences_list.map(({logoPath, company, link, position, duration, details}, i) => (
 							<Experience key={i}>
 								<Image className='scrollreveal'>
-									<img src={logoPath}/>
+									<img src={logoPath} alt={company}/>
 								</Image>
 								<div className='scrollreveal'>
 									<Company target='_blank' rel="noopener" href={link} onClick={() => {

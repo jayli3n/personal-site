@@ -4,8 +4,6 @@ import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import smoothScroll from '../../utils/smoothScroll';
 import {
-	color_hero_1,
-	color_hero_2,
 	color_grey_4,
 	color_grey_5,
 	color_primary,
