@@ -49,9 +49,9 @@ const experiences_list = [
 		link: '#experiences',
 		duration: 'Dec 2015 - Sep 2018',
 		details: [
-			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
+			'Graduated school with a body of knowledge that I wanted to give back to the local community.',
 			'Focused on 12th grade Mathematics, Physics and Chemistry.',
-			'By the end of school semester, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of the year group).',
+			'By the end of the school year, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of the year group).',
 			'1000+ hours of teaching experience.'
 		]
 	}
