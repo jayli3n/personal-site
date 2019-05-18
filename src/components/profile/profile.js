@@ -78,7 +78,7 @@ class Profile extends Component{
 						<P>
 							Hi, I’m Jay. It’s great to see you on my page!<br/>
 							I’m a holistic software engineer who loves to see magic happen and problems solved from my lines of code. 
-							On top of that, I love to learn; it could be little things but I always strive to become a slightly better version of myself than I was the day before.
+							In addition, I love to work in teams and make meaningful connections with people to help each other learn and grow.
 						</P>
 					</About>
 					<Info className='scrollreveal'>
