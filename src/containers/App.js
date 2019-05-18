@@ -128,9 +128,9 @@ const Section = styled.section`
 	background-color: ${props => props.transparent ? `transparent` : color_grey_7};
 
 	:nth-of-type(2){
-		padding-top: 8rem;
-		border-top-right-radius: 2rem;
-		border-top-left-radius: 2rem;
+		padding-top: 6rem;
+		border-top-right-radius: 50% 3vh;
+		border-top-left-radius: 50% 3vh;
 	};
 
 	:nth-last-of-type(2){
