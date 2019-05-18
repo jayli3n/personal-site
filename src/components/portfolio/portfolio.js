@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import ReactGA from 'react-ga';
+import ScrollReveal from 'scrollreveal';
 import {
 	H4,
 	P
@@ -286,6 +287,8 @@ class Portfolio extends Component{
 	}
 
 	showAll = () => {
+		//since more cards will be shown, scrollreveal needs to sync them
+		ScrollReveal().sync();
 		if(this.state.isShowAll){
 			this.setState({
 				showAllText: 'Show All',

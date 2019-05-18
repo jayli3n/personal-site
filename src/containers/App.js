@@ -129,6 +129,8 @@ const Section = styled.section`
 
 	:nth-of-type(2){
 		padding-top: 8rem;
+		border-top-right-radius: 2rem;
+		border-top-left-radius: 2rem;
 	};
 
 	:nth-last-of-type(2){
@@ -150,7 +152,7 @@ class App extends Component {
 	      reset: true
 	    };
 
-	    sr.reveal('.scrollreveal', config);
+	    ScrollReveal().reveal('.scrollreveal', config);
 	    // register a pageview event for GA
 	    ReactGA.pageview(window.location.pathname + window.location.search);
 	}

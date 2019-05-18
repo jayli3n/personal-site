@@ -25,9 +25,8 @@ const StyledSection = styled.div`
 	align-items: center;
 	flex-direction: column;
 	padding: 10rem 6rem;
-	min-height: 100vh;
+	height: 90vh;
 	background-color: rgba(0,0,0,.02);
-	z-index: 9;
 `;
 
 const InfoBox = styled.div`

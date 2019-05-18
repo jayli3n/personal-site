@@ -18,7 +18,7 @@ const Nav = styled.nav`
 	right: 0;
 	z-index: 999;
 	color: #fff;
-	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.02)'};
+	background-color: ${props => props.isBlueNav ? color_primary : 'rgba(255,255,255,.02)'};
 	box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
 	animation: ${props => props.isBlueNav ? navReveal : 'none'} .3s ease-out 0s;
 `;
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 			margin: .5rem;
 			padding: 1rem;
 			z-index: 9999;
-			background-color: ${props => props.isBlueNav ? color_primary : 'rgba(256,256,256,.1)'};
+			background-color: ${props => props.isBlueNav ? color_primary : 'rgba(255,255,255,.1)'};
 			box-shadow: ${props => props.isBlueNav ? '0 .1rem .15rem rgba(0,0,0,.3)' : '0 .1rem .15rem rgba(0,0,0,.1)'};
 			border-radius: 3px;
 			transition: all .2s;
@@ -66,7 +66,7 @@ const Wrapper = styled.div`
 
 		&--item-active{
 			border-radius: 4px;
-			background-color: rgba(256,256,256, .15);
+			background-color: rgba(255,255,255, .15);
 		}
 	}
 `;
@@ -137,11 +137,11 @@ const Item = styled.li`
 		transition: all .2s;
 
 		:hover{
-			background-color: rgba(256,256,256, .2);
+			background-color: rgba(255,255,255, .2);
 		};
 
 		:active{
-			background-color: rgba(256,256,256, .15);
+			background-color: rgba(255,255,255, .15);
 		};
 
 		${media.sizeIII`
