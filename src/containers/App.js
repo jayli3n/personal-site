@@ -36,7 +36,6 @@ import Footer from '../components/footer/footer';
 
 // initialize GA (Google Analytics) to collect traffic data
 ReactGA.initialize('UA-140313888-1');
-const sr = ScrollReveal();
 
 // applies a global reset and global styles
 const GlobalStyle = createGlobalStyle`
