@@ -35,7 +35,7 @@ const experiences_list = [
 		company: 'UltraVe',
 		link: 'https://www.ultrave.com/',
 		position: 'Founder',
-		duration: 'September 2017 - July 2018',
+		duration: 'Sep 2018 - Present',
 		details: [
 			'UltraVe is a social media community and online clothing company that promotes healthy eating and a cruelty-free lifestyle.',
 			'I have learnt the importance of online marketing and online presence that comes from search engine optimization (SEO) and ongoing community building.',
@@ -47,7 +47,7 @@ const experiences_list = [
 		logoPath: tutor_logo,
 		company: 'Private Tutor',
 		link: '#experiences',
-		duration: 'September 2017 - July 2018',
+		duration: 'Dec 2015 - Sep 2018',
 		details: [
 			'Graduated school with a body of knowledge which I wanted to give back to the local community.',
 			'Focused on 12th grade Mathematics, Physics and Chemistry.',
