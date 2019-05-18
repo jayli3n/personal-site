@@ -38,7 +38,7 @@ const experiences_list = [
 		duration: 'Sep 2018 - Present',
 		details: [
 			'UltraVe is a social media community and online clothing company that promotes healthy eating and a cruelty-free lifestyle.',
-			'I have learnt the importance of online marketing and online presence that comes from search engine optimization (SEO) and ongoing community building.',
+			'I have learned the importance of online marketing and online presence that comes from search engine optimization (SEO) and ongoing community building.',
 			'This small project has taught me how to work on tasks independently: site creation, product sponsoring, graphic designs, customer support etc.',
 			'As a way to give back, a portion of the proceeds go to animal rescue and shelters.'
 		]
