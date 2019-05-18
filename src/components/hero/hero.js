@@ -61,7 +61,7 @@ const Buttons = styled.div`
 	width: auto;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
 	color: #fff;
 	font-size: 1.6rem;
 	font-family: inherit;
@@ -141,8 +141,7 @@ class Hero extends Component{
 						            action: 'Contact Me click',
 						        });
 							}}>Contact Me</Button>
-						<Button secondary onClick={() => {
-								smoothScroll('footer');
+						<Button secondary href='../../Jay_Li_Resume_2019.pdf' target='_blank' rel="noopener" onClick={() => {
 								ReactGA.event({
 						            category: 'Hero',
 						            action: 'Resume click',
