@@ -210,15 +210,16 @@ const ShowAllBtn = styled.button`
 	cursor: pointer;
 	color: ${color_grey_4};
 	border: none;
+	border-bottom: 1px solid ${color_grey_4};
 
 	:hover{
 		color: ${color_grey_2};
-		border-bottom: 1px solid ${color_grey_2};;
+		border-bottom: 2px solid ${color_grey_2};
 	};
 
 	:active{
 		color: ${color_grey_3};
-		border-bottom: 1px solid ${color_grey_3};;
+		border-bottom: 1px solid ${color_grey_3};
 	};
 `;
 
