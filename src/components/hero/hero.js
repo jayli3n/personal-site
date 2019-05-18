@@ -14,6 +14,7 @@ import {
 	H4
 } from '../../atoms/typography';
 import avatar from '../../images/avatar.jpg';
+import ResumePDF from '../../Jay_Li_Resume_2019.pdf';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
@@ -141,7 +142,7 @@ class Hero extends Component{
 						            action: 'Contact Me click',
 						        });
 							}}>Contact Me</Button>
-						<Button secondary href='../../Jay_Li_Resume_2019.pdf' target='_blank' rel="noopener" onClick={() => {
+						<Button secondary href={ResumePDF} target='_blank' rel="noopener" onClick={() => {
 								ReactGA.event({
 						            category: 'Hero',
 						            action: 'Resume click',
