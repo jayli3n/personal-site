@@ -6,8 +6,8 @@ import {
 	P
 } from '../../atoms/typography';
 import {
-	color_grey_3,
 	color_grey_4,
+	color_grey_5,
 	color_grey_6,
 	color_primary
 } from '../../atoms/variables';
@@ -47,7 +47,7 @@ const Content = styled(P)`
 
 const Copyright = styled(P)`
 	font-size: 1.4rem;
-	color: ${color_grey_4};
+	color: ${color_grey_5};
 `
 const AdditionalText = styled(P)`
 	font-size: 1.4rem;
@@ -56,7 +56,7 @@ const AdditionalText = styled(P)`
 	bottom: 0;
 	padding: 2rem 2.5rem;
 	text-align: right;
-	color: ${color_grey_3};
+	color: ${color_grey_4};
 `
 
 const A = styled.a`
@@ -84,7 +84,7 @@ const SocialIcon = styled.a`
 	width: 2rem;
 	cursor: pointer;
 	transition: all .2s;
-	fill: ${color_grey_4};
+	fill: ${color_grey_5};
 
 	:not(:last-child){
 		margin-right: 2rem;
@@ -95,7 +95,7 @@ const SocialIcon = styled.a`
 	;
 
 	:active{
-		fill: ${color_grey_3};
+		fill: ${color_grey_4};
 	;
 `;
 
