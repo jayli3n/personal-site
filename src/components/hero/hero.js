@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import ReactGA from 'react-ga';
 import {media} from '../../utils/mediaQueriesBuilder';
 import smoothScroll from '../../utils/smoothScroll';
+import {Socials} from '../../atoms/socials';
 import {
 	color_grey_4,
-	color_grey_5,
 	color_primary,
 	color_primary_dark
 } from '../../atoms/variables';
@@ -15,10 +15,6 @@ import {
 } from '../../atoms/typography';
 import avatar from '../../images/avatar.jpg';
 import ResumePDF from '../../Jay_Li_Resume_2019.pdf';
-import { ReactComponent as Github } from '../../images/icons/github.svg';
-import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
-import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
-import { ReactComponent as Medium } from '../../images/icons/medium.svg';
 
 
 const StyledSection = styled.div`
@@ -99,32 +95,6 @@ const Button = styled.a`
 	`}
 `;
 
-const Socials = styled.div`
-	display: flex;
-	margin-top: 1.8rem;
-	justify-content: center;
-`;
-
-const SocialIcon = styled.a`
-	fill: ${color_grey_5};
-	height: 2.5rem;
-	width: 2.5rem;
-	cursor: pointer;
-	transition: all .2s;
-
-	:not(:last-child){
-		margin-right: 1.2rem;
-	};
-
-	:hover{
-		fill: #fff;
-	;
-
-	:active{
-		fill: ${color_grey_4};
-	;
-`;
-
 //------------------------------------------------------------------------------
 
 class Hero extends Component{
@@ -150,33 +120,7 @@ class Hero extends Component{
 						        });
 							}}>Resume</Button>
 					</Buttons>
-
-					<Socials className='scrollreveal'>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
-							ReactGA.event({
-					            category: 'Hero',
-					            action: 'GitHub icon',
-					        });
-						}}><Github /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
-							ReactGA.event({
-					            category: 'Hero',
-					            action: 'LinkedIn icon',
-					        });
-						}}><Linkedin /></SocialIcon>
-						<SocialIcon href='https://medium.com/@jayli3n' target='_blank' rel="noopener" onClick={() => {
-							ReactGA.event({
-					            category: 'Hero',
-					            action: 'Medium icon',
-					        });
-						}}><Medium /></SocialIcon>
-						<SocialIcon href='https://twitter.com/JayLi08453971' target='_blank' rel="noopener" onClick={() => {
-							ReactGA.event({
-					            category: 'Hero',
-					            action: 'Twitter icon',
-					        });
-						}}><Twitter /></SocialIcon>
-					</Socials>
+					<Socials className='scrollreveal'/>
 				</InfoBox>
 			</StyledSection>
 		)

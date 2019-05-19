@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactGA from 'react-ga';
+import {Socials} from '../../atoms/socials';
 import {
 	H1,
 	P
@@ -11,11 +12,6 @@ import {
 	color_grey_6,
 	color_primary
 } from '../../atoms/variables';
-
-import { ReactComponent as Github } from '../../images/icons/github.svg';
-import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
-import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
-import { ReactComponent as Medium } from '../../images/icons/medium.svg';
 
 
 const Container = styled.div`
@@ -74,32 +70,6 @@ const A = styled.a`
 	};
 `;
 
-const Socials = styled.div`
-	display: flex;
-	justify-content: center;
-	margin: 1rem;
-`;
-
-const SocialIcon = styled.a`
-	height: 2rem;
-	width: 2rem;
-	cursor: pointer;
-	transition: all .2s;
-	fill: ${color_grey_5};
-
-	:not(:last-child){
-		margin-right: 1.2rem;
-	};
-
-	:hover{
-		fill: #fff;
-	;
-
-	:active{
-		fill: ${color_grey_4};
-	;
-`;
-
 //------------------------------------------------------------------------------
 
 const Footer = () => {
@@ -115,32 +85,7 @@ const Footer = () => {
 			        });
 				}}>jayli3n@gmail.com</A></Content>
 				<Copyright>&copy; 2019 - Copyright Jay Li, All Rights Reserved.</Copyright>
-				<Socials>
-					<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
-						ReactGA.event({
-				            category: 'Footer',
-				            action: 'GitHub icon',
-				        });
-					}}><Github /></SocialIcon>
-					<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
-						ReactGA.event({
-				            category: 'Footer',
-				            action: 'LinkedIn icon',
-				        });
-					}}><Linkedin /></SocialIcon>
-					<SocialIcon href='https://medium.com/@jayli3n' target='_blank' rel="noopener" onClick={() => {
-						ReactGA.event({
-				            category: 'Footer',
-				            action: 'Medium icon',
-				        });
-					}}><Medium /></SocialIcon>
-					<SocialIcon href='https://twitter.com/JayLi08453971' target='_blank' rel="noopener" onClick={() => {
-						ReactGA.event({
-				            category: 'Footer',
-				            action: 'Twitter icon',
-				        });
-					}}><Twitter /></SocialIcon>
-				</Socials>
+				<Socials small/>
 			</Wrapper>
 			<AdditionalText>Designed & developed by me from scratch.<br/>
 				Source code for the site can be found <A href='https://github.com/jayli3n/personal-site' target='_blank' rel="noopener" onClick={() => {
