@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "homepage": "https://www.jayli3n.me/",
+  "homepage": "https://jayli3n.me/",
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
