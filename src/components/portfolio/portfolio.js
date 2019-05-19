@@ -88,11 +88,25 @@ const portfolio_array = [
 	}
 ];
 
+const Wrapper = styled.div`
+	width: 100%;	
+`;
 
 const Cards = styled.div`
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+
+	@supports (display: grid) {
+		display: grid;  
+		grid-template-columns: repeat(auto-fit, minmax(33.3333rem, 1fr));
+		justify-items: center;
+		align-content: start;
+		align-items: start;
+	}
+
 	overflow: hidden;
 	height: ${props => props.isShowAll ? '' : '92rem'};
 `;
@@ -200,7 +214,7 @@ const WhiteDot = styled.div`
 
 const ShowAllBtn = styled.button`
 	display: block;
-	margin: 1.8rem auto;
+	margin: 1.9rem auto;
 	font-family: inherit;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -306,10 +320,10 @@ class Portfolio extends Component{
 	render(){
 		return(
 			<Container title='Portfolio' transparent>
-				<div>
+				<Wrapper>
 					<CardComponent p_array={portfolio_array} isShowAll={this.state.isShowAll}/>
 					<ShowAllBtn onClick={this.showAll}>{this.state.showAllText}</ShowAllBtn>
-				</div>
+				</Wrapper>
 			</Container>
 		)
 	}

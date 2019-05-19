@@ -12,6 +12,16 @@ const Wrapper = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
+	width: 100%;
+
+	@supports (display: grid) {
+		display: grid;  
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		justify-items: center;
+		align-content: start;
+		align-items: start;
+	}
+
 	padding: 1rem 0;
 `;
 
