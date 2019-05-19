@@ -101,7 +101,7 @@ const Cards = styled.div`
 
 	@supports (display: grid) {
 		display: grid;  
-		grid-template-columns: repeat(auto-fit, minmax(33.3333rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(33.3333rem, .4fr));
 		justify-items: center;
 		align-content: start;
 		align-items: start;
