@@ -8,7 +8,7 @@ import {
 import {
 	color_grey_3,
 	color_grey_4,
-	color_primary_light
+	color_primary
 } from '../../atoms/variables';
 
 import { ReactComponent as Github } from '../../images/icons/github.svg';
@@ -62,12 +62,14 @@ const AdditionalText = styled(P)`
 const A = styled.a`
 	:link,
 	:visited{
-		color: ${color_primary_light};
+		padding: .1rem .5rem;
+		background-color: ${color_primary};
+		color: #fff;
 		text-decoration: none;
 	};
 
 	:hover{
-		text-decoration: underline;
+		border-bottom: 2px solid #fff;
 	};
 `;
 
