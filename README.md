@@ -1,7 +1,7 @@
-## [personal site](https://jayli3n.me/")
+## [personal site](https://jayli3n.me/)
 `Live:` https://jayli3n.me/
 
-Designed and developed from scratch using just `React` and `Styled Components`.
+Designed and developed from scratch using just `React` and `Styled Components`.<br>
 It is highly responsive thanks to `flexbox` and media queries using 6 breakpoints.
 
 #### Things that took me a while to get perfect:
@@ -10,7 +10,7 @@ It is highly responsive thanks to `flexbox` and media queries using 6 breakpoint
 
 ------------
 
-<ins>**Smootherscroll:**</ins>
+<ins>**Smootherscroll:**</ins><br>
 Achieved by using `requestAnimationFrame()` to smoothly update scroll position.
 
 **Callback function** for `requestAnimationFrame()`:
@@ -38,7 +38,7 @@ const easingFunction = (t, b, c, d) => {
 ```
 ------------
 
-<ins>**Meteorshower:**</ins>
+<ins>**Meteorshower:**</ins><br>
 Each meteor is essentially a long, narrow, invisible `div` that is:
 - white
 - randomly placed on screen at 220 degrees
