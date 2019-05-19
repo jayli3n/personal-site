@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 // number of meteors to display if it's not specified
-const default_meteors = 5;
+const DEFAULT_METEORS = 5;
 
 // random whole number generator
 const getRandomInt = (min, max) => {
@@ -58,7 +58,7 @@ const MeteorWrapper = styled.div`
 
 // constructs specified number of meteors
 export const MeteorComponent = (props) => {
-	const num = (props.num > 0 ? props.num : default_meteors);
+	const num = (props.num > 0 ? props.num : DEFAULT_METEORS);
 	return(
 		<>
 			{[...Array(num)].map((_, i) => {
