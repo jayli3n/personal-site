@@ -8,6 +8,7 @@ import {
 import {
 	color_grey_3,
 	color_grey_4,
+	color_grey_6,
 	color_primary
 } from '../../atoms/variables';
 
@@ -41,8 +42,7 @@ const Title = styled(H1)`
 
 const Content = styled(P)`
 	margin-bottom: 3rem;
-	opacity: .8;
-	color: #fff;
+	color: ${color_grey_6};
 `;
 
 const Copyright = styled(P)`
