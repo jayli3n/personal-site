@@ -15,6 +15,7 @@ import {
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
+import { ReactComponent as Medium } from '../../images/icons/medium.svg';
 
 
 const Container = styled.div`
@@ -87,7 +88,7 @@ const SocialIcon = styled.a`
 	fill: ${color_grey_5};
 
 	:not(:last-child){
-		margin-right: 2rem;
+		margin-right: 1.2rem;
 	};
 
 	:hover{
@@ -127,7 +128,13 @@ const Footer = () => {
 				            action: 'LinkedIn icon',
 				        });
 					}}><Linkedin /></SocialIcon>
-					<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
+					<SocialIcon href='https://medium.com/@jayli3n' target='_blank' rel="noopener" onClick={() => {
+						ReactGA.event({
+				            category: 'Footer',
+				            action: 'Medium icon',
+				        });
+					}}><Medium /></SocialIcon>
+					<SocialIcon href='https://twitter.com/JayLi08453971' target='_blank' rel="noopener" onClick={() => {
 						ReactGA.event({
 				            category: 'Footer',
 				            action: 'Twitter icon',

@@ -18,6 +18,7 @@ import ResumePDF from '../../Jay_Li_Resume_2019.pdf';
 import { ReactComponent as Github } from '../../images/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../images/icons/twitter.svg';
+import { ReactComponent as Medium } from '../../images/icons/medium.svg';
 
 
 const StyledSection = styled.div`
@@ -112,7 +113,7 @@ const SocialIcon = styled.a`
 	transition: all .2s;
 
 	:not(:last-child){
-		margin-right: 2rem;
+		margin-right: 1.2rem;
 	};
 
 	:hover{
@@ -163,7 +164,13 @@ class Hero extends Component{
 					            action: 'LinkedIn icon',
 					        });
 						}}><Linkedin /></SocialIcon>
-						<SocialIcon href='https://github.com/jayli3n' target='_blank' rel="noopener" onClick={() => {
+						<SocialIcon href='https://medium.com/@jayli3n' target='_blank' rel="noopener" onClick={() => {
+							ReactGA.event({
+					            category: 'Hero',
+					            action: 'Medium icon',
+					        });
+						}}><Medium /></SocialIcon>
+						<SocialIcon href='https://twitter.com/JayLi08453971' target='_blank' rel="noopener" onClick={() => {
 							ReactGA.event({
 					            category: 'Hero',
 					            action: 'Twitter icon',
