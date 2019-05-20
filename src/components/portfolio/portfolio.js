@@ -303,7 +303,6 @@ class Portfolio extends Component{
 
 	showAll = () => {
 		//since more cards will be shown, scrollreveal needs to sync them
-		ScrollReveal().sync();
 		if(this.state.isShowAll){
 			this.setState({
 				showAllText: 'Show All',
@@ -315,6 +314,7 @@ class Portfolio extends Component{
 				isShowAll: true
 			});
 		}
+		ScrollReveal().sync();
 	}
 
 	render(){

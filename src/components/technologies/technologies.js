@@ -68,8 +68,8 @@ const Icon = styled.div`
 const Icons = ({className, list}) => (
 	<Wrapper className={className}>
 		{list.map(({name, color, svg}, i) => (
-			<IconBox key={i} className='scrollreveal'>
-				<Icon color={color}>{svg}</Icon>
+			<IconBox key={i}>
+				<Icon color={color} className='scrollreveal'>{svg}</Icon>
 				<H3>{name}</H3>
 			</IconBox>
 		))}
