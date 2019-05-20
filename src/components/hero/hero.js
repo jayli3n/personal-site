@@ -23,7 +23,7 @@ const StyledSection = styled.div`
 	align-items: center;
 	flex-direction: column;
 	padding: 10rem 6rem;
-	height: 97vh;
+	height: 96vh;
 	background-color: rgba(0,0,0,.02);
 `;
 
@@ -120,7 +120,7 @@ class Hero extends Component{
 						        });
 							}}>Resume</Button>
 					</Buttons>
-					<Socials className='scrollreveal'/>
+					<div className='scrollreveal'><Socials/></div>
 				</InfoBox>
 			</StyledSection>
 		)
