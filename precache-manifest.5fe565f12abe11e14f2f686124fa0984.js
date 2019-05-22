@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c8296a24516c04aa09b6c40fb261bb2",
+    "revision": "9af8c891904a821033e3e0ff05549a12",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6c93e6b5.chunk.js"
   },
   {
-    "revision": "75f98cce23707cafb57f",
-    "url": "/static/js/main.cb3657db.chunk.js"
+    "revision": "9e445a560cbc877e72e3",
+    "url": "/static/js/main.2fb8c19f.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -190,6 +190,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "717dedb8dabaa51ddea6c5eed0ff8793",
     "url": "/static/media/woodplc.717dedb8.jpg"
+  },
+  {
+    "revision": "d960ce447fab10a358b4d3ba62daa1a4",
+    "url": "/static/media/wordpress.d960ce44.svg"
   },
   {
     "revision": "d3cbe74bf8d0f3f4d0cf68811cecf24a",

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.cb3657db.chunk.js",
-    "main.js.map": "/static/js/main.cb3657db.chunk.js.map",
+    "main.js": "/static/js/main.2fb8c19f.chunk.js",
+    "main.js.map": "/static/js/main.2fb8c19f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.6c93e6b5.chunk.js": "/static/js/2.6c93e6b5.chunk.js",
     "static/js/2.6c93e6b5.chunk.js.map": "/static/js/2.6c93e6b5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cac429e2ca98ae3a810ca6d71fcf575c.js": "/precache-manifest.cac429e2ca98ae3a810ca6d71fcf575c.js",
+    "precache-manifest.5fe565f12abe11e14f2f686124fa0984.js": "/precache-manifest.5fe565f12abe11e14f2f686124fa0984.js",
     "service-worker.js": "/service-worker.js",
     "static/media/Jay_Li_Resume_2019.pdf": "/static/media/Jay_Li_Resume_2019.28f8cf10.pdf",
     "static/media/StratumNo1 Bold.ttf": "/static/media/StratumNo1 Bold.135f44b0.ttf",
@@ -53,6 +53,7 @@
     "static/media/twitter.be066898.svg": "/static/media/twitter.be066898.svg",
     "static/media/ultrave.jpg": "/static/media/ultrave.2bf210e0.jpg",
     "static/media/woodplc.jpg": "/static/media/woodplc.717dedb8.jpg",
+    "static/media/wordpress.d960ce44.svg": "/static/media/wordpress.d960ce44.svg",
     "static/media/workout.png": "/static/media/workout.d3cbe74b.png"
   }
 }
