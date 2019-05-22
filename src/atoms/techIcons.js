@@ -14,6 +14,7 @@ import { ReactComponent as JquerySvg } from '../images/technologies/jquery.svg';
 import { ReactComponent as AndroidSvg } from '../images/technologies/android.svg';
 import { ReactComponent as AccessSvg } from '../images/technologies/microsoftaccess.svg';
 import { ReactComponent as FirebaseSvg } from '../images/technologies/firebase.svg';
+import { ReactComponent as WordpressSvg } from '../images/technologies/wordpress.svg';
 
 // export of all tech icons and their color scheme
 // icons are from: https://simpleicons.org/
@@ -92,5 +93,10 @@ export const svg_icons = [
 		name: 'Access',
 		color: '#BA141A',
 		svg: <AccessSvg/>
+	},
+	{
+		name: 'Wordpress',
+		color: '#21759B',
+		svg: <WordpressSvg/>
 	}
 ];
