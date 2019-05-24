@@ -6,7 +6,7 @@ import {Container} from '../../atoms/container';
 import {
 	color_grey_2,
 	color_grey_3,
-	color_grey_5,
+	color_grey_4,
 	color_grey_7,
 	color_primary
 } from '../../atoms/variables';
@@ -124,15 +124,15 @@ const Company = styled.a`
 const PositionText = styled.p`
 	font-size: 1.7rem;
 	font-weight: 400;
-	margin-bottom: .6rem;
+	margin: .8rem 0;
 	color: ${color_grey_3}
 `;
 
 const DurationText = styled.p`
 	font-size: 1.6rem;
 	font-weight: 300;
-	margin-bottom: 1rem;
-	color: ${color_grey_5}
+	margin-bottom: 1.2rem;
+	color: ${color_grey_4}
 `;
 
 const Ul = styled.ul`
