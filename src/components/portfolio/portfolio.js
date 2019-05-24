@@ -178,7 +178,7 @@ const Button = styled.a`
 	}
 
 	:not(:last-child){
-		margin-right: .5rem;
+		margin-right: .8rem;
 	};
 
 	:active{
