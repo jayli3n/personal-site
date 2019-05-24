@@ -7,6 +7,7 @@ import {
 	P
 } from '../../atoms/typography';
 import {
+	color_grey_1,
 	color_grey_2,
 	color_grey_3,
 	color_grey_4,
@@ -146,8 +147,11 @@ const Details = styled.div`
 	padding: 1.2rem 1.6rem 1.8rem 1.6rem;	
 `;
 
-const StyledH4 = styled(H4)`
-	margin-top: 1rem;
+const StyledH4 = styled.h4`
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: ${color_grey_1};
+	margin-top: 2rem;
 	margin-bottom: 1rem;
 `;
 
