@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ReactGA from 'react-ga';
 import ScrollReveal from 'scrollreveal';
 import {
-	H4,
 	P
 } from '../../atoms/typography';
 import {
@@ -27,6 +26,7 @@ import natours_img from '../../images/portfolio/natours-tour-startup_snapshot.jp
 import nexter_img from '../../images/portfolio/nexter-real-estate_snapshot.jpg';
 import starwars_img from '../../images/portfolio/starwars-api_snapshot.jpg';
 import trillo_img from '../../images/portfolio/trillo-hotel-booking_snapshot.jpg';
+import thewestcoins_img from '../../images/portfolio/the-west-coins_snapshot.jpg';
 
 // add or remove this array to update portfolio
 // icons are from "../../atoms/techIcons" and follows the order of the exported icons array
@@ -56,12 +56,11 @@ const portfolio_array = [
 		sourceLink: 'https://github.com/jayli3n/nexter-front-end',
 	},
 	{
-		imgPath: natours_img,
-		icons: [4,5,9],
-		title: 'Natours Startup',
-		text: 'A mockup landing page for a startup travel agency. Uses old css techniques for responsiveness.',
-		liveLink: 'https://jayli3n.github.io/natours-startup/',
-		sourceLink: 'https://github.com/jayli3n/natours-startup',
+		imgPath: thewestcoins_img,
+		icons: [4,5,11],
+		title: 'The West Coins',
+		text: 'Coin collection E-commerce website for my dear friend. I still manage and maintain it weekly.',
+		liveLink: 'https://www.thewestcoins.com/'
 	},
 	{
 		imgPath: starwars_img,
@@ -78,6 +77,14 @@ const portfolio_array = [
 		text: 'It\'s the site you\'re on right now! Designed and built from scratch using React and Styled Components.',
 		liveLink: 'https://jayli3n.github.io/personal-site/',
 		sourceLink: 'https://github.com/jayli3n/personal-site',
+	},
+	{
+		imgPath: natours_img,
+		icons: [4,5,9],
+		title: 'Natours Startup',
+		text: 'A mockup landing page for a startup travel agency. Uses old css techniques for responsiveness.',
+		liveLink: 'https://jayli3n.github.io/natours-startup/',
+		sourceLink: 'https://github.com/jayli3n/natours-startup',
 	},
 	{
 		imgPath: linear_gradient_img,
@@ -269,15 +276,17 @@ const ButtonsComponent = ({className, title, liveLink, sourceLink}) => {
 				}}>
 				<WhiteDot id='live'/><span>Live</span>
 			</Button>
-			<Button href={sourceLink} target='_blank' rel="noopener" secondary 
-				onClick={() => {
-					ReactGA.event({
-			            category: 'Portfolio',
-			            action: `Source: ${title}`,
-			        });
-				}}>
-				<Icon id='github'><GithubSvg/></Icon><span>Source</span>
-			</Button>
+			{sourceLink
+				? <Button href={sourceLink} target='_blank' rel="noopener" secondary 
+					onClick={() => {
+						ReactGA.event({
+				            category: 'Portfolio',
+				            action: `Source: ${title}`,
+				        });
+					}}>
+					<Icon id='github'><GithubSvg/></Icon><span>Source</span>
+				</Button>
+				: null}
 		</Buttons>
 	)
 }
