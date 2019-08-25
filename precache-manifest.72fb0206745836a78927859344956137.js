@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5778780db17a93208ac09eef7e9d66d1",
+    "revision": "5d93b8db9b1f0e0e17ab5a56cf4c6356",
     "url": "/index.html"
   },
   {
-    "revision": "dc3cd90b094bf09f3b8b",
-    "url": "/static/js/2.6c93e6b5.chunk.js"
+    "revision": "4def593b97094601e8ee",
+    "url": "/static/js/2.cd2daad2.chunk.js"
   },
   {
-    "revision": "be664e7de410dd78a29d",
-    "url": "/static/js/main.b3b06bae.chunk.js"
+    "revision": "7be38661704dedf01aaf",
+    "url": "/static/js/main.14566697.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -170,6 +170,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "54ab7cbd59688828d3bdfe0b76393a27",
     "url": "/static/media/starwars-api_snapshot.54ab7cbd.jpg"
+  },
+  {
+    "revision": "65cd8ffd641077983e768d6d2595c25b",
+    "url": "/static/media/the-west-coins_snapshot.65cd8ffd.jpg"
   },
   {
     "revision": "9927c9397725000278a9010674ee0f49",
