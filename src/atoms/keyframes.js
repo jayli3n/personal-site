@@ -1,6 +1,6 @@
-import {keyframes} from 'styled-components';
+import { keyframes } from 'styled-components';
 
-export const pulseEffect = keyframes`
+export const PULSE_EFFECT = keyframes`
 	50% {
 		opacity: 1;
 	}
@@ -12,8 +12,8 @@ export const pulseEffect = keyframes`
 	}
 `;
 
-// nav slides from top into view
-export const navReveal = keyframes`
+// Nav slides from top into view
+export const NAV_REVEAL = keyframes`
 	0% {
 		top: -10rem;
 		opacity: 0;
