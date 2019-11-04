@@ -5,7 +5,7 @@ import {
 	outsidePNGs
 } from './assets';
 
-export const GOOGLE_ANALYTICS = 'x UA-140313888-1';
+export const GOOGLE_ANALYTICS = 'UA-140313888-1';
 
 export const SOCIALS = [
 	{
