@@ -162,11 +162,11 @@ const CollapsiblesDiv = styled.div`
 		top: 100%;
 		right: 0;
 		z-index: 9999;
-		margin: .25rem .5rem;
+		margin: .5rem 1rem;
 		padding: 1.3rem 1.8rem;
 		transition: all .2s;
 		border-radius: ${COMMON_STYLES.BORDER_RADIUS};
-		background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.GREY_1}99`};
+		background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : COLORS.DARK};
 		box-shadow: ${COMMON_STYLES.BOX_SHADOW_HOVER};
 		opacity: ${props => props.isMenuVisible ? 1 : 0};
 		visibility: ${props => props.isMenuVisible ? 'visible' : 'hidden'};
