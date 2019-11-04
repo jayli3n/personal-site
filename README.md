@@ -88,6 +88,8 @@ const MeteorWrapper = styled.div`
 <MeteorWrapper><Meteor /></MeteorWrapper>
 ```
 
+[Deployed with `gh-pages`](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
+
 #### Node Packages Used:
 - gh-pages
 - react
