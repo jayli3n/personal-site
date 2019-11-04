@@ -99,7 +99,7 @@ const Nav = styled.nav`
 	padding: 1rem 3rem;
 	color: ${COLORS.WHITE};
 	box-shadow: ${COMMON_STYLES.NAVBAR_SHADOW};
-	background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.WHITE}03`};
+	background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.WHITE}07`};
 	animation: ${props => props.isBlueNav ? NAV_REVEAL : 'none'} .3s ease-out 0s;
 `;
 
@@ -166,7 +166,7 @@ const CollapsiblesDiv = styled.div`
 		padding: 1.3rem 1.8rem;
 		transition: all .2s;
 		border-radius: ${COMMON_STYLES.BORDER_RADIUS};
-		background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.WHITE}15`};
+		background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.GREY_1}99`};
 		box-shadow: ${COMMON_STYLES.BOX_SHADOW_HOVER};
 		opacity: ${props => props.isMenuVisible ? 1 : 0};
 		visibility: ${props => props.isMenuVisible ? 'visible' : 'hidden'};

@@ -98,7 +98,7 @@ export const PORTFOLIO = [
 		imgPath: portfolioJPGs.linearGradJPG,
 		icons: [2,4,5,9],
 		title: 'Gradient Background Generator',
-		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient( ).',
+		text: 'Pick your own or randomly generate color codes for CSS linear gradient.',
 		liveLink: 'https://jayli3n.github.io/linear-background-generator/',
 		sourceLink: 'https://github.com/jayli3n/linear-background-generator',
 	}
