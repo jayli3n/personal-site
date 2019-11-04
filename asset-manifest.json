@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.3a3caad2.chunk.js",
-    "main.js.map": "/static/js/main.3a3caad2.chunk.js.map",
+    "main.js": "/static/js/main.aa0687f5.chunk.js",
+    "main.js.map": "/static/js/main.aa0687f5.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.a6ef6ecb.chunk.js": "/static/js/2.a6ef6ecb.chunk.js",
     "static/js/2.a6ef6ecb.chunk.js.map": "/static/js/2.a6ef6ecb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5e669fa445d859ce70ef9ff320d103c5.js": "/precache-manifest.5e669fa445d859ce70ef9ff320d103c5.js",
+    "precache-manifest.a90e131344ce1be406af0506b8c203aa.js": "/precache-manifest.a90e131344ce1be406af0506b8c203aa.js",
     "service-worker.js": "/service-worker.js",
-    "static/media/Jay_Li_Resume_2019.pdf": "/static/media/Jay_Li_Resume_2019.28f8cf10.pdf",
+    "static/media/Jay_Li_Resume_2019.pdf": "/static/media/Jay_Li_Resume_2019.9270f5aa.pdf",
     "static/media/StratumNo1 Bold.ttf": "/static/media/StratumNo1 Bold.135f44b0.ttf",
     "static/media/StratumNo1 Heavy.ttf": "/static/media/StratumNo1 Heavy.304df3d1.ttf",
     "static/media/StratumNo1 Light.ttf": "/static/media/StratumNo1 Light.e4bdc1eb.ttf",
@@ -21,6 +21,8 @@
     "static/media/jayli3n-book.png": "/static/media/jayli3n-book.fe35993f.png",
     "static/media/jayli3n-bootstrap.b1b360f5.svg": "/static/media/jayli3n-bootstrap.b1b360f5.svg",
     "static/media/jayli3n-css3.b675af60.svg": "/static/media/jayli3n-css3.b675af60.svg",
+    "static/media/jayli3n-discord.9e72b42f.svg": "/static/media/jayli3n-discord.9e72b42f.svg",
+    "static/media/jayli3n-facebook.1f2672bd.svg": "/static/media/jayli3n-facebook.1f2672bd.svg",
     "static/media/jayli3n-facial-recognition-web-app_snapshot.jpg": "/static/media/jayli3n-facial-recognition-web-app_snapshot.d70b9fda.jpg",
     "static/media/jayli3n-firebase.df8bf7ad.svg": "/static/media/jayli3n-firebase.df8bf7ad.svg",
     "static/media/jayli3n-git.b73214e3.svg": "/static/media/jayli3n-git.b73214e3.svg",
@@ -28,9 +30,9 @@
     "static/media/jayli3n-gmail.808f00f5.svg": "/static/media/jayli3n-gmail.808f00f5.svg",
     "static/media/jayli3n-google_translate.6c613299.svg": "/static/media/jayli3n-google_translate.6c613299.svg",
     "static/media/jayli3n-html5.3056bf2f.svg": "/static/media/jayli3n-html5.3056bf2f.svg",
+    "static/media/jayli3n-instagram.662a4f14.svg": "/static/media/jayli3n-instagram.662a4f14.svg",
     "static/media/jayli3n-javascript.1f606957.svg": "/static/media/jayli3n-javascript.1f606957.svg",
     "static/media/jayli3n-linear-gradient_snapshot.jpg": "/static/media/jayli3n-linear-gradient_snapshot.8ed63398.jpg",
-    "static/media/jayli3n-linkedin.619231ff.svg": "/static/media/jayli3n-linkedin.619231ff.svg",
     "static/media/jayli3n-lit.png": "/static/media/jayli3n-lit.7792a29f.png",
     "static/media/jayli3n-medium.5b6c39e9.svg": "/static/media/jayli3n-medium.5b6c39e9.svg",
     "static/media/jayli3n-menu.342a34f2.svg": "/static/media/jayli3n-menu.342a34f2.svg",
@@ -56,6 +58,7 @@
     "static/media/jayli3n-ultrave.jpg": "/static/media/jayli3n-ultrave.2bf210e0.jpg",
     "static/media/jayli3n-woodplc.jpg": "/static/media/jayli3n-woodplc.717dedb8.jpg",
     "static/media/jayli3n-wordpress.d960ce44.svg": "/static/media/jayli3n-wordpress.d960ce44.svg",
-    "static/media/jayli3n-workout.png": "/static/media/jayli3n-workout.d3cbe74b.png"
+    "static/media/jayli3n-workout.png": "/static/media/jayli3n-workout.d3cbe74b.png",
+    "static/media/jayli3n-youtube.d57a47e1.svg": "/static/media/jayli3n-youtube.d57a47e1.svg"
   }
 }

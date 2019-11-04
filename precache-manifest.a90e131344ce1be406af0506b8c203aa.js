@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bac1bfe618cb535c110df496c043623a",
+    "revision": "82dd5dcce6a1a08df6da250ef4d0b512",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.a6ef6ecb.chunk.js"
   },
   {
-    "revision": "6f832a62636d33abaaba",
-    "url": "/static/js/main.3a3caad2.chunk.js"
+    "revision": "de296e69aabec856dccc",
+    "url": "/static/js/main.aa0687f5.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "28f8cf103c721d64a23774852c1149fd",
-    "url": "/static/media/Jay_Li_Resume_2019.28f8cf10.pdf"
+    "revision": "9270f5aa37974f344c91a98078d973dd",
+    "url": "/static/media/Jay_Li_Resume_2019.9270f5aa.pdf"
   },
   {
     "revision": "135f44b0ed55d7029d056523c56d3c14",
@@ -64,6 +64,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-css3.b675af60.svg"
   },
   {
+    "revision": "9e72b42fe966f1af41cff7fd3a4963c8",
+    "url": "/static/media/jayli3n-discord.9e72b42f.svg"
+  },
+  {
+    "revision": "1f2672bd252bf1d057aadb366580cb3f",
+    "url": "/static/media/jayli3n-facebook.1f2672bd.svg"
+  },
+  {
     "revision": "d70b9fda7c0377715f81c982ca7632fc",
     "url": "/static/media/jayli3n-facial-recognition-web-app_snapshot.d70b9fda.jpg"
   },
@@ -92,16 +100,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-html5.3056bf2f.svg"
   },
   {
+    "revision": "662a4f1472618eb2eb3b507d7459741f",
+    "url": "/static/media/jayli3n-instagram.662a4f14.svg"
+  },
+  {
     "revision": "1f6069572c9380a733700436d2980f8a",
     "url": "/static/media/jayli3n-javascript.1f606957.svg"
   },
   {
     "revision": "8ed633989375e0e8a9a361d29453c7da",
     "url": "/static/media/jayli3n-linear-gradient_snapshot.8ed63398.jpg"
-  },
-  {
-    "revision": "619231ff8ec7a6b4d39aede30fa9890e",
-    "url": "/static/media/jayli3n-linkedin.619231ff.svg"
   },
   {
     "revision": "7792a29f1418737d6cfb84d90b4ebbbb",
@@ -206,5 +214,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d3cbe74bf8d0f3f4d0cf68811cecf24a",
     "url": "/static/media/jayli3n-workout.d3cbe74b.png"
+  },
+  {
+    "revision": "d57a47e161639189da5621dd9cef0c1f",
+    "url": "/static/media/jayli3n-youtube.d57a47e1.svg"
   }
 ]);
