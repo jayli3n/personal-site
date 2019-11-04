@@ -4,6 +4,8 @@
 Designed and developed from scratch using just `React` and `Styled Components`.<br>
 It's highly responsive thanks to `flexbox` and media queries using 6 breakpoints.
 
+[Deployed with `gh-pages`](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
+
 #### Things that took me a while to get perfect:
 - **smoothscroll** when navbar item is clicked
 - **meteorshower** that randomly appears in the background
@@ -87,8 +89,6 @@ const MeteorWrapper = styled.div`
 ```jsx
 <MeteorWrapper><Meteor /></MeteorWrapper>
 ```
-
-[Deployed with `gh-pages`](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
 
 #### Node Packages Used:
 - gh-pages
