@@ -2,7 +2,7 @@
 `Live:` https://jayli3n.me/
 
 Designed and developed from scratch using just `React` and `Styled Components`.<br>
-It is highly responsive thanks to `flexbox` and media queries using 6 breakpoints.
+It's highly responsive thanks to `flexbox` and media queries using 6 breakpoints.
 
 #### Things that took me a while to get perfect:
 - **smoothscroll** when navbar item is clicked
@@ -24,7 +24,7 @@ const animationScroll = (currentTime) => {
 	const run = easingFunction(timeElapsed, startingPosition, displacement, duration);
 	window.scrollTo(0, run);
 
-	// keep scrolling until duration reached or positioned reached
+	// Keep scrolling until duration reached or positioned reached
 	if(timeElapsed < duration && (window.pageYOffset - targetPosition) !== 0){
 		requestAnimationFrame(animationScroll);
 	}
@@ -48,26 +48,11 @@ Each meteor is essentially a long, narrow, invisible `div` that is:
 ```jss
 // animation for the each meteor
 const meteorAnimation = keyframes`
-  from {
-    transform: scale(0);
-  }
-
-  1% {
-    opacity: ${(getRandomInt(50, 100)) * 0.01};
-  }
-
-  6% {
-    opacity: 0;
-    height: 0;
-  }
-
-  7% {
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-  }
+  from { transform: scale(0); }
+  1% { opacity: ${(getRandomInt(50, 100)) * 0.01}; } 
+  6% { opacity: 0; height: 0; }
+  7% { transform: scale(1); }
+  to { opacity: 0; }
 `;
 ```
 
@@ -104,7 +89,6 @@ const MeteorWrapper = styled.div`
 ```
 
 #### Node Packages Used:
-- classnames
 - gh-pages
 - react
 - react-dom
