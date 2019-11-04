@@ -14,9 +14,9 @@ export class TechnologiesSection extends Component {
 		return (
 			<Section id={this.props.id} title='Professional Skills'>
 				<InnerDiv>
-					{technologies.map(({ name, color, Svg }, i) => (
+					{technologies.map(({ name, fill, bgColor, Svg }, i) => (
 						<IconDiv key={i}>
-							<Icon color={color} className='scrollreveal'><Svg /></Icon>
+							<Icon fill={fill} bgColor={bgColor} className='scrollreveal'><Svg /></Icon>
 							<TYPOGRAPHY.H6>{name}</TYPOGRAPHY.H6>
 						</IconDiv>
 					))}
@@ -69,8 +69,8 @@ const Icon = styled.div`
 	text-align: center;
 	border-radius: 1.5rem;
 	padding: 1.7rem;
-	fill: ${COLORS.WHITE};
-	background-color: ${props => props.color};
+	fill: ${props => props.fill || COLORS.WHITE};
+	background-color: ${props => props.bgColor};
 	height: 7rem;
 	width: 7rem;
 

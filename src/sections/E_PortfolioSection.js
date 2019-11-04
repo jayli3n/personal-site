@@ -34,11 +34,11 @@ const DetailsComponent = ({ icons, title, text }) => (
 // Buttons component for the live / source code buttons
 const ButtonsComponent = ({ title, liveLink, sourceLink }) => (
 	<ButtonsDiv>
-		<Anchor href={liveLink} target='_blank' rel="noopener">
+		<Anchor href={liveLink} target='_blank' rel="noopener noreferrer">
 			<WhiteDot /><TYPOGRAPHY.Span>Live</TYPOGRAPHY.Span>
 		</Anchor>
 		{sourceLink
-			? <Anchor href={sourceLink} target='_blank' rel="noopener" sourceButton>
+			? <Anchor href={sourceLink} target='_blank' rel="noopener noreferrer" sourceButton>
 				<IconDiv><icons.GitHubSVG/></IconDiv><TYPOGRAPHY.Span>Source</TYPOGRAPHY.Span>
 			</Anchor>
 			: null}
@@ -46,9 +46,9 @@ const ButtonsComponent = ({ title, liveLink, sourceLink }) => (
 );
 
 const CardsComponent = ({ portfolio, isShowAll }) => (
-	<CardsDiv isShowAll={isShowAll}>
+	<CardsDiv isShowAll={isShowAll} className='scrollreveal'>
 		{portfolio.map(({ imgPath, icons, title, text, liveLink, sourceLink }, i) => (
-			<CardDiv key={i} className='scrollreveal'>
+			<CardDiv key={i}>
 				<ImageDiv><img src={imgPath} alt={title} /></ImageDiv>
 				<DetailsComponent icons={icons} title={title} text={text} />
 				<ButtonsComponent title={title} liveLink={liveLink} sourceLink={sourceLink} />
@@ -102,26 +102,25 @@ const CardsDiv = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
+	overflow: hidden;
 	width: 100%;
+	height: ${props => props.isShowAll ? '' : '96rem'};
 
 	@supports (display: grid) {
 		display: grid;  
-		grid-template-columns: repeat(auto-fit, minmax(33.3333rem, .4fr));
+		grid-template-columns: repeat(auto-fit, minmax(33.33rem, .4fr));
 		justify-items: center;
 		align-content: start;
 		align-items: start;
 	}
-
-	overflow: hidden;
-	height: ${props => props.isShowAll ? '' : '97rem'};
 `;
 
 const CardDiv = styled.div`
 	display: flex;
 	flex-direction: column;
+	width: 31.33rem;
 	height: 47rem;
 	margin: 0 1rem 2rem 1rem;
-	width: 31.3333rem;
 	background-color: ${COLORS.WHITE};
 	box-shadow: 0 .5px 1px #00000015;
 	border: 1px solid ${COLORS.GREY_6};

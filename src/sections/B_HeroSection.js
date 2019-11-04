@@ -7,7 +7,6 @@ import {
 import {
 	Socials,
 	GAAnchor,
-	Section
 } from '../components';
 import {
 	COLORS,
@@ -17,12 +16,12 @@ import {
 import { avatarJPG } from '../assets';
 
 
-const resumeLocation = '../assets/Jay_Li_Resume_2019';
+const resumeLocation = '../assets/Jay_Li_Resume_2019.pdf';
 
 export class HeroSection extends Component {
 	render() {
 		return (
-			<StyledSection id={this.props.id} transparent>
+			<Section id={this.props.id} transparent>
 				<InfoDiv>
 					<AvatarDiv className='scrollreveal' />
 					<TYPOGRAPHY.H4 className='scrollreveal' color={COLORS.WHITE}>Jay Li</TYPOGRAPHY.H4>
@@ -33,18 +32,18 @@ export class HeroSection extends Component {
 						<Anchor onClick={() => smoothScroll('footer')}>
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Contact Me</TYPOGRAPHY.P>
 						</Anchor>
-						<Anchor secondary href={resumeLocation} target='_blank' rel="noopener">
+						<Anchor secondary href={resumeLocation} target='_blank' rel="noopener noreferrer">
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Resume</TYPOGRAPHY.P>
 						</Anchor>
 					</AnchorsDiv>
 					<StyledSocials className='scrollreveal' />
 				</InfoDiv>
-			</StyledSection>
+			</Section>
 		)
 	}
 };
 
-const StyledSection = styled.section`
+const Section = styled.section`
 	height: 95.5vh;
 	display: flex;
 	align-items: center;
@@ -87,7 +86,7 @@ const Anchor = styled(GAAnchor)`
 	transition: all .2s;
 
 	:not(:last-child) {
-		margin-right: 1.8rem;
+		margin-right: 1.6rem;
 	};
 
 	:hover {
@@ -107,5 +106,5 @@ const Anchor = styled(GAAnchor)`
 `;
 
 const StyledSocials = styled(Socials)`
-	margin-top: 1.9rem;
+	margin-top: 1.7rem;
 `;

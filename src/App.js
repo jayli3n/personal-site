@@ -13,7 +13,10 @@ import {
 	ProfileSection,
 	TechnologiesSection,
 	PortfolioSection,
-	ExperiencesSection
+	ExperiencesSection,
+	ExtracurricularSection,
+	MySystemSection,
+	FooterSection
 } from './sections';
 
 
@@ -38,6 +41,9 @@ class App extends Component {
 				<TechnologiesSection id='skills' />
 				<PortfolioSection id='portfolio' />
 				<ExperiencesSection id='experiences' />
+				<ExtracurricularSection id='outside' />
+				<MySystemSection id='mysystem' />
+				<FooterSection id='footer' />
 			</>
 		)
 	}

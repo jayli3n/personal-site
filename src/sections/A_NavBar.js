@@ -47,15 +47,15 @@ export class NavBar extends Component {
 	}
 
 	renderCollapsiblesDiv = () => {
-		const { isMenuVisible } = this.state;
+		const { isBlueNav, isMenuVisible } = this.state;
 		return (
-			<CollapsiblesDiv isMenuVisible={isMenuVisible}>
+			<CollapsiblesDiv isBlueNav={isBlueNav} isMenuVisible={isMenuVisible}>
 				<Scrollspy
 		    		offset={-250}
 					className='scrollspy'
 		    		currentClassName='scrollspy--item-active'
 		    		items={['home', 'about', 'skills', 'portfolio',
-		    			'experiences', 'outside', 'mySystem']}
+		    			'experiences', 'outside', 'mysystem']}
 				>
 				    <li></li>
 				    <ListItem><NavButton refID='about' text='About'/></ListItem>
@@ -163,11 +163,11 @@ const CollapsiblesDiv = styled.div`
 		right: 0;
 		z-index: 9999;
 		margin: .25rem .5rem;
-		padding: 1.6rem 2rem;
+		padding: 1.3rem 1.8rem;
 		transition: all .2s;
 		border-radius: ${COMMON_STYLES.BORDER_RADIUS};
 		background-color: ${props => props.isBlueNav ? COLORS.PRIMARY : `${COLORS.WHITE}15`};
-		box-shadow: ${COMMON_STYLES.NAVBAR_SHADOW};
+		box-shadow: ${COMMON_STYLES.BOX_SHADOW_HOVER};
 		opacity: ${props => props.isMenuVisible ? 1 : 0};
 		visibility: ${props => props.isMenuVisible ? 'visible' : 'hidden'};
 	`}
@@ -207,6 +207,6 @@ const StyledButton = styled.button`
 
 	${media.sizeII`
 		width: 100%;
-		text-align: left;
+		padding: 1.5rem 2.2rem;
 	`}
 `;

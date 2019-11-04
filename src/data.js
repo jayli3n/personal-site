@@ -1,7 +1,8 @@
 import {
 	icons,
 	portfolioJPGs,
-	experiencesJPGs
+	experiencesJPGs,
+	outsidePNGs
 } from './assets';
 
 export const GOOGLE_ANALYTICS = 'x UA-140313888-1';
@@ -28,6 +29,13 @@ export const SOCIALS = [
 // Icons are from "./assets" and follows the order of the exported icons array
 export const PORTFOLIO = [
 	{
+		imgPath: portfolioJPGs.raikohappsJPG,
+		icons: [0,1,2,3,4,5,6,9],
+		title: 'Raikoh Apps',
+		text: 'A fun company that develops apps, games and websites. Built from scratch.',
+		liveLink: 'https://raikohapps.com',
+	},
+	{
 		imgPath: portfolioJPGs.trilloJPG,
 		icons: [4,5,6,9],
 		title: 'Trillo Front End',
@@ -37,7 +45,7 @@ export const PORTFOLIO = [
 	},
 	{
 		imgPath: portfolioJPGs.facialJPG,
-		icons: [0,4,2,7,8,9],
+		icons: [0,2,3,4,5,6,9],
 		title: 'Facial Recognition Web App',
 		text: 'Detects human faces in an input image and put boxes around them. Uses Clarifai API.',
 		liveLink: 'https://jayli3n.github.io/facial-recognition-web-app/',
@@ -47,32 +55,24 @@ export const PORTFOLIO = [
 		imgPath: portfolioJPGs.nexterJPG,
 		icons: [4,5,6,9],
 		title: 'Nexter Real Estate',
-		text: 'A mockup real estate website. Made responsive using tons of CSS Grid.',
+		text: 'A mockup real estate website. Made responsive using of CSS Grid.',
 		liveLink: 'https://jayli3n.github.io/nexter-front-end/',
 		sourceLink: 'https://github.com/jayli3n/nexter-front-end',
 	},
 	{
 		imgPath: portfolioJPGs.thewestcoinsJPG,
-		icons: [4,5,11],
+		icons: [4,5,7],
 		title: 'The West Coins',
 		text: 'Coin collection E-commerce website for my dear friend. I still manage and maintain it weekly.',
 		liveLink: 'https://www.thewestcoins.com/'
 	},
 	{
 		imgPath: portfolioJPGs.starwarsJPG,
-		icons: [0,4,2,7,9],
+		icons: [0,2,4,5,9],
 		title: 'Star Wars Database',
 		text: 'A fun and light-weight web app to display all the Star Wars data you\'ll ever want! Uses AJAX and SWAPI.',
 		liveLink: 'https://jayli3n.github.io/starwars/',
 		sourceLink: 'https://github.com/jayli3n/starwars',
-	},
-	{
-		imgPath: portfolioJPGs.jayli3nJPG,
-		icons: [0,4,5,2,6,7,9],
-		title: 'My Personal Site',
-		text: 'It\'s the site you\'re on right now! Designed and built from scratch using React JS.',
-		liveLink: 'https://jayli3n.github.io/personal-site/',
-		sourceLink: 'https://github.com/jayli3n/personal-site',
 	},
 	{
 		imgPath: portfolioJPGs.natoursJPG,
@@ -84,7 +84,7 @@ export const PORTFOLIO = [
 	},
 	{
 		imgPath: portfolioJPGs.linearGradJPG,
-		icons: [4,5,2],
+		icons: [2,4,5,9],
 		title: 'Gradient Background Generator',
 		text: 'Pick your own or randomly generate color codes for CSS: linear-gradient( ).',
 		liveLink: 'https://jayli3n.github.io/linear-background-generator/',
@@ -95,22 +95,35 @@ export const PORTFOLIO = [
 // Array of experiences, makes it easy to add or remove in the future
 export const EXPERIENCES = [
 	{
+		logoPath: experiencesJPGs.raikohappsLogoJPG,
+		company: 'Raikoh Apps',
+		link: 'https://raikohapps.com/',
+		position: 'Founder',
+		duration: 'Oct 2019 - Present',
+		details: [
+			'Raikoh Apps is an app, game and website development project.',
+			'I use it as a creative playground to release small and fun projects to the world.',
+			'This project allows me to learn about the indie app and game development industries.',
+			'One mobile app has been released and more to come!'
+		]
+	},
+	{
 		logoPath: experiencesJPGs.woodJPG,
 		company: 'Wood PLC',
 		link: 'https://www.woodplc.com/',
 		position: 'Technical Analyst',
 		duration: 'Feb 2018 - Present',
 		details: [
-			'Worked within asset management teams to deliver inspection and turnaround maintenance scopes.',
-			'Primarily worked on database management and data manipulation as well as querying SQL data to create progress reports.',
-			'Developed scripts and programs for the team to reduce complexity and time of repetitive tasks.',
+			'Worked within asset management and inspection teams to deliver inspection and turnaround maintenance scopes.',
+			'Primarily worked on database management and data manipulation.',
+			'Developed scripts and programs for the team to reduce complexity and time of tasks.',
 			'I’m grateful for the time I spent with different clients alongside brilliant engineers; whose work gave me a glimpse into the challenges and rewards of an engineer’s life.'
 		]
 	},
 	{
 		logoPath: experiencesJPGs.ultraveJPG,
 		company: 'UltraVe',
-		link: 'https://www.ultrave.com/',
+		link: 'https://instagram.com/ultraveofficial',
 		position: 'Founder',
 		duration: 'Sep 2018 - Present',
 		details: [
@@ -123,13 +136,54 @@ export const EXPERIENCES = [
 	{
 		logoPath: experiencesJPGs.tutorJPG,
 		company: 'Private Tutor',
-		link: '#experiences',
 		duration: 'Dec 2015 - Sep 2018',
 		details: [
 			'Graduated school with a body of knowledge that I wanted to give back to the local community.',
 			'Focused on 12th grade Mathematics, Physics and Chemistry.',
-			'By the end of the school year, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of the year group).',
+			'By the end of the school year, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of their year group).',
 			'1000+ hours of teaching experience.'
 		]
+	}
+];
+
+export const EXTRACURRICULAR = [
+	{
+		img: outsidePNGs.litPNG,
+		title: 'Friends',
+		text: 'I find time to spend with my friends for occasional movie marathons, board games and some other stuff.'
+	},
+	{
+		img: outsidePNGs.workoutPNG,
+		title: 'Workout',
+		text: 'Incredibly important to keep my body moving especially when I working in front of a desk all day.'
+	},
+	{
+		img: outsidePNGs.racketPNG,
+		title: 'Sports',
+		text: 'I enjoy racket sports such as tennis and badminton. I play badminton at a local club and attempted a few tournaments, did not go well.'
+	},
+	{
+		img: outsidePNGs.bookPNG,
+		title: 'Learning',
+		text: 'The rest of my time are spent discovering new ideas and picking up skills from various online platforms, podcasts and audiobooks.'
+	}
+];
+
+export const MY_SYSTEM = [
+	{
+		text: 'be humble',
+		link: 'https://www.franksonnenbergonline.com/blog/be-humble-dont-let-success-go-to-your-head/'
+	},
+	{
+		text: 'be respectful',
+		link: 'https://www.azquotes.com/picture-quotes/quote-everyone-has-something-to-teach-you-if-you-are-humble-enough-to-learn-mark-driscoll-81-13-11.jpg'
+	},
+	{
+		text: 'always learning',
+		link: 'https://www.entrepreneur.com/article/300360/'
+	},
+	{
+		text: 'enjoy the ride!',
+		link: 'https://guardianlv.com/2014/04/life-is-a-journey-buckle-up-and-enjoy-the-ride/'
 	}
 ];

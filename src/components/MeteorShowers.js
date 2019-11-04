@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import Particles from 'react-particles-js';
 import particlesOptions from '../react-particles-js-config';
 
+
 // Number of meteors to display if it's not specified
 const DEFAULT_METEORS = 5;
 
@@ -53,26 +54,11 @@ const DarkBGOverlayDiv = styled.div`
 
 // Animation for the each meteor
 const meteorAnimation = keyframes`
-  from {
-    transform: scale(0);
-  }
-
-  1% {
-    opacity: ${(getRandomInt(50, 100)) * 0.01};
-  }
-
-  6% {
-    opacity: 0;
-    height: 0;
-  }
-
-  7% {
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-  }
+  from { transform: scale(0); }
+  1% { opacity: ${(getRandomInt(50, 100)) * 0.01}; } 
+  6% { opacity: 0; height: 0; }
+  7% { transform: scale(1); }
+  to { opacity: 0; }
 `;
 
 // The meteor, each meteor will have different width, animation duration and delay

@@ -1,93 +1,61 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import ReactGA from 'react-ga';
-import {media} from '../../utils/mediaQueriesBuilder';
-import {Container} from '../../atoms/container';
+import { MY_SYSTEM } from '../data';
+import { media } from '../util';
 import {
-	color_grey_2,
-	color_primary
-} from '../../atoms/variables';
+	Section,
+	GAAnchor
+} from '../components';
+import {
+	COLORS,
+	TYPOGRAPHY
+} from '../atoms';
 
-// an array to make add annd remove easier in the future
-const my_system_list = [
-	{
-		text: 'be humble',
-		link: 'https://www.franksonnenbergonline.com/blog/be-humble-dont-let-success-go-to-your-head/'
-	},
-	{
-		text: 'be respectful',
-		link: 'https://www.azquotes.com/picture-quotes/quote-everyone-has-something-to-teach-you-if-you-are-humble-enough-to-learn-mark-driscoll-81-13-11.jpg'
-	},
-	{
-		text: 'always learning',
-		link: 'https://www.entrepreneur.com/article/300360/'
-	},
-	{
-		text: 'enjoy the ride!',
-		link: 'https://guardianlv.com/2014/04/life-is-a-journey-buckle-up-and-enjoy-the-ride/'
+
+const OneQuote = ({ quote: { text, link } }) => (
+	<ListItem className='scrollreveal'>
+		<TYPOGRAPHY.H4 weight={200} align='center' color='inherit'>
+			<span role="img" aria-label="point right">👉</span>
+			<Anchor href={link} target='_blank' rel="noopener noreferrer">{` ${text} `}</Anchor>
+			<span role="img" aria-label="point right">👈</span>
+		</TYPOGRAPHY.H4>
+	</ListItem>
+);
+
+export class MySystemSection extends Component {
+	render() {
+		return (
+			<Section id={this.props.id} title='This is My System'>
+				<Ol>{MY_SYSTEM.map((quote, i) => <OneQuote key={i} quote={quote} />)}</Ol>
+			</Section>
+		)
 	}
-];
+}
 
-const Wrapper = styled.div`
+const Ol = styled.ol`
 	width: 100%;
-	padding: 1rem 0;
-`;
-
-const List = styled.ol`
-	padding: 2rem;
-	text-align: center;
-	list-style-position: inside;
+	padding: 3rem 2rem;
 	list-style-type: none;
+	list-style-position: inside;
 `;
 
-const Item = styled.li`
-	font-size: 3.2rem;
-	font-weight: 200;
+const ListItem = styled.li`
 	margin-bottom: .5rem;
-
-	a{
-		:link,
-		:visited{
-			text-decoration: none;
-			color: ${color_grey_2};
-			cursor: pointer;
-		}
-
-		:hover{
-			color: ${color_primary};
-		};
-	};
 
 	${media.sizeII`
 		font-size: 2.8rem;
 	`}
 `;
 
-const MySystemComponent = ({className, my_system_list}) => (
-	<Wrapper className={className}>
-		<List>
-			{my_system_list.map(({text, link}, i) => (
-				<Item key={i} className='scrollreveal'><span role="img" aria-label="point right">👉</span> <a href={link} target='_blank' rel="noopener noreferrer" onClick={() => {
-					ReactGA.event({
-			            category: 'My System',
-			            action: text,
-			        });
-				}}>{text}</a> <span role="img" aria-label="point right">👈</span></Item>
-			))}
-		</List>
-	</Wrapper>
-)
-
-//------------------------------------------------------------------------------
-
-class MySystem extends Component {
-	render(){
-		return(
-			<Container title='This is My System'>
-				<MySystemComponent my_system_list={my_system_list}/>
-			</Container>
-		)
+const Anchor = styled(GAAnchor)`
+	:link,
+	:visited{
+		cursor: pointer;
+		text-decoration: none;
+		color: ${COLORS.GREY_2};
 	}
-}
 
-export default MySystem;
+	:hover{
+		color: ${COLORS.PRIMARY};
+	};
+`;

@@ -6,24 +6,25 @@ import {
 	Section,
 	GAAnchor
 } from '../components';
-import { COLORS } from '../atoms';
+import {
+	COLORS,
+	TYPOGRAPHY
+} from '../atoms';
 
 
-const OneExperience = ({ logoPath, company, link, position, duration, details }) => (
+const OneExperience = ({ info: { logoPath, company, link, position, duration, details } }) => (
 	<ExperienceDiv>
 		<ImageDiv className='scrollreveal'>
 			<img src={logoPath} alt={company} />
 		</ImageDiv>
 		<div className='scrollreveal'>
-			<CompanyAnchor target='_blank' rel="noopener" href={link}>
-				{company}
+			<CompanyAnchor target='_blank' rel="noopener noreferrer" href={link}>
+				<TYPOGRAPHY.H5 align='inherit' color='inherit'>{company}</TYPOGRAPHY.H5>
 			</CompanyAnchor>
-			<PositionText>{position}</PositionText>
-			<DurationText>{duration}</DurationText>
+			<StyledP align='inherit' color={COLORS.GREY_2} weight={400}>{position}</StyledP>
+			<StyledS1 align='inherit' color={COLORS.GREY_3}>{duration}</StyledS1>
 			<Ul>
-				{details.map((detail, i) => (
-					<Li key={i}>{detail}</Li>
-				))}
+				{details.map((detail, i) => <li key={i}><TYPOGRAPHY.P>{detail}</TYPOGRAPHY.P></li>)}
 			</Ul>
 		</div>
 	</ExperienceDiv>
@@ -32,7 +33,7 @@ const OneExperience = ({ logoPath, company, link, position, duration, details })
 export class ExperiencesSection extends Component {
 	render() {
 		return (
-			<Section title='What I&apos;ve done so far'>
+			<Section id={this.props.id} title='What I&apos;ve done so far'>
 				<div>
 					{EXPERIENCES.map((info, i) => <OneExperience key={i} info={info} />)}
 				</div>
@@ -46,15 +47,15 @@ const ExperienceDiv = styled.div`
 	align-items: center;
 	padding: 4rem 3rem;
 
-	:first-child{
+	:first-child {
 		padding-top: 3rem;
 	}
 
-	:last-child{
+	:last-child {
 		padding-bottom: 3rem;
 	}
 
-	:not(:last-child){
+	:not(:last-child) {
 		border-bottom: 1px solid ${COLORS.GREY_7};
 	}
 
@@ -67,15 +68,15 @@ const ExperienceDiv = styled.div`
 
 const ImageDiv = styled.div`
 	flex: 0 0 auto;
-	margin-right: 3rem;
-	height: 12rem;
-	width: 12rem;
 	display: flex;
 	justify-content: center;
+	width: 12rem;
+	height: 12rem;
+	margin-right: 3rem;
 	border-radius: 50%;
 	overflow: hidden;
 
-	img{
+	img {
 		height: 100%;
 		width: auto;
 	}
@@ -87,46 +88,44 @@ const ImageDiv = styled.div`
 
 	${media.sizeV`
 		flex-direction: column;
-		margin: 0 auto 1rem auto;
+		margin: 0 auto 1.2rem auto;
 	`}
 `;
 
 const CompanyAnchor = styled(GAAnchor)`
 	:link,
 	:visited{
-		font-size: 2.5rem;
-		font-weight: 400;
-		color: ${COLORS.PRIMARY};
+		cursor: ${props => props.href ? 'pointer' : 'none'};
+		color: ${props => props.href ? COLORS.PRIMARY : COLORS.GREY_1};
 		text-decoration: none;
 	};
 
 	:hover{
-		text-decoration: underline;
+		text-decoration: ${props => props.href ? 'underline' : 'none'};
 	};
+
+	${media.sizeV`
+		text-align: center;
+	`}
 `;
 
-const PositionText = styled.p`
-	font-size: 1.7rem;
-	font-weight: 400;
-	margin: .8rem 0;
-	color: ${COLORS.GREY_3}
+const StyledP = styled(TYPOGRAPHY.P)`
+	margin: .18rem 0;
+
+	${media.sizeV`
+		text-align: center;
+	`}
 `;
 
-const DurationText = styled.p`
-	font-size: 1.6rem;
-	font-weight: 300;
-	margin-bottom: 1.2rem;
-	color: ${COLORS.GREY_4}
+const StyledS1 = styled(TYPOGRAPHY.S1)`
+	margin-bottom: 1.4rem;
+
+	${media.sizeV`
+		text-align: center;
+	`}
 `;
 
 const Ul = styled.ul`
 	margin-left: 1.7rem;
 	list-style-position: outside;
-`;
-
-const Li = styled.li`
-	font-size: 1.8rem;
-	font-weight: 300;
-	line-height: 1.3;
-	color: ${COLORS.GREY_2};
 `;

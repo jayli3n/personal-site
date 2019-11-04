@@ -8,7 +8,7 @@ import { COLORS } from '../atoms';
 export const Socials = ({ small, className }) => (
 	<SocialsDiv isSmall={small} className={className}>
 		{SOCIALS.map((item, i) => (
-			<SocialIcon key={i} isSmall={small} href={item.link} target='_blank' rel="noopener">
+			<SocialIcon key={i} isSmall={small} href={item.link} target='_blank' rel="noopener noreferrer">
 				<item.Svg />
 			</SocialIcon>
 		))}
@@ -22,8 +22,8 @@ const SocialsDiv = styled.div`
 
 const SocialIcon = styled(GAAnchor)`
 	cursor: pointer;
-	height: ${props => props.isSmall ? '2rem' : '2.5rem'};
-	width: ${props => props.isSmall ? '2rem' : '2.5rem'};
+	height: ${props => props.isSmall ? '1.9rem' : '2.5rem'};
+	width: ${props => props.isSmall ? '1.9rem' : '2.5rem'};
 	fill: ${COLORS.GREY_5};
 	transition: all .2s;
 

@@ -18,7 +18,6 @@ export const COLORS = {
 	GREY_5: '#BBBBBB',
 	GREY_6: '#DFE1E5',
 	GREY_7: '#F4F2F2',
-	GREY_8: '#FAF9F9',
 };
 
 // ----------------------------------
@@ -136,6 +135,15 @@ export const TYPOGRAPHY = {
 	`,
 	S1: styled.p`
 		font-size: 1.6rem;
+		letter-spacing: inherit;
+		font-family: ${props => props.fontFamily || 'Stratum'};
+		line-height: ${props => props.lineHeight || 'inherit'};
+		font-weight: ${props => props.weight || 300};
+		text-align: ${props => props.align || 'left'};
+		color: ${props => props.color || COLORS.GREY_2};
+	`,
+	S2: styled.p`
+		font-size: 1.4rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Stratum'};
 		line-height: ${props => props.lineHeight || 'inherit'};
