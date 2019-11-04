@@ -65,6 +65,8 @@ export const fonts = {
 	FONT_THIN
 }
 
+export { resumePDF };
+
 export { avatarJPG };
 
 export const experiencesJPGs = {
