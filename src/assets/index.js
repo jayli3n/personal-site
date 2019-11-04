@@ -32,11 +32,15 @@ import raikohappsJPG from './portfolio/jayli3n-raikoh-apps-snapshot copy.jpg';
 import { ReactComponent as TranslateSVG } from './icons/jayli3n-google_translate.svg';
 import { ReactComponent as GitHubSVG } from './icons/jayli3n-github.svg';
 import { ReactComponent as GmailSVG } from './icons/jayli3n-gmail.svg';
-import { ReactComponent as LinkedInSVG } from './icons/jayli3n-linkedin.svg';
-import { ReactComponent as MediumSVG } from './icons/jayli3n-medium.svg';
 import { ReactComponent as MenuSVG } from './icons/jayli3n-menu.svg';
-import { ReactComponent as TwitterSVG } from './icons/jayli3n-twitter.svg';
 import { ReactComponent as PinSVG } from './icons/jayli3n-pin.svg';
+import { ReactComponent as MediumSVG } from './icons/jayli3n-medium.svg';
+import { ReactComponent as TwitterSVG } from './icons/jayli3n-twitter.svg';
+import { ReactComponent as YouTubeSVG } from './icons/jayli3n-youtube.svg';
+import { ReactComponent as FacebookSVG } from './icons/jayli3n-facebook.svg';
+import { ReactComponent as InstagramSVG } from './icons/jayli3n-instagram.svg';
+import { ReactComponent as DiscordSVG } from './icons/jayli3n-discord.svg';
+
 import { ReactComponent as AndroidSVG } from './technologies/jayli3n-android.svg';
 import { ReactComponent as BootstrapSVG } from './technologies/jayli3n-bootstrap.svg';
 import { ReactComponent as CSS3SVG } from './technologies/jayli3n-css3.svg';
@@ -96,13 +100,16 @@ export const portfolioJPGs = {
 
 export const icons = {
 	TranslateSVG,
-	GitHubSVG,
 	GmailSVG,
-	LinkedInSVG,
-	MediumSVG,
 	MenuSVG,
+	PinSVG,
+	GitHubSVG,
+	MediumSVG,
 	TwitterSVG,
-	PinSVG
+	YouTubeSVG,
+	FacebookSVG,
+	InstagramSVG,
+	DiscordSVG
 };
 
 export const technologies = [

@@ -22,8 +22,8 @@ const SocialsDiv = styled.div`
 
 const SocialIcon = styled(GAAnchor)`
 	cursor: pointer;
-	height: ${props => props.isSmall ? '1.9rem' : '2.5rem'};
-	width: ${props => props.isSmall ? '1.9rem' : '2.5rem'};
+	height: ${props => props.isSmall ? '1.6rem' : '2.2rem'};
+	width: ${props => props.isSmall ? '1.6rem' : '2.2rem'};
 	fill: ${COLORS.GREY_5};
 	transition: all .2s;
 

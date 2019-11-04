@@ -13,16 +13,28 @@ export const SOCIALS = [
 		link: 'https://github.com/jayli3n'
 	},
 	{
-		Svg: icons.LinkedInSVG,
-		link: 'https://github.com/jayli3n'
+		Svg: icons.FacebookSVG,
+		link: 'https://www.facebook.com/raikohapps'
+	},
+	{
+		Svg: icons.InstagramSVG,
+		link: 'https://www.instagram.com/raikoh_apps'
+	},
+	{
+		Svg: icons.TwitterSVG,
+		link: 'https://twitter.com/raikohapps'
+	},
+	{
+		Svg: icons.DiscordSVG,
+		link: 'https://discord.gg/YCFFFRJ'
 	},
 	{
 		Svg: icons.MediumSVG,
 		link: 'https://medium.com/@raikohapps'
 	},
 	{
-		Svg: icons.TwitterSVG,
-		link: 'https://twitter.com/raikohapps'
+		Svg: icons.YouTubeSVG,
+		link: 'https://www.youtube.com/channel/UCQHWgmwxdQY3EzRCLVSECsw'
 	}
 ];
 
@@ -103,7 +115,7 @@ export const EXPERIENCES = [
 		details: [
 			'Raikoh Apps is an app, game and website development project.',
 			'I use it as a creative playground to release small and fun projects to the world.',
-			'This project allows me to learn about the indie app and game development industries.',
+			'It allows me to learn about the indie app and game development industries.',
 			'One mobile app has been released and more to come!'
 		]
 	},

@@ -66,6 +66,6 @@ const StyledS2 = styled(TYPOGRAPHY.S2)`
 `
 
 const StyledSocials = styled(Socials)`
-	margin-top: 1.3rem;
+	margin-top: 1rem;
 	margin-bottom: 2rem;
 `;
