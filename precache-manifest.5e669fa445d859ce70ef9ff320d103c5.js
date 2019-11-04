@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "172b73af5a17f8c2c8a76677c2c973cf",
+    "revision": "bac1bfe618cb535c110df496c043623a",
     "url": "/index.html"
   },
   {
-    "revision": "8ed5c58672f5d49b4b17",
-    "url": "/static/js/2.b1e81a72.chunk.js"
+    "revision": "0f68ffdd4364c34c9b0a",
+    "url": "/static/js/2.a6ef6ecb.chunk.js"
   },
   {
-    "revision": "ec79c288953a09220e4d",
-    "url": "/static/js/main.dee82ffe.chunk.js"
+    "revision": "6f832a62636d33abaaba",
+    "url": "/static/js/main.3a3caad2.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
+  },
+  {
+    "revision": "28f8cf103c721d64a23774852c1149fd",
+    "url": "/static/media/Jay_Li_Resume_2019.28f8cf10.pdf"
   },
   {
     "revision": "135f44b0ed55d7029d056523c56d3c14",
