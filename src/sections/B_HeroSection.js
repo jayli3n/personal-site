@@ -16,7 +16,7 @@ import {
 import { avatarJPG } from '../assets';
 
 
-const resumeLocation = '../assets/Jay_Li_Resume_2019.pdf';
+const resumeLocation = '../Jay_Li_Resume_2019.pdf';
 
 export class HeroSection extends Component {
 	render() {
