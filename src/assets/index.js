@@ -6,6 +6,9 @@ import FONT_REGULAR from './fonts/StratumNo1 Regular.ttf';
 import FONT_LIGHT from './fonts/StratumNo1 Light.ttf';
 import FONT_THIN from './fonts/StratumNo1 Thin.ttf';
 
+// Import PDF
+import resumePDF from './Jay_Li_Resume_2019.pdf';
+
 // Import images
 import avatarJPG from './jayli3n-avatar.jpg';
 import tutorJPG from './experiences/jayli3n-tutor.jpg';

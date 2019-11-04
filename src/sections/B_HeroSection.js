@@ -13,10 +13,11 @@ import {
 	TYPOGRAPHY,
 	COMMON_STYLES
 } from '../atoms';
-import { avatarJPG } from '../assets';
+import {
+	resumePDF,
+	avatarJPG
+} from '../assets';
 
-
-const resumeLocation = '../Jay_Li_Resume_2019.pdf';
 
 export class HeroSection extends Component {
 	render() {
@@ -32,7 +33,7 @@ export class HeroSection extends Component {
 						<Anchor onClick={() => smoothScroll('footer')}>
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Contact Me</TYPOGRAPHY.P>
 						</Anchor>
-						<Anchor secondary href={resumeLocation} target='_blank' rel="noopener noreferrer">
+						<Anchor secondary href={resumePDF} target='_blank' rel="noopener noreferrer">
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Resume</TYPOGRAPHY.P>
 						</Anchor>
 					</AnchorsDiv>
