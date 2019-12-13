@@ -28,13 +28,15 @@ const StyledSection = styled.section`
 	background-color: ${props => props.transparent ? `transparent` : COLORS.GREY_7};
 
 	:nth-of-type(2) {
-		padding-top: 16rem;
+		padding-top: 14rem;
 		border-top-right-radius: 50% 3vh;
 		border-top-left-radius: 50% 3vh;
 	};
 
 	:nth-last-of-type(2) {
-		padding-bottom: 12rem;
+		padding-bottom: 16rem;
+		border-bottom-right-radius: 50% 3vh;
+		border-bottom-left-radius: 50% 3vh;
 	};
 
 	${media.sizeIV`
