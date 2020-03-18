@@ -20,7 +20,7 @@ export class ProfileSection extends Component {
 					<AboutDiv className='scrollreveal'>
 						<StyledH5>Profile</StyledH5>
 						<TYPOGRAPHY.P>
-							Hi, I’m Jay. It’s great to see you on my page!<br />
+							Hi, I’m James. It’s great to see you on my page!<br />
 							I’m a software engineer who loves to see magic happen and problems solved from my lines of code. 
 							In addition, I love to work in teams and make meaningful connections with people to help each other learn and grow.
 						</TYPOGRAPHY.P>
