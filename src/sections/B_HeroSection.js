@@ -25,7 +25,7 @@ export class HeroSection extends Component {
 			<Section id={this.props.id} transparent>
 				<InfoDiv>
 					<AvatarDiv className='scrollreveal' />
-					<TYPOGRAPHY.H4 className='scrollreveal' color={COLORS.WHITE}>Jay Li</TYPOGRAPHY.H4>
+					<TYPOGRAPHY.H4 className='scrollreveal' color={COLORS.WHITE}>James Li</TYPOGRAPHY.H4>
 					<TYPOGRAPHY.H6 className='scrollreveal' color={COLORS.WHITE}>
 						&lt; Software Developer &#47;&gt;
 					</TYPOGRAPHY.H6>
