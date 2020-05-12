@@ -17,7 +17,7 @@ export const FooterSection = ({ id }) => (
 			I'm always open to make new friends.<br />
 			Shoot me an email at: <A href="mailto: jayli3n@gmail.com" rel="noopener noreferrer">jayli3n@gmail.com</A>
 		</StyledP>
-		<TYPOGRAPHY.S2 color={COLORS.GREY_5} align='center'>&copy; 2019 - 2020 Jay Li, All Rights Reserved.</TYPOGRAPHY.S2>
+		<TYPOGRAPHY.S2 color={COLORS.GREY_5} align='center'>&copy; 2019 - 2020 James Li, All Rights Reserved.</TYPOGRAPHY.S2>
 		<StyledSocials small />
 
 		<StyledS2 color={COLORS.GREY_4} align='right'>Designed & developed from scratch.<br />

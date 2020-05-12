@@ -33,7 +33,7 @@ export class HeroSection extends Component {
 						<Anchor onClick={() => smoothScroll('footer')}>
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Contact Me</TYPOGRAPHY.P>
 						</Anchor>
-						<Anchor secondary href={resumePDF} target='_blank' rel="noopener noreferrer">
+						<Anchor secondary href='#' rel="noopener noreferrer">
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Resume</TYPOGRAPHY.P>
 						</Anchor>
 					</AnchorsDiv>
