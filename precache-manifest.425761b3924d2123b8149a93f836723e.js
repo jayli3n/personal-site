@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5cb6d7c36f3a06237bf1d490d45c5e5",
+    "revision": "f58e32b0c0f9b7db32e28e71a264ee82",
     "url": "/index.html"
   },
   {
-    "revision": "0f68ffdd4364c34c9b0a",
-    "url": "/static/js/2.a6ef6ecb.chunk.js"
+    "revision": "41916fe47ba6090ec0d4",
+    "url": "/static/js/2.c81af89e.chunk.js"
   },
   {
-    "revision": "f8ea04ae66b3a00533f5",
-    "url": "/static/js/main.bd679a04.chunk.js"
+    "revision": "a6670ed56d450e67bb27",
+    "url": "/static/js/main.fbedf837.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-android.bafc4be3.svg"
   },
   {
-    "revision": "975b7882216d98f6aa9ee3c1abc599c1",
-    "url": "/static/media/jayli3n-avatar.975b7882.jpg"
+    "revision": "ddefdd662e6397d2ad057db0c8ad6357",
+    "url": "/static/media/jayli3n-avatar.ddefdd66.jpg"
   },
   {
     "revision": "fe35993fd308247892f4dd71e6a70788",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1b360f517849f9eb939165d18738714",
     "url": "/static/media/jayli3n-bootstrap.b1b360f5.svg"
+  },
+  {
+    "revision": "c057950d854a33ecf54ad56b5516b17a",
+    "url": "/static/media/jayli3n-calytrix.c057950d.jpg"
   },
   {
     "revision": "b675af6016eed403de51899be75efe59",
@@ -92,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-gmail.808f00f5.svg"
   },
   {
-    "revision": "6c613299984ecaf6de7d8061787cb7ef",
-    "url": "/static/media/jayli3n-google_translate.6c613299.svg"
+    "revision": "6d8e357a608f3d9dccc102d19e4626b3",
+    "url": "/static/media/jayli3n-google_translate.6d8e357a.svg"
   },
   {
     "revision": "3056bf2f96c40cd0a814b355959a6983",
@@ -110,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ed633989375e0e8a9a361d29453c7da",
     "url": "/static/media/jayli3n-linear-gradient_snapshot.8ed63398.jpg"
+  },
+  {
+    "revision": "48a2133dd5c34ad46cc6ab6ff06c03ec",
+    "url": "/static/media/jayli3n-linkedin.48a2133d.svg"
   },
   {
     "revision": "7792a29f1418737d6cfb84d90b4ebbbb",
@@ -136,20 +144,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-nexter-real-estate_snapshot.02ab3328.jpg"
   },
   {
+    "revision": "40272245a301ff44001e790f449e1f98",
+    "url": "/static/media/jayli3n-ninja.40272245.jpg"
+  },
+  {
     "revision": "4edea5d49bd09fd7b5eda2e56d6ab18b",
     "url": "/static/media/jayli3n-node-dot-js.4edea5d4.svg"
   },
   {
-    "revision": "dae8cc21cf7c400dacbeb56f5c625968",
-    "url": "/static/media/jayli3n-pin.dae8cc21.svg"
+    "revision": "8f6368756634361aaf31c46c606103a3",
+    "url": "/static/media/jayli3n-pin.8f636875.svg"
   },
   {
     "revision": "34cbdb156ea57b239962b2909e0a6d89",
     "url": "/static/media/jayli3n-postgresql.34cbdb15.svg"
   },
   {
-    "revision": "8034317e19b624e156c57c35772843f8",
-    "url": "/static/media/jayli3n-power-bi.8034317e.svg"
+    "revision": "aecb63e80a0d8b11b3a25bc279860f5a",
+    "url": "/static/media/jayli3n-power-bi.aecb63e8.svg"
   },
   {
     "revision": "3fe2815380f515b3fba0247ec0cb70f2",
