@@ -39,8 +39,8 @@ class App extends Component {
 				<HeroSection id='home' />
 				<ProfileSection id='about' />
 				<TechnologiesSection id='skills' />
-				<PortfolioSection id='portfolio' />
 				<ExperiencesSection id='experiences' />
+				<PortfolioSection id='portfolio' />
 				<ExtracurricularSection id='outside' />
 				<MySystemSection id='mysystem' />
 				<FooterSection id='footer' />

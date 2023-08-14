@@ -81,7 +81,7 @@ export class PortfolioSection extends Component{
 
 	render() {
 		return (
-			<Section id={this.props.id} title='Portfolio' transparent>
+			<Section id={this.props.id} title='For Fun (out dated)' transparent>
 				<WrapperDiv>
 					<CardsComponent portfolio={PORTFOLIO} isShowAll={this.state.isShowAll} />
 					<ShowAllButton onClick={this.showAll}>

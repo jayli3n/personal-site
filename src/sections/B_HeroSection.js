@@ -14,7 +14,6 @@ import {
 	COMMON_STYLES
 } from '../atoms';
 import {
-	resumePDF,
 	avatarJPG
 } from '../assets';
 
@@ -27,14 +26,11 @@ export class HeroSection extends Component {
 					<AvatarDiv className='scrollreveal' />
 					<TYPOGRAPHY.H4 className='scrollreveal' color={COLORS.WHITE}>James Li</TYPOGRAPHY.H4>
 					<TYPOGRAPHY.H6 className='scrollreveal' color={COLORS.WHITE}>
-						&lt; Software Developer &#47;&gt;
+						&lt; Software Engineer &#47;&gt;
 					</TYPOGRAPHY.H6>
 					<AnchorsDiv className='scrollreveal'>
 						<Anchor onClick={() => smoothScroll('footer')}>
 							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Contact Me</TYPOGRAPHY.P>
-						</Anchor>
-						<Anchor secondary href='#' rel="noopener noreferrer">
-							<TYPOGRAPHY.P color={COLORS.WHITE} align='center'>Resume</TYPOGRAPHY.P>
 						</Anchor>
 					</AnchorsDiv>
 					<StyledSocials className='scrollreveal' />

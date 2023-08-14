@@ -22,7 +22,7 @@ export class ProfileSection extends Component {
 						<TYPOGRAPHY.P>
 							Hi, I’m James. It’s great to see you on my page!<br />
 							I’m a software engineer who loves to see magic happen and problems solved from my lines of code. 
-							In addition, I love to work in teams and make meaningful connections with people to help each other learn and grow.
+							In addition, I love to work in a team and make meaningful connections with people.
 						</TYPOGRAPHY.P>
 					</AboutDiv>
 					<InfoDiv className='scrollreveal'>
@@ -31,9 +31,9 @@ export class ProfileSection extends Component {
 							<ListItemComponent svg={<icons.GmailSVG />}
 								value='jayli3n&#64;gmail.com' />
 							<ListItemComponent svg={<icons.PinSVG />}
-								value='Australia' />
+								value='Perth, Australia' />
 							<ListItemComponent svg={<icons.TranslateSVG />}
-								value='English, Mandarin, Cantonese' />
+								value='English, Chinese' />
 						</Ul>
 					</InfoDiv>
 				</WrapperDiv>

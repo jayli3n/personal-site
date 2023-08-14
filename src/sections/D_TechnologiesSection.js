@@ -12,7 +12,7 @@ import { technologies } from '../assets';
 export class TechnologiesSection extends Component {
 	render() {
 		return (
-			<Section id={this.props.id} title='Professional Skills'>
+			<Section id={this.props.id} title='Some Skills'>
 				<InnerDiv>
 					{technologies.map(({ name, fill, bgColor, Svg }, i) => (
 						<IconDiv key={i}>

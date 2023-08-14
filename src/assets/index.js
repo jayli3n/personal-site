@@ -15,6 +15,9 @@ import tutorJPG from './experiences/jayli3n-tutor.jpg';
 import ultraveJPG from './experiences/jayli3n-ultrave.jpg';
 import woodJPG from './experiences/jayli3n-woodplc.jpg';
 import raikohappsLogoJPG from './experiences/jayli3n-raikohapps.jpg';
+import chevronJPG from './experiences/jayli3n-chevron.jpg';
+import calytrixJPG from './experiences/jayli3n-calytrix.jpg';
+import ninjaJPG from './experiences/jayli3n-ninja.jpg';
 import bookPNG from './outside/jayli3n-book.png';
 import litPNG from './outside/jayli3n-lit.png';
 import racketPNG from './outside/jayli3n-racket.png';
@@ -40,6 +43,7 @@ import { ReactComponent as YouTubeSVG } from './icons/jayli3n-youtube.svg';
 import { ReactComponent as FacebookSVG } from './icons/jayli3n-facebook.svg';
 import { ReactComponent as InstagramSVG } from './icons/jayli3n-instagram.svg';
 import { ReactComponent as DiscordSVG } from './icons/jayli3n-discord.svg';
+import { ReactComponent as LinkedInSVG } from './icons/jayli3n-linkedin.svg';
 
 import { ReactComponent as AndroidSVG } from './technologies/jayli3n-android.svg';
 import { ReactComponent as BootstrapSVG } from './technologies/jayli3n-bootstrap.svg';
@@ -77,7 +81,10 @@ export const experiencesJPGs = {
 	tutorJPG,
 	ultraveJPG,
 	woodJPG,
-	raikohappsLogoJPG
+	raikohappsLogoJPG,
+	chevronJPG,
+	calytrixJPG,
+	ninjaJPG
 };
 
 export const outsidePNGs = {
@@ -109,7 +116,8 @@ export const icons = {
 	YouTubeSVG,
 	FacebookSVG,
 	InstagramSVG,
-	DiscordSVG
+	DiscordSVG,
+	LinkedInSVG
 };
 
 export const technologies = [

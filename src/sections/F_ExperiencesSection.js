@@ -33,7 +33,7 @@ const OneExperience = ({ info: { logoPath, company, link, position, duration, de
 export class ExperiencesSection extends Component {
 	render() {
 		return (
-			<Section id={this.props.id} title='What I&apos;ve done so far'>
+			<Section id={this.props.id} title='Experiences'>
 				<div>
 					{EXPERIENCES.map((info, i) => <OneExperience key={i} info={info} />)}
 				</div>

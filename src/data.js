@@ -13,28 +13,12 @@ export const SOCIALS = [
 		link: 'https://github.com/jayli3n'
 	},
 	{
-		Svg: icons.FacebookSVG,
-		link: 'https://www.facebook.com/raikohapps'
+		Svg: icons.LinkedInSVG,
+		link: 'https://www.linkedin.com/in/jayli3n/'
 	},
 	{
 		Svg: icons.InstagramSVG,
-		link: 'https://www.instagram.com/raikoh_apps'
-	},
-	{
-		Svg: icons.TwitterSVG,
-		link: 'https://twitter.com/raikohapps'
-	},
-	{
-		Svg: icons.DiscordSVG,
-		link: 'https://discord.gg/YCFFFRJ'
-	},
-	{
-		Svg: icons.MediumSVG,
-		link: 'https://medium.com/@raikohapps'
-	},
-	{
-		Svg: icons.YouTubeSVG,
-		link: 'https://www.youtube.com/channel/UCQHWgmwxdQY3EzRCLVSECsw'
+		link: 'https://instagram.com/james2li'
 	}
 ];
 
@@ -107,53 +91,46 @@ export const PORTFOLIO = [
 // Array of experiences, makes it easy to add or remove in the future
 export const EXPERIENCES = [
 	{
-		logoPath: experiencesJPGs.raikohappsLogoJPG,
-		company: 'Raikoh Apps',
-		link: 'https://raikohapps.com/',
-		position: 'Founder',
-		duration: 'Oct 2019 - Present',
+		logoPath: experiencesJPGs.calytrixJPG,
+		company: 'Calytrix Technologies',
+		link: 'https://www.calytrix.com/',
+		position: 'Software Engineer',
+		duration: 'Jan 2023 - Present',
 		details: [
-			'Raikoh Apps is an app, game and website development project.',
-			'I use it as a creative playground to release small and fun projects to the world.',
-			'It allows me to learn about the indie app and game development industries.',
-			'One mobile app has been released and more to come!'
+			'Checkout my LinkedIn profile for more detail',
+			'TODO'
 		]
 	},
 	{
-		logoPath: experiencesJPGs.woodJPG,
-		company: 'Wood PLC',
-		link: 'https://www.woodplc.com/',
-		position: 'Technical Analyst',
-		duration: 'Feb 2018 - Present',
+		logoPath: experiencesJPGs.ninjaJPG,
+		company: 'Ninja Software',
+		link: 'https://www.linkedin.com/company/ninjasoftware/',
+		position: 'Software Engineer',
+		duration: 'Dec 2021 - Jan 2023',
 		details: [
-			'Worked within asset management and inspection teams to deliver inspection and turnaround maintenance scopes.',
-			'Primarily worked on database management and data manipulation.',
-			'Developed scripts and programs for the team to reduce complexity and time of tasks.',
-			'I’m grateful for the time I spent with different clients alongside brilliant engineers; whose work gave me a glimpse into the challenges and rewards of an engineer’s life.'
+			'Lead front-end engineer for Supremacy Game (https://play.supremacy.game): a 24/7 live battle stream of mechs battling and players dropping abilities, think Hunger Games meet Mechs',
+			'Full stack developer utilizing ReactJS, GoLang, and PostgreSQL',
+			'Implemented features using PixiJS, ThreeJS, Web3',
+			'Communicate data with WebSockets and REST API\'s',
+			'Write tests and optimize front-end for best performance and SEO',
+			'Features include: in-game minimap, inventory page, battle lobbies, game pass, marketplace, quests etc.',
+			'Built custom in-house WebSocket client to handle rapid game data',
+			'Mentored and trained junior developers in best practices for clean and performance UI/UX',
+			'Extremely agile work environment and highly collaborative with other team members'
 		]
 	},
 	{
-		logoPath: experiencesJPGs.ultraveJPG,
-		company: 'UltraVe',
-		link: 'https://instagram.com/ultraveofficial',
-		position: 'Founder',
-		duration: 'Sep 2018 - Present',
+		logoPath: experiencesJPGs.chevronJPG,
+		company: 'Chevron',
+		link: 'https://australia.chevron.com/',
+		position: 'Senior Technical Analyst',
+		duration: 'Apr 2019 - Present',
 		details: [
-			'UltraVe is a social media community and online clothing company that promotes healthy eating and a cruelty-free lifestyle.',
-			'I have learned the importance of online marketing and online presence that comes from search engine optimization (SEO) and ongoing community building.',
-			'This small project has taught me how to work on tasks independently: site creation, product sponsoring, graphic designs, customer support etc.',
-			'As a way to give back, a portion of the proceeds go to animal rescue and shelters.'
-		]
-	},
-	{
-		logoPath: experiencesJPGs.tutorJPG,
-		company: 'Private Tutor',
-		duration: 'Dec 2015 - Sep 2018',
-		details: [
-			'Graduated school with a body of knowledge that I wanted to give back to the local community.',
-			'Focused on 12th grade Mathematics, Physics and Chemistry.',
-			'By the end of the school year, my students achieved grade A from lower grades; 2 of which earned a Dux Award (Top ranked student of their year group).',
-			'1000+ hours of teaching experience.'
+			'Sole developer within the ABU Fixed Equipment Integrity Team (FEI) who are responsible for regular fixed equipment inspections and Turnarounds for Gorgon Gas Plant & Wheatstone Gas Plant ($90+ billion worth of assets)',
+			'Developed in-house solutions with Microsoft Power Platform',
+			'Microsoft Access DB front end + SQL Server + Power Automate',
+			'Power Bi KPI dashboards for the team and manager',
+			'100+ users within the company using the solutions I\'ve built'
 		]
 	}
 ];
@@ -162,22 +139,22 @@ export const EXTRACURRICULAR = [
 	{
 		img: outsidePNGs.litPNG,
 		title: 'Friends',
-		text: 'I find time to spend with my friends for occasional movie marathons, board games and some other stuff.'
+		text: 'I love to spend time with my friends for occasional movie marathons, board games and other fun stuff.'
 	},
 	{
 		img: outsidePNGs.workoutPNG,
 		title: 'Workout',
-		text: 'Incredibly important to keep my body moving especially when I working in front of a desk all day.'
+		text: 'The little voice inside my head won\'t let me sleep if I don\'t get at least a three workouts sessions a week.'
 	},
 	{
 		img: outsidePNGs.racketPNG,
 		title: 'Sports',
-		text: 'I enjoy racket sports such as tennis and badminton. I play badminton at a local club and attempted a few tournaments, did not go well.'
+		text: 'Can\'t live without racket sports, especially badminton. Attempted a tournament, did not go well tho.'
 	},
 	{
 		img: outsidePNGs.bookPNG,
 		title: 'Learning',
-		text: 'The rest of my time are spent discovering new ideas and picking up skills from various online platforms, podcasts and audiobooks.'
+		text: 'Always keeping up-to-date with the latest tech news, struggling to keep up with all the new JS frameworks man.'
 	}
 ];
 
