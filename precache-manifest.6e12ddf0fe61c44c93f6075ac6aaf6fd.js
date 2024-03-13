@@ -1,55 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f58e32b0c0f9b7db32e28e71a264ee82",
+    "revision": "6f86d80bf980c7be61a494eb047913e3",
     "url": "/index.html"
   },
   {
-    "revision": "41916fe47ba6090ec0d4",
-    "url": "/static/js/2.c81af89e.chunk.js"
+    "revision": "e39b32fb4bbc5a84d567",
+    "url": "/static/js/2.0a7c75ab.chunk.js"
   },
   {
-    "revision": "a6670ed56d450e67bb27",
-    "url": "/static/js/main.fbedf837.chunk.js"
+    "revision": "1e8752d8ab1e1a4d4a38",
+    "url": "/static/js/main.005811dc.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "9270f5aa37974f344c91a98078d973dd",
-    "url": "/static/media/Jay_Li_Resume_2019.9270f5aa.pdf"
+    "revision": "21c82294041b1504a5cbe4f566c8acd6",
+    "url": "/static/media/Raleway Bold.21c82294.ttf"
   },
   {
-    "revision": "135f44b0ed55d7029d056523c56d3c14",
-    "url": "/static/media/StratumNo1 Bold.135f44b0.ttf"
+    "revision": "ca057783cb90d483d16662f202212050",
+    "url": "/static/media/Raleway Heavy.ca057783.ttf"
   },
   {
-    "revision": "304df3d1a0d511d1ae5e2b6e5d9aa07a",
-    "url": "/static/media/StratumNo1 Heavy.304df3d1.ttf"
+    "revision": "a36750fa9f5530b0c2760267df04ae37",
+    "url": "/static/media/Raleway Light.a36750fa.ttf"
   },
   {
-    "revision": "e4bdc1ebeb221092a0b0c46b0ce5011d",
-    "url": "/static/media/StratumNo1 Light.e4bdc1eb.ttf"
+    "revision": "0c8c5471e4a8bfe0f6167f56bcf1e2d3",
+    "url": "/static/media/Raleway Medium.0c8c5471.ttf"
   },
   {
-    "revision": "06a6ac1709970857f419dc78aca05353",
-    "url": "/static/media/StratumNo1 Medium.06a6ac17.ttf"
+    "revision": "d95649da7dfb965a289ac29105ce8771",
+    "url": "/static/media/Raleway Regular.d95649da.ttf"
   },
   {
-    "revision": "09bccbfcb6b8a6425e90786b7bac436c",
-    "url": "/static/media/StratumNo1 Regular.09bccbfc.ttf"
-  },
-  {
-    "revision": "90223d37816bacaadc1d7659f6859cf7",
-    "url": "/static/media/StratumNo1 Thin.90223d37.ttf"
+    "revision": "02cf7464c6ce00474e8d90b69f103d75",
+    "url": "/static/media/Raleway Thin.02cf7464.ttf"
   },
   {
     "revision": "bafc4be389087c1c2c6b8e3c2231f09a",
     "url": "/static/media/jayli3n-android.bafc4be3.svg"
   },
   {
-    "revision": "ddefdd662e6397d2ad057db0c8ad6357",
-    "url": "/static/media/jayli3n-avatar.ddefdd66.jpg"
+    "revision": "12b9a35d8d658c036778d48f5264e8b4",
+    "url": "/static/media/jayli3n-avatar.12b9a35d.jpg"
   },
   {
     "revision": "fe35993fd308247892f4dd71e6a70788",
@@ -96,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-gmail.808f00f5.svg"
   },
   {
-    "revision": "6d8e357a608f3d9dccc102d19e4626b3",
-    "url": "/static/media/jayli3n-google_translate.6d8e357a.svg"
+    "revision": "6c613299984ecaf6de7d8061787cb7ef",
+    "url": "/static/media/jayli3n-google_translate.6c613299.svg"
   },
   {
     "revision": "3056bf2f96c40cd0a814b355959a6983",
@@ -152,16 +148,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jayli3n-node-dot-js.4edea5d4.svg"
   },
   {
-    "revision": "8f6368756634361aaf31c46c606103a3",
-    "url": "/static/media/jayli3n-pin.8f636875.svg"
+    "revision": "dae8cc21cf7c400dacbeb56f5c625968",
+    "url": "/static/media/jayli3n-pin.dae8cc21.svg"
   },
   {
     "revision": "34cbdb156ea57b239962b2909e0a6d89",
     "url": "/static/media/jayli3n-postgresql.34cbdb15.svg"
   },
   {
-    "revision": "aecb63e80a0d8b11b3a25bc279860f5a",
-    "url": "/static/media/jayli3n-power-bi.aecb63e8.svg"
+    "revision": "8034317e19b624e156c57c35772843f8",
+    "url": "/static/media/jayli3n-power-bi.8034317e.svg"
   },
   {
     "revision": "3fe2815380f515b3fba0247ec0cb70f2",
