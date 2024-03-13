@@ -165,7 +165,7 @@ const ButtonsDiv = styled.div`
 	justify-content: flex-start;
 	margin-top: auto;
 	padding: 1.3rem 1.6rem;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: 300;
 `;
 

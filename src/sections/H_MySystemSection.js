@@ -43,7 +43,7 @@ const ListItem = styled.li`
 	margin-bottom: .5rem;
 
 	${media.sizeII`
-		font-size: 2.7rem;
+		font-size: 2.5rem;
 	`}
 `;
 

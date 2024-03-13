@@ -72,7 +72,7 @@ export const SIZES = {
 
 export const TYPOGRAPHY = {
 	H1: styled.h1`
-		font-size: 4.6rem;
+		font-size: 4.4rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -81,7 +81,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H2: styled.h2`
-		font-size: 4.1rem;
+		font-size: 3.9rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -90,7 +90,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H3: styled.h3`
-		font-size: 3.6rem;
+		font-size: 3.4rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -99,7 +99,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H4: styled.h4`
-		font-size: 3.1rem;
+		font-size: 2.9rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -108,7 +108,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H5: styled.h5`
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -117,7 +117,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H6: styled.h6`
-		font-size: 2.2rem;
+		font-size: 2rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -126,7 +126,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	P: styled.p`
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -135,7 +135,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_2};
 	`,
 	S1: styled.p`
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
@@ -144,7 +144,7 @@ export const TYPOGRAPHY = {
 		color: ${props => props.color || COLORS.GREY_2};
 	`,
 	S2: styled.p`
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		letter-spacing: inherit;
 		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
