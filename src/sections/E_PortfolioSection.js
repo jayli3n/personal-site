@@ -81,7 +81,7 @@ export class PortfolioSection extends Component{
 
 	render() {
 		return (
-			<Section id={this.props.id} title='For Fun (out dated)' transparent>
+			<Section id={this.props.id} title='For Fun (Outdated)' transparent>
 				<WrapperDiv>
 					<CardsComponent portfolio={PORTFOLIO} isShowAll={this.state.isShowAll} />
 					<ShowAllButton onClick={this.showAll}>
@@ -165,7 +165,7 @@ const ButtonsDiv = styled.div`
 	justify-content: flex-start;
 	margin-top: auto;
 	padding: 1.3rem 1.6rem;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	font-weight: 300;
 `;
 

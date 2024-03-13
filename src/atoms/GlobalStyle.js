@@ -16,32 +16,32 @@ export const media = Object.keys(SIZES).reduce((acc, label) => {
 // Applies a global reset and global styles
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_HEAVY}');
       font-weight: 600;
   }
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_BOLD}');
       font-weight: 500;
   }
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_MEDIUM}');
       font-weight: 400;
   }
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_REGULAR}');
       font-weight: 300;
   }
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_LIGHT}');
       font-weight: 200;
   }
   @font-face {
-      font-family: "Stratum";
+      font-family: "Raleway";
       src: url('${fonts.FONT_THIN}');
       font-weight: 100;
   }
@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     color: ${COLORS.GREY_1};
     box-sizing: border-box;
-    font-family: 'Stratum', 'Roboto', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', 'Roboto', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     line-height: 1.4;
 

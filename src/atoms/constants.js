@@ -72,81 +72,81 @@ export const SIZES = {
 
 export const TYPOGRAPHY = {
 	H1: styled.h1`
-		font-size: 4.7rem;
+		font-size: 4.6rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 600};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H2: styled.h2`
-		font-size: 4.2rem;
+		font-size: 4.1rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 600};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H3: styled.h3`
-		font-size: 3.7rem;
+		font-size: 3.6rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 500};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H4: styled.h4`
-		font-size: 3.2rem;
+		font-size: 3.1rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 400};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H5: styled.h5`
-		font-size: 2.9rem;
+		font-size: 2.8rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 400};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	H6: styled.h6`
-		font-size: 2.3rem;
+		font-size: 2.2rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 300};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_1};
 	`,
 	P: styled.p`
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 300};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_2};
 	`,
 	S1: styled.p`
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 300};
 		text-align: ${props => props.align || 'left'};
 		color: ${props => props.color || COLORS.GREY_2};
 	`,
 	S2: styled.p`
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 300};
 		text-align: ${props => props.align || 'left'};
@@ -155,7 +155,7 @@ export const TYPOGRAPHY = {
 	Span: styled.span`
 		font-size: inherit;
 		letter-spacing: inherit;
-		font-family: ${props => props.fontFamily || 'Stratum'};
+		font-family: ${props => props.fontFamily || 'Raleway'};
 		line-height: ${props => props.lineHeight || 'inherit'};
 		font-weight: ${props => props.weight || 'inherit'};
 		text-align: ${props => props.align || 'inherit'};

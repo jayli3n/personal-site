@@ -1,13 +1,10 @@
 // Import fonts and its variants
-import FONT_HEAVY from './fonts/StratumNo1 Heavy.ttf';
-import FONT_BOLD from './fonts/StratumNo1 Bold.ttf';
-import FONT_MEDIUM from './fonts/StratumNo1 Medium.ttf';
-import FONT_REGULAR from './fonts/StratumNo1 Regular.ttf';
-import FONT_LIGHT from './fonts/StratumNo1 Light.ttf';
-import FONT_THIN from './fonts/StratumNo1 Thin.ttf';
-
-// Import PDF
-import resumePDF from './Jay_Li_Resume_2019.pdf';
+import FONT_HEAVY from './fonts/Raleway Heavy.ttf';
+import FONT_BOLD from './fonts/Raleway Bold.ttf';
+import FONT_MEDIUM from './fonts/Raleway Medium.ttf';
+import FONT_REGULAR from './fonts/Raleway Regular.ttf';
+import FONT_LIGHT from './fonts/Raleway Light.ttf';
+import FONT_THIN from './fonts/Raleway Thin.ttf';
 
 // Import images
 import avatarJPG from './jayli3n-avatar.jpg';
@@ -72,8 +69,6 @@ export const fonts = {
 	FONT_LIGHT,
 	FONT_THIN
 }
-
-export { resumePDF };
 
 export { avatarJPG };
 

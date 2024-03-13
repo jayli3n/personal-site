@@ -18,7 +18,7 @@ export const SOCIALS = [
 	},
 	{
 		Svg: icons.InstagramSVG,
-		link: 'https://instagram.com/james2li'
+		link: 'https://instagram.com/james12li'
 	}
 ];
 
