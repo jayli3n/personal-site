@@ -26,8 +26,8 @@ export const FooterSection = ({ id }) => (
             <A href="https://github.com/jayli3n/personal-site" target="_blank" rel="noopener noreferrer">
                 here
             </A>
-            .<br />
-            Checkout my LinkedIn for my latest updates.
+            <br />
+            Checkout my LinkedIn for my latest updates
         </StyledS2>
     </Section>
 );

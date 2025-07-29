@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { smoothScroll } from '../util';
 import { Socials, GAAnchor } from '../components';
 import { COLORS, TYPOGRAPHY, COMMON_STYLES } from '../atoms';
 import { avatarJPG } from '../assets';
@@ -18,7 +17,7 @@ export class HeroSection extends Component {
                         &lt;SoftwareEngineer &#47;&gt;
                     </TYPOGRAPHY.H6>
                     <AnchorsDiv className="scrollreveal">
-                        <Anchor onClick={() => smoothScroll('footer')}>
+                        <Anchor href="https://www.linkedin.com/in/jayli3n/" target="_blank" rel="noopener noreferrer">
                             <TYPOGRAPHY.P color={COLORS.WHITE} align="center">
                                 Connect with Me
                             </TYPOGRAPHY.P>
