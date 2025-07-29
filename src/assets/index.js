@@ -1,78 +1,81 @@
 // Import fonts and its variants
-import FONT_HEAVY from './fonts/Raleway Heavy.ttf';
 import FONT_BOLD from './fonts/Raleway Bold.ttf';
+import FONT_HEAVY from './fonts/Raleway Heavy.ttf';
+import FONT_LIGHT from './fonts/Raleway Light.ttf';
 import FONT_MEDIUM from './fonts/Raleway Medium.ttf';
 import FONT_REGULAR from './fonts/Raleway Regular.ttf';
-import FONT_LIGHT from './fonts/Raleway Light.ttf';
 import FONT_THIN from './fonts/Raleway Thin.ttf';
 
 // Import images
-import avatarJPG from './jayli3n-avatar.jpg';
+import calytrixJPG from './experiences/jayli3n-calytrix.jpg';
+import chevronJPG from './experiences/jayli3n-chevron.jpg';
+import ninjaJPG from './experiences/jayli3n-ninja.jpg';
+import raikohappsLogoJPG from './experiences/jayli3n-raikohapps.jpg';
 import tutorJPG from './experiences/jayli3n-tutor.jpg';
 import ultraveJPG from './experiences/jayli3n-ultrave.jpg';
-import woodJPG from './experiences/jayli3n-woodplc.jpg';
-import raikohappsLogoJPG from './experiences/jayli3n-raikohapps.jpg';
-import chevronJPG from './experiences/jayli3n-chevron.jpg';
-import calytrixJPG from './experiences/jayli3n-calytrix.jpg';
 import vgwJPG from './experiences/jayli3n-vgw.jpg';
-import ninjaJPG from './experiences/jayli3n-ninja.jpg';
+import woodJPG from './experiences/jayli3n-woodplc.jpg';
+import avatarJPG from './jayli3n-avatar.jpg';
 import bookPNG from './outside/jayli3n-book.png';
 import litPNG from './outside/jayli3n-lit.png';
 import racketPNG from './outside/jayli3n-racket.png';
 import workoutPNG from './outside/jayli3n-workout.png';
+import booyahPNG from './portfolio/jayli3n-booyah.png';
 import facialJPG from './portfolio/jayli3n-facial-recognition-web-app_snapshot.jpg';
 import linearGradJPG from './portfolio/jayli3n-linear-gradient_snapshot.jpg';
 import natoursJPG from './portfolio/jayli3n-natours-tour-startup_snapshot.jpg';
 import nexterJPG from './portfolio/jayli3n-nexter-real-estate_snapshot.jpg';
+import papercutsPNG from './portfolio/jayli3n-papercuts.png';
+import raikohappsJPG from './portfolio/jayli3n-raikoh-apps-snapshot.jpg';
 import starwarsJPG from './portfolio/jayli3n-starwars-api_snapshot.jpg';
+import supremacyPNG from './portfolio/jayli3n-supremacy.png';
 import thewestcoinsJPG from './portfolio/jayli3n-the-west-coins_snapshot.jpg';
 import trilloJPG from './portfolio/jayli3n-trillo-hotel-booking_snapshot.jpg';
-import raikohappsJPG from './portfolio/jayli3n-raikoh-apps-snapshot copy.jpg';
 
 // Import vectors
-import { ReactComponent as TranslateSVG } from './icons/jayli3n-google_translate.svg';
+import { ReactComponent as DiscordSVG } from './icons/jayli3n-discord.svg';
+import { ReactComponent as FacebookSVG } from './icons/jayli3n-facebook.svg';
 import { ReactComponent as GitHubSVG } from './icons/jayli3n-github.svg';
 import { ReactComponent as GmailSVG } from './icons/jayli3n-gmail.svg';
+import { ReactComponent as TranslateSVG } from './icons/jayli3n-google_translate.svg';
+import { ReactComponent as InstagramSVG } from './icons/jayli3n-instagram.svg';
+import { ReactComponent as LinkedInSVG } from './icons/jayli3n-linkedin.svg';
+import { ReactComponent as MediumSVG } from './icons/jayli3n-medium.svg';
 import { ReactComponent as MenuSVG } from './icons/jayli3n-menu.svg';
 import { ReactComponent as PinSVG } from './icons/jayli3n-pin.svg';
-import { ReactComponent as MediumSVG } from './icons/jayli3n-medium.svg';
 import { ReactComponent as TwitterSVG } from './icons/jayli3n-twitter.svg';
 import { ReactComponent as YouTubeSVG } from './icons/jayli3n-youtube.svg';
-import { ReactComponent as FacebookSVG } from './icons/jayli3n-facebook.svg';
-import { ReactComponent as InstagramSVG } from './icons/jayli3n-instagram.svg';
-import { ReactComponent as DiscordSVG } from './icons/jayli3n-discord.svg';
-import { ReactComponent as LinkedInSVG } from './icons/jayli3n-linkedin.svg';
 
 import { ReactComponent as AndroidSVG } from './technologies/jayli3n-android.svg';
+import { ReactComponent as AWSSVG } from './technologies/jayli3n-aws.svg';
+import { ReactComponent as CodefreshSVG } from './technologies/jayli3n-codefresh.svg';
 import { ReactComponent as CSS3SVG } from './technologies/jayli3n-css3.svg';
+import { ReactComponent as DockerSVG } from './technologies/jayli3n-docker.svg';
 import { ReactComponent as FirebaseSVG } from './technologies/jayli3n-firebase.svg';
 import { ReactComponent as GitSVG } from './technologies/jayli3n-git.svg';
+import { ReactComponent as GithubSVG } from './technologies/jayli3n-github.svg';
+import { ReactComponent as GodotSVG } from './technologies/jayli3n-godot.svg';
 import { ReactComponent as HTML5SVG } from './technologies/jayli3n-html5.svg';
+import { ReactComponent as JiraSVG } from './technologies/jayli3n-jira.svg';
 import { ReactComponent as AccessSVG } from './technologies/jayli3n-microsoftaccess.svg';
+import { ReactComponent as MuiSVG } from './technologies/jayli3n-mui.svg';
 import { ReactComponent as NodeSVG } from './technologies/jayli3n-node-dot-js.svg';
+import { ReactComponent as PixiJSSVG } from './technologies/jayli3n-pixijs.svg';
+import { ReactComponent as PlaywrightSVG } from './technologies/jayli3n-playwright.svg';
 import { ReactComponent as PostgreSQLSVG } from './technologies/jayli3n-postgresql.svg';
+import { ReactComponent as PowerBISVG } from './technologies/jayli3n-power-bi.svg';
+import { ReactComponent as ReactNativeSVG } from './technologies/jayli3n-react-native.svg';
 import { ReactComponent as ReactJSSVG } from './technologies/jayli3n-reactjs.svg';
 import { ReactComponent as ReduxSVG } from './technologies/jayli3n-redux.svg';
 import { ReactComponent as SassSVG } from './technologies/jayli3n-sass.svg';
 import { ReactComponent as ShopifySVG } from './technologies/jayli3n-shopify.svg';
-import { ReactComponent as WordPressSVG } from './technologies/jayli3n-wordpress.svg';
-import { ReactComponent as PowerBISVG } from './technologies/jayli3n-power-bi.svg';
-import { ReactComponent as TypescriptSVG } from './technologies/jayli3n-typescript.svg';
-import { ReactComponent as VueJSSVG } from './technologies/jayli3n-vuejs.svg';
-import { ReactComponent as PixiJSSVG } from './technologies/jayli3n-pixijs.svg';
-import { ReactComponent as GithubSVG } from './technologies/jayli3n-github.svg';
-import { ReactComponent as CodefreshSVG } from './technologies/jayli3n-codefresh.svg';
-import { ReactComponent as DockerSVG } from './technologies/jayli3n-docker.svg';
-import { ReactComponent as AWSSVG } from './technologies/jayli3n-aws.svg';
-import { ReactComponent as UnitySVG } from './technologies/jayli3n-unity.svg';
-import { ReactComponent as TailwindCSSSVG } from './technologies/jayli3n-tailwindcss.svg';
-import { ReactComponent as GodotSVG } from './technologies/jayli3n-godot.svg';
-import { ReactComponent as PlaywrightSVG } from './technologies/jayli3n-playwright.svg';
-import { ReactComponent as JiraSVG } from './technologies/jayli3n-jira.svg';
-import { ReactComponent as MuiSVG } from './technologies/jayli3n-mui.svg';
-import { ReactComponent as VitestSVG } from './technologies/jayli3n-vitest.svg';
 import { ReactComponent as StorybookSVG } from './technologies/jayli3n-storybook.svg';
-import { ReactComponent as ReactNativeSVG } from './technologies/jayli3n-react-native.svg';
+import { ReactComponent as TailwindCSSSVG } from './technologies/jayli3n-tailwindcss.svg';
+import { ReactComponent as TypescriptSVG } from './technologies/jayli3n-typescript.svg';
+import { ReactComponent as UnitySVG } from './technologies/jayli3n-unity.svg';
+import { ReactComponent as VitestSVG } from './technologies/jayli3n-vitest.svg';
+import { ReactComponent as VueJSSVG } from './technologies/jayli3n-vuejs.svg';
+import { ReactComponent as WordPressSVG } from './technologies/jayli3n-wordpress.svg';
 
 // ------------------------------------------
 
@@ -95,7 +98,7 @@ export const experiencesJPGs = {
     chevronJPG,
     calytrixJPG,
     ninjaJPG,
-	vgwJPG
+    vgwJPG,
 };
 
 export const outsidePNGs = {
@@ -114,6 +117,9 @@ export const portfolioJPGs = {
     thewestcoinsJPG,
     trilloJPG,
     raikohappsJPG,
+    booyahPNG,
+    papercutsPNG,
+    supremacyPNG,
 };
 
 export const icons = {

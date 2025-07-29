@@ -4,20 +4,10 @@ import ScrollReveal from 'scrollreveal';
 import { PORTFOLIO } from '../data';
 import { COLORS, TYPOGRAPHY, COMMON_STYLES, PULSE_EFFECT } from '../atoms';
 import { Section, GAAnchor } from '../components';
-import { icons, technologies } from '../assets';
+import { icons } from '../assets';
 
 const DetailsComponent = ({ icons, title, text }) => (
     <DetailsDiv>
-        <IconsDiv>
-            {icons.map((index, i) => {
-                const Svg = technologies[index].Svg;
-                return (
-                    <IconDiv color={COLORS.GREY_2} key={i}>
-                        <Svg />
-                    </IconDiv>
-                );
-            })}
-        </IconsDiv>
         <StyledH6 weight={400} color={COLORS.GREY_1}>
             {title}
         </StyledH6>
@@ -146,7 +136,9 @@ const ImageDiv = styled.div`
 
     img {
         height: 100%;
-        width: auto;
+        width: 100%;
+		object-fit: cover;
+		object-position: top;
     }
 `;
 
@@ -158,7 +150,7 @@ const DetailsDiv = styled.div`
 `;
 
 const StyledH6 = styled(TYPOGRAPHY.H6)`
-    margin-top: 1.6rem;
+    margin-top: 0.6rem;
     margin-bottom: 0.8rem;
 `;
 
@@ -192,10 +184,6 @@ const Anchor = styled(GAAnchor)`
     :active {
         background-color: ${(props) => (props.sourceButton ? COLORS.GREY_3 : COLORS.PRIMARY)};
     }
-`;
-
-const IconsDiv = styled.div`
-    display: flex;
 `;
 
 const IconDiv = styled.div`

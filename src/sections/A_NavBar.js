@@ -55,10 +55,10 @@ export class NavBar extends Component {
                         <NavButton refID="skills" text="Skills" />
                     </ListItem>
                     <ListItem>
-                        <NavButton refID="portfolio" text="Projects" />
+                        <NavButton refID="experiences" text="Experiences" />
                     </ListItem>
                     <ListItem>
-                        <NavButton refID="experiences" text="Experiences" />
+                        <NavButton refID="portfolio" text="Projects" />
                     </ListItem>
                     <ListItem>
                         <NavButton refID="outside" text="Outside of Work" />

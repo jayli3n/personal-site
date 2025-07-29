@@ -20,15 +20,31 @@ export const SOCIALS = [
 // Icons are from "./assets" and follows the order of the exported icons array
 export const PORTFOLIO = [
     {
+        imgPath: portfolioJPGs.papercutsPNG,
+        title: 'Papercuts Godot Devlogs',
+        text: 'Crafting a fast-paced 2D action RPG where you can slice everything. Follow the dev journey!',
+        liveLink: 'https://www.youtube.com/@level1gg',
+    },
+    {
+        imgPath: portfolioJPGs.supremacyPNG,
+        title: 'Supremacy Game',
+        text: 'A 24/7 live stream of mechs battling and players dropping abilities, think Hunger Games meet Mechs.',
+        liveLink: 'https://supremacy.game/',
+    },
+    {
+        imgPath: portfolioJPGs.booyahPNG,
+        title: 'BOOYAH! Real Life Hide & Seek',
+        text: 'Enhance the classic game of hide and seek with a real-time mobile app that tracks your friends and their locations.',
+        liveLink: 'https://raikohapps.com/apps/booyah',
+    },
+    {
         imgPath: portfolioJPGs.raikohappsJPG,
-        icons: [0, 1, 2, 3, 4, 5, 6, 9],
         title: 'Raikoh Apps',
-        text: 'A fun company that develops apps, games and websites. Built from scratch.',
+        text: 'My company that develops apps, games and websites. Built from scratch.',
         liveLink: 'https://raikohapps.com',
     },
     {
         imgPath: portfolioJPGs.trilloJPG,
-        icons: [4, 5, 6, 9],
         title: 'Trillo Front End',
         text: 'A simple and clean front-end for a mockup hotel booking website. Has nice animations.',
         liveLink: 'https://jayli3n.github.io/trillo-front-end/',
@@ -36,7 +52,6 @@ export const PORTFOLIO = [
     },
     {
         imgPath: portfolioJPGs.facialJPG,
-        icons: [0, 2, 3, 4, 5, 6, 9],
         title: 'Facial Recognition Web App',
         text: 'Detects human faces in an input image and put boxes around them. Uses Clarifai API.',
         liveLink: 'https://jayli3n.github.io/facial-recognition-web-app/',
@@ -44,7 +59,6 @@ export const PORTFOLIO = [
     },
     {
         imgPath: portfolioJPGs.nexterJPG,
-        icons: [4, 5, 6, 9],
         title: 'Nexter Real Estate',
         text: 'A mockup real estate website. Made responsive using of CSS Grid.',
         liveLink: 'https://jayli3n.github.io/nexter-front-end/',
@@ -52,14 +66,12 @@ export const PORTFOLIO = [
     },
     {
         imgPath: portfolioJPGs.thewestcoinsJPG,
-        icons: [4, 5, 7],
         title: 'The West Coins',
         text: 'Coin collection E-commerce website for my dear friend. I still manage and maintain it weekly.',
         liveLink: 'https://www.thewestcoins.com/',
     },
     {
         imgPath: portfolioJPGs.starwarsJPG,
-        icons: [0, 2, 4, 5, 9],
         title: 'Star Wars Database',
         text: "A fun and light-weight web app to display all the Star Wars data you'll ever want! Uses AJAX and SWAPI.",
         liveLink: 'https://jayli3n.github.io/starwars/',
@@ -67,7 +79,6 @@ export const PORTFOLIO = [
     },
     {
         imgPath: portfolioJPGs.natoursJPG,
-        icons: [4, 5, 9],
         title: 'Natours Startup',
         text: 'A mockup landing page for a startup travel agency. Uses old css techniques for responsiveness.',
         liveLink: 'https://jayli3n.github.io/natours-startup/',
@@ -75,7 +86,6 @@ export const PORTFOLIO = [
     },
     {
         imgPath: portfolioJPGs.linearGradJPG,
-        icons: [2, 4, 5, 9],
         title: 'Gradient Background Generator',
         text: 'Pick your own or randomly generate color codes for CSS linear gradient.',
         liveLink: 'https://jayli3n.github.io/linear-background-generator/',
@@ -117,7 +127,7 @@ export const EXPERIENCES = [
             "I've designed a custom Shopify theme for a local Perth coffee retailer",
             "Built with Shopify's Liquid templating language, HTML, CSS, and vanilla Javascript",
             '',
-            'Lead front-end engineer for Supremacy Game (https://play.supremacy.game): a 24/7 live battle stream of mechs battling and players dropping abilities, think Hunger Games meet Mechs',
+            'Lead front-end engineer for Supremacy Game (https://play.supremacy.game): a 24/7 live stream of mechs battling and players dropping abilities, think Hunger Games meet Mechs',
             'Full stack developer utilizing ReactJS, GoLang, and PostgreSQL',
             'Implemented features using PixiJS, ThreeJS, Web3',
             "Communicate data with WebSockets and REST API's",
