@@ -23,11 +23,15 @@ const OneExperience = ({ info: { logoPath, company, link, position, duration, de
                 {duration}
             </StyledS1>
             <Ul>
-                {details.map((detail, i) => (
-                    <li key={i}>
-                        <TYPOGRAPHY.P>{detail}</TYPOGRAPHY.P>
-                    </li>
-                ))}
+                {details.map((detail, i) =>
+                    detail ? (
+                        <li key={i}>
+                            <TYPOGRAPHY.P>{detail}</TYPOGRAPHY.P>
+                        </li>
+                    ) : (
+                        <br />
+                    ),
+                )}
             </Ul>
         </div>
     </ExperienceDiv>
@@ -93,7 +97,7 @@ const ImageDiv = styled.div`
 
     ${media.sizeV`
 		flex-direction: column;
-		margin: 0 auto 1.2rem auto;
+		margin: 0 auto;
 	`}
 `;
 

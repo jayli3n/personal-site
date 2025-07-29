@@ -14,6 +14,7 @@ import woodJPG from './experiences/jayli3n-woodplc.jpg';
 import raikohappsLogoJPG from './experiences/jayli3n-raikohapps.jpg';
 import chevronJPG from './experiences/jayli3n-chevron.jpg';
 import calytrixJPG from './experiences/jayli3n-calytrix.jpg';
+import vgwJPG from './experiences/jayli3n-vgw.jpg';
 import ninjaJPG from './experiences/jayli3n-ninja.jpg';
 import bookPNG from './outside/jayli3n-book.png';
 import litPNG from './outside/jayli3n-lit.png';
@@ -94,6 +95,7 @@ export const experiencesJPGs = {
     chevronJPG,
     calytrixJPG,
     ninjaJPG,
+	vgwJPG
 };
 
 export const outsidePNGs = {
