@@ -57,6 +57,7 @@ import { ReactComponent as GithubSVG } from './technologies/jayli3n-github.svg';
 import { ReactComponent as GodotSVG } from './technologies/jayli3n-godot.svg';
 import { ReactComponent as HTML5SVG } from './technologies/jayli3n-html5.svg';
 import { ReactComponent as JiraSVG } from './technologies/jayli3n-jira.svg';
+import { ReactComponent as LeafletSVG } from './technologies/jayli3n-leafletjs.svg';
 import { ReactComponent as AccessSVG } from './technologies/jayli3n-microsoftaccess.svg';
 import { ReactComponent as MuiSVG } from './technologies/jayli3n-mui.svg';
 import { ReactComponent as NodeSVG } from './technologies/jayli3n-node-dot-js.svg';
@@ -178,6 +179,7 @@ export const technologies = [
     { name: 'Unity', bgColor: '#000000', Svg: UnitySVG },
     { name: 'Godot', bgColor: '#478CBF', Svg: GodotSVG },
     { name: 'PixiJS', bgColor: '#D33095', Svg: PixiJSSVG },
+    { name: 'Leaflet', bgColor: '#199900', Svg: LeafletSVG },
 
     // Mobile
     { name: 'Android', bgColor: '#A4C639', Svg: AndroidSVG },
