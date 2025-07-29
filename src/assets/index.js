@@ -130,34 +130,51 @@ export const icons = {
 };
 
 export const technologies = [
+    // Frontend Core
     { name: 'TypeScript', bgColor: '#3178C6', Svg: TypescriptSVG },
     { name: 'NodeJS', bgColor: '#339933', Svg: NodeSVG },
-    { name: 'GitHub', bgColor: '#181717', Svg: GithubSVG },
     { name: 'React', bgColor: '#61DAFB', Svg: ReactJSSVG },
     { name: 'React Native', bgColor: '#61DAFB', Svg: ReactNativeSVG },
     { name: 'Redux', bgColor: '#764ABC', Svg: ReduxSVG },
+    { name: 'Vue.js', bgColor: '#42B883', Svg: VueJSSVG },
+    { name: 'GitHub', bgColor: '#181717', Svg: GithubSVG },
+    { name: 'Git', bgColor: '#F05032', Svg: GitSVG },
+
+    // Web foundations
     { name: 'HTML', bgColor: '#E34F26', Svg: HTML5SVG },
     { name: 'CSS', bgColor: '#1572B6', Svg: CSS3SVG },
+
+    // Styling
     { name: 'Tailwind CSS', bgColor: '#06B6D4', Svg: TailwindCSSSVG },
     { name: 'Sass', bgColor: '#CC6699', Svg: SassSVG },
-    { name: 'Shopify', bgColor: '#7AB55C', Svg: ShopifySVG },
+    { name: 'MUI', bgColor: '#007FFF', Svg: MuiSVG },
+
+    // Backend & infra
     { name: 'PSQL', bgColor: '#336791', Svg: PostgreSQLSVG },
-    { name: 'Git', bgColor: '#F05032', Svg: GitSVG },
-    { name: 'Android', bgColor: '#A4C639', Svg: AndroidSVG },
     { name: 'Firebase', bgColor: '#FFCA28', Svg: FirebaseSVG },
-    { name: 'Access', bgColor: '#BA141A', Svg: AccessSVG },
-    { name: 'Power BI', fill: '#000000', bgColor: '#F3C912', Svg: PowerBISVG },
-    { name: 'Wordpress', bgColor: '#21759B', Svg: WordPressSVG },
-    { name: 'Vue.js', bgColor: '#42B883', Svg: VueJSSVG },
-    { name: 'PixiJS', bgColor: '#D33095', Svg: PixiJSSVG },
-    { name: 'Codefresh', bgColor: '#00C7B7', Svg: CodefreshSVG },
     { name: 'Docker', bgColor: '#2496ED', Svg: DockerSVG },
     { name: 'AWS', bgColor: '#FF9900', Svg: AWSSVG },
+
+    // Testing & dev tools
+    { name: 'Vitest', bgColor: '#6E9F18', Svg: VitestSVG },
+    { name: 'Playwright', bgColor: '#2EAD33', Svg: PlaywrightSVG },
+    { name: 'Storybook', bgColor: '#FF4785', Svg: StorybookSVG },
+    { name: 'Jira', bgColor: '#0052CC', Svg: JiraSVG },
+    { name: 'Codefresh', bgColor: '#00C7B7', Svg: CodefreshSVG },
+
+    // CMS / platform-specific
+    { name: 'Shopify', bgColor: '#7AB55C', Svg: ShopifySVG },
+    { name: 'Wordpress', bgColor: '#21759B', Svg: WordPressSVG },
+
+    // Game development
     { name: 'Unity', bgColor: '#000000', Svg: UnitySVG },
     { name: 'Godot', bgColor: '#478CBF', Svg: GodotSVG },
-    { name: 'Playwright', bgColor: '#2EAD33', Svg: PlaywrightSVG },
-    { name: 'Jira', bgColor: '#0052CC', Svg: JiraSVG },
-    { name: 'MUI', bgColor: '#007FFF', Svg: MuiSVG },
-    { name: 'Vitest', bgColor: '#6E9F18', Svg: VitestSVG },
-    { name: 'Storybook', bgColor: '#FF4785', Svg: StorybookSVG },
+    { name: 'PixiJS', bgColor: '#D33095', Svg: PixiJSSVG },
+
+    // Mobile
+    { name: 'Android', bgColor: '#A4C639', Svg: AndroidSVG },
+
+    // Microsoft tools
+    { name: 'Access', bgColor: '#BA141A', Svg: AccessSVG },
+    { name: 'Power BI', fill: '#000000', bgColor: '#F3C912', Svg: PowerBISVG },
 ];

@@ -46,27 +46,23 @@ const IconDiv = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1.5rem;
-    min-width: 11rem;
+    margin: 1.2rem;
+    min-width: 8rem;
     transition: all 0.2s;
 
     & > :last-child {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
     }
 
     :hover {
         transform: scale(1.05);
     }
-
-    ${media.sizeVI`
-		min-width: 9rem;
-	`}
 `;
 
 const Icon = styled.div`
     text-align: center;
     border-radius: 1.5rem;
-    padding: 1.7rem;
+    padding: 1.6rem;
     fill: ${(props) => props.fill || COLORS.WHITE};
     background-color: ${(props) => props.bgColor};
     height: 7rem;
