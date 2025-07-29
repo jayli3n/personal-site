@@ -17,6 +17,7 @@
   "scripts": {
 	"docker:dev": "sudo docker compose up dev --build",
     "dev": "react-scripts start",
+    "docker:build": "sudo docker compose up build --build",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

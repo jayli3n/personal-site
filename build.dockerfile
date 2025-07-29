@@ -9,4 +9,4 @@ RUN npm ci
 COPY public ./public
 COPY src ./src
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "build"]
