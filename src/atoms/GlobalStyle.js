@@ -1,16 +1,14 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { fonts } from '../assets';
-import {
-  COLORS,
-  SIZES
-} from './constants'
+import { COLORS, SIZES } from './constants';
 
 export const media = Object.keys(SIZES).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-      @media only screen and (max-width: ${SIZES[label] / 16}em) {
-        ${css(...args)}
-      }`
-  return acc
+    acc[label] = (...args) => css`
+        @media only screen and (max-width: ${SIZES[label] / 16}em) {
+            ${css(...args)}
+        }
+    `;
+    return acc;
 }, {});
 
 // Applies a global reset and global styles

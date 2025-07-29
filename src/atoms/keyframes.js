@@ -1,6 +1,5 @@
 import { keyframes } from 'styled-components';
 
-
 export const PULSE_EFFECT = keyframes`
 	50% { opacity: 1; }
 	70% { opacity: 0; }
