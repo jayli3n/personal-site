@@ -9,15 +9,15 @@ export const FooterSection = ({ id }) => (
             Let's get in touch!
         </StyledH3>
         <StyledP color={COLORS.GREY_6} align="center">
-            I'm always open to make new friends.
+            Let's connect on LinkedIn
             <br />
-            Shoot me an email at:{' '}
+            or shoot me an email at:{' '}
             <A href="mailto: jayli3n@gmail.com" rel="noopener noreferrer">
                 jayli3n@gmail.com
             </A>
         </StyledP>
         <TYPOGRAPHY.S2 color={COLORS.GREY_5} align="center">
-            &copy; 2019 - 2024 James Li, All Rights Reserved.
+            &copy; 2019 - 2025 James Li, All Rights Reserved.
         </TYPOGRAPHY.S2>
         <StyledSocials small />
 

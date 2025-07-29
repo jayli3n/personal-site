@@ -173,7 +173,7 @@ export const EXTRACURRICULAR = [
     {
         img: outsidePNGs.bookPNG,
         title: 'Learning',
-        text: 'Always keeping up-to-date with the latest tech news, struggling to keep up with all the new JS frameworks man.',
+        text: 'I like keeping up with the latest in tech, struggling to keep up with all the new JS frameworks man.',
     },
 ];
 

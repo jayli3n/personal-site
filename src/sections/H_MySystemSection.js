@@ -7,7 +7,7 @@ import { COLORS, TYPOGRAPHY } from '../atoms';
 
 const OneQuote = ({ quote: { text, link } }) => (
     <ListItem className="scrollreveal">
-        <TYPOGRAPHY.H4 weight={200} align="center" color="inherit">
+        <TYPOGRAPHY.H5 weight={200} align="center" color="inherit">
             <span role="img" aria-label="point right">
                 👉
             </span>
@@ -15,7 +15,7 @@ const OneQuote = ({ quote: { text, link } }) => (
             <span role="img" aria-label="point right">
                 👈
             </span>
-        </TYPOGRAPHY.H4>
+        </TYPOGRAPHY.H5>
     </ListItem>
 );
 
@@ -41,7 +41,7 @@ const Ol = styled.ol`
 `;
 
 const ListItem = styled.li`
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 
     ${media.sizeII`
 		font-size: 2.5rem;
