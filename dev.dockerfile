@@ -6,7 +6,4 @@ COPY package*.json ./
 
 RUN npm ci
 
-COPY public ./public
-COPY src ./src
-
 CMD ["npm", "run", "dev"]
