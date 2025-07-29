@@ -43,93 +43,121 @@ import { ReactComponent as DiscordSVG } from './icons/jayli3n-discord.svg';
 import { ReactComponent as LinkedInSVG } from './icons/jayli3n-linkedin.svg';
 
 import { ReactComponent as AndroidSVG } from './technologies/jayli3n-android.svg';
-import { ReactComponent as BootstrapSVG } from './technologies/jayli3n-bootstrap.svg';
 import { ReactComponent as CSS3SVG } from './technologies/jayli3n-css3.svg';
 import { ReactComponent as FirebaseSVG } from './technologies/jayli3n-firebase.svg';
 import { ReactComponent as GitSVG } from './technologies/jayli3n-git.svg';
 import { ReactComponent as HTML5SVG } from './technologies/jayli3n-html5.svg';
-import { ReactComponent as JavaScriptSVG } from './technologies/jayli3n-javascript.svg';
 import { ReactComponent as AccessSVG } from './technologies/jayli3n-microsoftaccess.svg';
 import { ReactComponent as NodeSVG } from './technologies/jayli3n-node-dot-js.svg';
 import { ReactComponent as PostgreSQLSVG } from './technologies/jayli3n-postgresql.svg';
-import { ReactComponent as ReactSVG } from './technologies/jayli3n-react.svg';
+import { ReactComponent as ReactJSSVG } from './technologies/jayli3n-reactjs.svg';
 import { ReactComponent as ReduxSVG } from './technologies/jayli3n-redux.svg';
 import { ReactComponent as SassSVG } from './technologies/jayli3n-sass.svg';
 import { ReactComponent as ShopifySVG } from './technologies/jayli3n-shopify.svg';
 import { ReactComponent as WordPressSVG } from './technologies/jayli3n-wordpress.svg';
 import { ReactComponent as PowerBISVG } from './technologies/jayli3n-power-bi.svg';
+import { ReactComponent as TypescriptSVG } from './technologies/jayli3n-typescript.svg';
+import { ReactComponent as VueJSSVG } from './technologies/jayli3n-vuejs.svg';
+import { ReactComponent as PixiJSSVG } from './technologies/jayli3n-pixijs.svg';
+import { ReactComponent as GithubSVG } from './technologies/jayli3n-github.svg';
+import { ReactComponent as CodefreshSVG } from './technologies/jayli3n-codefresh.svg';
+import { ReactComponent as DockerSVG } from './technologies/jayli3n-docker.svg';
+import { ReactComponent as AWSSVG } from './technologies/jayli3n-aws.svg';
+import { ReactComponent as UnitySVG } from './technologies/jayli3n-unity.svg';
+import { ReactComponent as TailwindCSSSVG } from './technologies/jayli3n-tailwindcss.svg';
+import { ReactComponent as GodotSVG } from './technologies/jayli3n-godot.svg';
+import { ReactComponent as PlaywrightSVG } from './technologies/jayli3n-playwright.svg';
+import { ReactComponent as JiraSVG } from './technologies/jayli3n-jira.svg';
+import { ReactComponent as MuiSVG } from './technologies/jayli3n-mui.svg';
+import { ReactComponent as VitestSVG } from './technologies/jayli3n-vitest.svg';
+import { ReactComponent as StorybookSVG } from './technologies/jayli3n-storybook.svg';
+import { ReactComponent as ReactNativeSVG } from './technologies/jayli3n-react-native.svg';
 
 // ------------------------------------------
 
 export const fonts = {
-	FONT_HEAVY,
-	FONT_BOLD,
-	FONT_MEDIUM,
-	FONT_REGULAR,
-	FONT_LIGHT,
-	FONT_THIN
-}
+    FONT_HEAVY,
+    FONT_BOLD,
+    FONT_MEDIUM,
+    FONT_REGULAR,
+    FONT_LIGHT,
+    FONT_THIN,
+};
 
 export { avatarJPG };
 
 export const experiencesJPGs = {
-	tutorJPG,
-	ultraveJPG,
-	woodJPG,
-	raikohappsLogoJPG,
-	chevronJPG,
-	calytrixJPG,
-	ninjaJPG
+    tutorJPG,
+    ultraveJPG,
+    woodJPG,
+    raikohappsLogoJPG,
+    chevronJPG,
+    calytrixJPG,
+    ninjaJPG,
 };
 
 export const outsidePNGs = {
-	bookPNG,
-	litPNG,
-	racketPNG,
-	workoutPNG
+    bookPNG,
+    litPNG,
+    racketPNG,
+    workoutPNG,
 };
 
 export const portfolioJPGs = {
-	facialJPG,
-	linearGradJPG,
-	natoursJPG,
-	nexterJPG,
-	starwarsJPG,
-	thewestcoinsJPG,
-	trilloJPG,
-	raikohappsJPG
+    facialJPG,
+    linearGradJPG,
+    natoursJPG,
+    nexterJPG,
+    starwarsJPG,
+    thewestcoinsJPG,
+    trilloJPG,
+    raikohappsJPG,
 };
 
 export const icons = {
-	TranslateSVG,
-	GmailSVG,
-	MenuSVG,
-	PinSVG,
-	GitHubSVG,
-	MediumSVG,
-	TwitterSVG,
-	YouTubeSVG,
-	FacebookSVG,
-	InstagramSVG,
-	DiscordSVG,
-	LinkedInSVG
+    TranslateSVG,
+    GmailSVG,
+    MenuSVG,
+    PinSVG,
+    GitHubSVG,
+    MediumSVG,
+    TwitterSVG,
+    YouTubeSVG,
+    FacebookSVG,
+    InstagramSVG,
+    DiscordSVG,
+    LinkedInSVG,
 };
 
 export const technologies = [
-	{ name: 'React', bgColor: '#61DAFB', Svg: ReactSVG },
-	{ name: 'Redux', bgColor: '#764ABC', Svg: ReduxSVG },
-	{ name: 'JavaScript', bgColor: '#F7DF1E', Svg: JavaScriptSVG },
-	{ name: 'NodeJS', bgColor: '#339933', Svg: NodeSVG },
-	{ name: 'HTML', bgColor: '#E34F26', Svg: HTML5SVG },
-	{ name: 'CSS', bgColor: '#1572B6', Svg: CSS3SVG },
-	{ name: 'Sass', bgColor: '#CC6699', Svg: SassSVG },
-	{ name: 'Shopify', bgColor: '#7AB55C', Svg: ShopifySVG },
-	{ name: 'PSQL', bgColor: '#336791', Svg: PostgreSQLSVG },
-	{ name: 'Git', bgColor: '#F05032', Svg: GitSVG },
-	{ name: 'Bootstrap', bgColor: '#563D7C', Svg: BootstrapSVG },
-	{ name: 'Android', bgColor: '#A4C639', Svg: AndroidSVG },
-	{ name: 'Firebase', bgColor: '#FFCA28', Svg: FirebaseSVG },
-	{ name: 'Access', bgColor: '#BA141A', Svg: AccessSVG },
-	{ name: 'Power BI', fill: '#000000', bgColor: '#F3C912', Svg: PowerBISVG },
-	{ name: 'Wordpress', bgColor: '#21759B', Svg: WordPressSVG }
+    { name: 'TypeScript', bgColor: '#3178C6', Svg: TypescriptSVG },
+    { name: 'NodeJS', bgColor: '#339933', Svg: NodeSVG },
+    { name: 'GitHub', bgColor: '#181717', Svg: GithubSVG },
+    { name: 'React', bgColor: '#61DAFB', Svg: ReactJSSVG },
+    { name: 'React Native', bgColor: '#61DAFB', Svg: ReactNativeSVG },
+    { name: 'Redux', bgColor: '#764ABC', Svg: ReduxSVG },
+    { name: 'HTML', bgColor: '#E34F26', Svg: HTML5SVG },
+    { name: 'CSS', bgColor: '#1572B6', Svg: CSS3SVG },
+    { name: 'Tailwind CSS', bgColor: '#06B6D4', Svg: TailwindCSSSVG },
+    { name: 'Sass', bgColor: '#CC6699', Svg: SassSVG },
+    { name: 'Shopify', bgColor: '#7AB55C', Svg: ShopifySVG },
+    { name: 'PSQL', bgColor: '#336791', Svg: PostgreSQLSVG },
+    { name: 'Git', bgColor: '#F05032', Svg: GitSVG },
+    { name: 'Android', bgColor: '#A4C639', Svg: AndroidSVG },
+    { name: 'Firebase', bgColor: '#FFCA28', Svg: FirebaseSVG },
+    { name: 'Access', bgColor: '#BA141A', Svg: AccessSVG },
+    { name: 'Power BI', fill: '#000000', bgColor: '#F3C912', Svg: PowerBISVG },
+    { name: 'Wordpress', bgColor: '#21759B', Svg: WordPressSVG },
+    { name: 'Vue.js', bgColor: '#42B883', Svg: VueJSSVG },
+    { name: 'PixiJS', bgColor: '#D33095', Svg: PixiJSSVG },
+    { name: 'Codefresh', bgColor: '#00C7B7', Svg: CodefreshSVG },
+    { name: 'Docker', bgColor: '#2496ED', Svg: DockerSVG },
+    { name: 'AWS', bgColor: '#FF9900', Svg: AWSSVG },
+    { name: 'Unity', bgColor: '#000000', Svg: UnitySVG },
+    { name: 'Godot', bgColor: '#478CBF', Svg: GodotSVG },
+    { name: 'Playwright', bgColor: '#2EAD33', Svg: PlaywrightSVG },
+    { name: 'Jira', bgColor: '#0052CC', Svg: JiraSVG },
+    { name: 'MUI', bgColor: '#007FFF', Svg: MuiSVG },
+    { name: 'Vitest', bgColor: '#6E9F18', Svg: VitestSVG },
+    { name: 'Storybook', bgColor: '#FF4785', Svg: StorybookSVG },
 ];
