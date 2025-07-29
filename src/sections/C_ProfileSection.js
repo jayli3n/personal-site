@@ -14,19 +14,19 @@ const ListItemComponent = ({ svg, value }) => (
 export class ProfileSection extends Component {
     render() {
         return (
-            <Section id={this.props.id} title="Get to know me">
+            <Section id={this.props.id} title="Get to Know Me">
                 <WrapperDiv>
                     <AboutDiv className="scrollreveal">
-                        <StyledH5>Profile</StyledH5>
+                        <StyledH5>Hello...</StyledH5>
                         <TYPOGRAPHY.P>
-                            Hi, I’m James. It’s great to see you on my page!
+                            I’m James — thanks for stopping by!
                             <br />
                             I’m a software engineer who loves to see magic happen and problems solved from my lines of
                             code. In addition, I love to work in a team and make meaningful connections with people.
                         </TYPOGRAPHY.P>
                     </AboutDiv>
                     <InfoDiv className="scrollreveal">
-                        <StyledH5>Info</StyledH5>
+                        <StyledH5>Metadata</StyledH5>
                         <Ul>
                             <ListItemComponent svg={<icons.GmailSVG />} value="jayli3n&#64;gmail.com" />
                             <ListItemComponent svg={<icons.PinSVG />} value="Perth, Australia" />
@@ -77,7 +77,7 @@ const StyledH5 = styled(TYPOGRAPHY.H5)`
 `;
 
 const IconDiv = styled.div`
-    width: 2.5rem;
+    width: 2rem;
     height: auto;
     margin-right: 1.55rem;
 

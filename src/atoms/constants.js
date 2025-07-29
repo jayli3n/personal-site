@@ -96,7 +96,7 @@ export const TYPOGRAPHY = {
         letter-spacing: inherit;
         font-family: ${(props) => props.fontFamily || 'Raleway'};
         line-height: ${(props) => props.lineHeight || 'inherit'};
-        font-weight: ${(props) => props.weight || 500};
+        font-weight: ${(props) => props.weight || 400};
         text-align: ${(props) => props.align || 'left'};
         color: ${(props) => props.color || COLORS.GREY_1};
     `,

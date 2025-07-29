@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { media, smoothScroll } from '../util';
+import { smoothScroll } from '../util';
 import { Socials, GAAnchor } from '../components';
 import { COLORS, TYPOGRAPHY, COMMON_STYLES } from '../atoms';
 import { avatarJPG } from '../assets';
@@ -87,10 +87,6 @@ const Anchor = styled(GAAnchor)`
         background-color: ${(props) => (props.secondary ? `${COLORS.GREY_4}20` : COLORS.PRIMARY_DARK)};
         border: 2px solid ${(props) => (props.secondary ? COLORS.GREY_4 : 'transparent')};
     }
-
-    ${media.sizeV`
-		width: 13rem;
-	`}
 `;
 
 const StyledSocials = styled(Socials)`
