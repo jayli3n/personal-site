@@ -14,13 +14,13 @@ export class HeroSection extends Component {
                     <TYPOGRAPHY.H4 className="scrollreveal" color={COLORS.WHITE}>
                         James Li
                     </TYPOGRAPHY.H4>
-                    <TYPOGRAPHY.H6 className="scrollreveal" color={COLORS.WHITE}>
-                        &lt; Software Engineer &#47;&gt;
+                    <TYPOGRAPHY.H6 className="scrollreveal" color={COLORS.GREY_3} weight={200}>
+                        &lt;SoftwareEngineer &#47;&gt;
                     </TYPOGRAPHY.H6>
                     <AnchorsDiv className="scrollreveal">
                         <Anchor onClick={() => smoothScroll('footer')}>
                             <TYPOGRAPHY.P color={COLORS.WHITE} align="center">
-                                Contact Me
+                                Connect with Me
                             </TYPOGRAPHY.P>
                         </Anchor>
                     </AnchorsDiv>
@@ -57,12 +57,12 @@ const AvatarDiv = styled.div`
 const AnchorsDiv = styled.div`
     display: flex;
     justify-content: space-around;
-    margin-top: 1.5rem;
+    margin-top: 2.4rem;
     width: auto;
 `;
 
 const Anchor = styled(GAAnchor)`
-    width: 16rem;
+    width: 18rem;
     text-decoration: none;
     padding: 1rem 0;
     border-radius: ${COMMON_STYLES.BORDER_RADIUS};

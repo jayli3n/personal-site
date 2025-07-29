@@ -119,7 +119,7 @@ export const TYPOGRAPHY = {
         color: ${(props) => props.color || COLORS.GREY_1};
     `,
     H6: styled.h6`
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: inherit;
         font-family: ${(props) => props.fontFamily || 'Raleway'};
         line-height: ${(props) => props.lineHeight || 'inherit'};

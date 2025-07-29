@@ -1,15 +1,15 @@
-import { icons, portfolioJPGs, experiencesJPGs, outsidePNGs } from './assets';
+import { experiencesJPGs, icons, outsidePNGs, portfolioJPGs } from './assets';
 
 export const GOOGLE_ANALYTICS = 'UA-140313888-1';
 
 export const SOCIALS = [
     {
-        Svg: icons.GitHubSVG,
-        link: 'https://github.com/jayli3n',
-    },
-    {
         Svg: icons.LinkedInSVG,
         link: 'https://www.linkedin.com/in/jayli3n/',
+    },
+    {
+        Svg: icons.GitHubSVG,
+        link: 'https://github.com/jayli3n',
     },
     {
         Svg: icons.InstagramSVG,
