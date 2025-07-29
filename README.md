@@ -15,6 +15,10 @@ Before you begin, ensure you have Docker Desktop installed and running on your m
 ## Development
 
 ```bash
+# Install deps locally (for gh-pages deployment)
+# So I don't need to setup git inside the container)
+npm ci
+
 # To run locally
 npm run docker:dev
 
